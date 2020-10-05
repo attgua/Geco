@@ -1,0 +1,70 @@
+version: "2.0"
+
+stories:
+
+- story: Experiment cell
+  steps:
+  - intent: start
+  - action: utter_what_data
+  - intent: retrieve_experiments
+  - action: utter_field_name
+  - intent: search_field
+    entities: 
+    - field: "cell"  
+  - action: utter_slot
+  - intent: affirm
+  - action: action_show_value
+  - intent: choice_value_cell
+    entities:
+    - cell: "h1a549"
+  - action: action_control
+  - action: utter_value
+  - intent: affirm
+  - action: utter_query
+
+- story: Experiment source
+  steps:
+  - intent: start
+  - action: utter_what_data
+  - intent: retrieve_experiments
+  - action: utter_field_name
+  - intent: search_field
+    entities: 
+    - field: "source"  
+  - action: utter_slot
+  - intent: affirm
+  - action: action_show_value
+  - intent: choice_value_source
+    entities:
+    - source: "encode"
+  - action: action_control
+  - intent: affirm
+  - action: utter_query 
+
+- story: Experiment source_ann
+  steps:
+  - intent: start
+  - action: utter_what_data
+  - intent: retrieve_experiments
+  - action: utter_field_name
+  - action: action_show_field
+  - intent: search_field
+    entities: 
+    - field: "source_ann"  
+  - action: utter_slot
+  - intent: affirm
+  - action: action_show_value
+  - intent: choice_value_source_ann
+    entities:
+    - source_ann: "gencode"
+  - action: action_control
+  - intent: affirm
+  - action: utter_query 
+  
+- story: Annotation
+  steps:
+  - intent: start
+  - action: utter_what_data
+  - intent: retrieve_annotations
+  - action: utter_ciao_annotations
+

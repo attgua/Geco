@@ -1,0 +1,202 @@
+version: "2.0"
+
+nlu:
+
+- intent: start
+  examples: |
+    - start
+    - go
+    - restart
+
+- intent: choice_value_cell
+  examples: |
+    - [k562](cell)  
+    - [h1a549](cell)
+    - [cardiac cell](cell)
+
+- intent: choice_value_source
+  examples: |
+      - [tcga](source)
+      - [encode](source)
+      - [1000 genomes](source)
+      - [roadmap epigenomics](source)
+      - [tads](source)
+
+- intent: choice_value_source_ann
+  examples: |
+      - [refseq](source_ann)
+      - [gencode](source_ann)
+      - [roadmap epigenomics](source_ann)
+
+- intent: search_field
+  examples: |
+    - [file_format](field)
+    - [cell](field)
+    - [biosample_type](field)
+    - [feature](field)
+    - [source](field)
+    - [target](field)
+    - [technique](field)
+    - I want to select [source](field)
+    - [target](field)
+    - [source](field) 
+    - [disease](field)
+    - [target](field)
+    - [assembly](field)
+    - I want to select [source](field)
+
+- intent: retrieve_annotations
+  examples: |
+    - annotation
+    - annotations
+    - i want annotation
+    - i need annotation
+    - i am looking form annotation
+    - i need structural annotation
+    - I want to have [gene](content_type) annotation from [refseq](source_ann)
+    - can i have data regarding [gencode](source_ann) from [hg19](assembly) annotations?
+    - I would like to have [gene](content_type) annotation data from [gencode](source_ann)
+    - [hg19](assembly)
+    - [gene](content_type)
+    - annotation for [hg19](assembly)
+    - annotations for [grch38](assembly)
+    - I want [hg19](assembly) annotations
+    - I need [grch38](assembly) annotations
+    - I am looking for annotations for [hg19](assembly)
+    - can i have [grch38](assembly) annotations?
+    - [gene](content_type) annotations
+    - [exon](content_type) annotations from [hg19](assembly)
+    - i want annotations of [gene](content_type)
+
+
+- intent: retrieve_experiments
+  examples: |
+    - experiment
+    - experiments
+    - i need experiments
+    - i want experiments
+    - i need experimental data
+    - experimental data from [tcga](source)
+    - experimental data
+    - sample
+    - samples
+    - [simple nucleotide variation](feature)
+    - I want [simple nucleotide variation](feature)
+    - I need data from [dna repair](feature)
+    - [narrow]{"entity": "file_format", "value": "narrowpeak"} files
+    - [broad]{"entity": "file_format", "value": "broadpeak"} files
+    - [broadpeak](file_format) experiments
+    - give me [narrowpeak](file_format) samples
+    - i need [gappedpeak](file_format) files
+    - i am looking form [narrowpeak](file_format) experiments from [encode](source)
+    - [bed](file_format) files from [tcga](source) for [hg19](assembly)
+    - i want experiment data
+    - i need experiment
+    - i am looking for experiment
+    - i need experimental data
+    - i want to retrieve experimental data
+    - [hg19](assembly) data for [healthy](is_healthy) tissue
+    - [gencode](source) data for [tumoral](is_healthy) patients with [breast invasive carcinoma](disease)
+    - I need to select [kidney tissue](tissue: kidney) data
+    - I want [tcga](source) data
+    - samples with [breast invasive carcinoma](disease)
+    - patients affected by [kidney renal clear cell carcinoma](disease)
+    - patients with [esophageal carcinoma](disease)
+    - i need samples affected by [prostate carcinoma](disease)
+    - [disease](field) is [lung adenocarcinoma](disease)
+    - [hg19](assembly) [assembly](field)
+    - [rna-seq](technique)
+    - [tcga](source) [cna](data_type) data with [bed](file_format) for [brain tissue](tissue: brain)
+    - i would like to have [mirna expression quantification](data_type) regarding [thyroid cancer](disease)
+    - can I have data in [bed](file_format) for [rna-seq](technique)?
+    - please give me [cell line](biosample_type) data for [blood](tissue)
+    - provide me all [cistrome](source) data
+    - [tcga](source)
+    - [cna](data_type)
+    - [blood](tissue)
+    - [kidney](tissue)
+    - [transcription factors]{"entity":"feature", "value":"transcription factor"}
+    - [transcription factors]{"entity":"feature", "value":"transcription factor"} for [cervical carcinoma]{"entity":"disease", "value":"cervical adenocarcinoma"}
+    - [gene expression]{"entity":"data_type", "value":"gene expression quantification"}
+    - [gene expressions]{"entity":"data_type", "value":"gene expression quantification"}
+    - [gene expressions]{"entity":"data_type", "value":"gene expression quantification"} datasets
+    - [gene expressions]{"entity":"data_type", "value":"gene expression quantification"} data
+    - [gene expression]{"entity":"data_type", "value":"gene expression quantification"} data
+    - [RNA expression]{"entity":"data_type", "value":"gene expression quantification"}
+    - [RNA expression]{"entity":"data_type", "value":"gene expression quantification"} data
+    - [rna expression]{"entity":"data_type", "value":"gene expression quantification"}
+    - [rna expressions]{"entity":"data_type", "value":"gene expression quantification"}
+    - [exon expressions]{"entity":"data_type", "value":"exon quantification"}
+    - [exon expression]{"entity":"data_type", "value":"exon quantification"} data
+    - I would like to retrieve items from [tcga](source) regarding [kidney tissue]{"entity":"tissue", "value":"kidney"}
+    - [kidney tissue]{"entity":"tissue", "value":"kidney"}
+    - [heart tissue]{"entity":"tissue", "value":"heart, mediastinum, and pleura"}
+    - I want experiment about [uveal melanoma](disease)
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
