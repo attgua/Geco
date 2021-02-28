@@ -1,0 +1,16 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "1be313ec9d3c4db5b98cabbe2fa265ed",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " soft tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " disease"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a disease"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " sarcoma"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Please select a dataset value"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " grch38_tcga_gene_expression_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "bb1b0beb474f428ba56ea649814ecb59",
+            "message": " age"
+        }
+    ]
+}

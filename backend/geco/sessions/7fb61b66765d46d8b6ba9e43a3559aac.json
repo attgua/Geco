@@ -1,0 +1,20 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "7fb61b66765d46d8b6ba9e43a3559aac",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Here is your analysis! Choose the final number of clusters you want to keep. Otherwise you can modify the parameters and re-run the analysis"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": " palate"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Please select a dataset value"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": " grch38_tcga_copy_number_masked_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "0715b98e0d8b418fb653d0cc5717c802",
+            "message": "age\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Which range of values do you want? You can tell me the minimum or maximum value or both.\n The values are shown in the histogram."
+        }
+    ]
+}

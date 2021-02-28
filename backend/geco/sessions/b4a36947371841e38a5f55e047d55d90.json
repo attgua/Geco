@@ -1,0 +1,36 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "b4a36947371841e38a5f55e047d55d90",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "b4a36947371841e38a5f55e047d55d90",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "b4a36947371841e38a5f55e047d55d90",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "b4a36947371841e38a5f55e047d55d90",
+            "message": " age"
+        }
+    ]
+}

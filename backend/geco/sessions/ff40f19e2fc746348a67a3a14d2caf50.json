@@ -1,0 +1,144 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "i need brain and mirna expression\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " age"
+        },
+        {
+            "sender": "bot",
+            "message": "Which range of values do you want? You can tell me the minimum or maximum value or both.\n The values are shown in the histogram."
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " 5267"
+        },
+        {
+            "sender": "bot",
+            "message": "What metadatum do you want to filter now? say stop if you don't want other metadatum"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want to keep your selection, modify it or modify the extracted data?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " Keep my selection"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want to select another dataset?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " No"
+        },
+        {
+            "sender": "bot",
+            "message": "Now i will put the data in a table, so as you can analyze them easily. Do you want feature or sample data?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " Feature"
+        },
+        {
+            "sender": "bot",
+            "message": "You have to define what to put in the rows. Which region do you want?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " gene_symbol"
+        },
+        {
+            "sender": "bot",
+            "message": "I will put in the columuns 'item_id' ok ?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "ok\n"
+        },
+        {
+            "sender": "bot",
+            "message": "which region data do you want to use to fill your table?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " reads_per_million_mirna_mapped"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want to add some labels from metadata or region data?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "which operation do you want to do?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": " Clustering"
+        },
+        {
+            "sender": "bot",
+            "message": "Give me the number of clusters you need. In case you don't know, you can try some tuning"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "tuning\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Which is the minimum and maximum number of clusters you want to try?"
+        },
+        {
+            "sender": "ff40f19e2fc746348a67a3a14d2caf50",
+            "message": "32;2\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Here is your analysis! Choose the final number of clusters you want to keep. Otherwise you can modify the parameters and re-run the analysis"
+        }
+    ]
+}

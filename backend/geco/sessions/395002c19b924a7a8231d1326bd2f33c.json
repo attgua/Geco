@@ -1,0 +1,28 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "395002c19b924a7a8231d1326bd2f33c",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "395002c19b924a7a8231d1326bd2f33c",
+            "message": " data_type"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a data_type"
+        },
+        {
+            "sender": "bot",
+            "message": "Insert field or modify field?"
+        }
+    ]
+}

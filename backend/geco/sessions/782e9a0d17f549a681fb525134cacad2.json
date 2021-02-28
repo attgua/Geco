@@ -1,0 +1,52 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": " data_type"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a data_type"
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": " methylation beta value"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "782e9a0d17f549a681fb525134cacad2",
+            "message": " age"
+        }
+    ]
+}

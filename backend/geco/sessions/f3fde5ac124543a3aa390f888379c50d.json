@@ -1,0 +1,180 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "Insert field or modify field?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " Modify"
+        },
+        {
+            "sender": "bot",
+            "message": "The possible values for tissue are:"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "back\n"
+        },
+        {
+            "sender": "bot",
+            "message": "ok! let's go back"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "back\n"
+        },
+        {
+            "sender": "bot",
+            "message": "ok! let's go back"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "back\n"
+        },
+        {
+            "sender": "bot",
+            "message": "ok! let's go back"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "data_type\n"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a data_type"
+        },
+        {
+            "sender": "bot",
+            "message": "Insert field or modify field?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " Modify"
+        },
+        {
+            "sender": "bot",
+            "message": "The possible values for data_type are:"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "back\n"
+        },
+        {
+            "sender": "bot",
+            "message": "ok! let's go back"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a data_type"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "disease\n"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a disease"
+        },
+        {
+            "sender": "bot",
+            "message": "Insert field or modify field?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " Modify"
+        },
+        {
+            "sender": "bot",
+            "message": "The possible values for disease are:"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "back\n"
+        },
+        {
+            "sender": "bot",
+            "message": "ok! let's go back"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a disease"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "dataset_name\n"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a dataset_name"
+        },
+        {
+            "sender": "bot",
+            "message": "Insert field or modify field?"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " Modify"
+        },
+        {
+            "sender": "bot",
+            "message": "The possible values for dataset_name are:"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": " grch38_tcga_somatic_mutation_masked_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "f3fde5ac124543a3aa390f888379c50d",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        }
+    ]
+}

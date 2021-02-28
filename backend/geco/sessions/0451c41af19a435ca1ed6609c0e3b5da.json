@@ -1,0 +1,68 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": " data_type"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a data_type"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": " gene expression"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": " dataset_name"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a dataset_name"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": " grch38_tcga_gene_expression_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "0451c41af19a435ca1ed6609c0e3b5da",
+            "message": "age\n"
+        }
+    ]
+}

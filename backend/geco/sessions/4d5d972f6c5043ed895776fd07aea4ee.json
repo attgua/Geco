@@ -1,0 +1,76 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " pleura"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " disease"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a disease"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " mesothelioma"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Please select a dataset value"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " grch38_tcga_methylation_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "4d5d972f6c5043ed895776fd07aea4ee",
+            "message": " age"
+        }
+    ]
+}

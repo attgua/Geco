@@ -1,0 +1,48 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "d65674706f884e11bf8e103e4359ada0",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "d65674706f884e11bf8e103e4359ada0",
+            "message": " tissue"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a tissue"
+        },
+        {
+            "sender": "d65674706f884e11bf8e103e4359ada0",
+            "message": " prostate gland"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "d65674706f884e11bf8e103e4359ada0",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Please select a dataset value"
+        },
+        {
+            "sender": "d65674706f884e11bf8e103e4359ada0",
+            "message": " grch38_tcga_copy_number_masked_2019_10"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        }
+    ]
+}

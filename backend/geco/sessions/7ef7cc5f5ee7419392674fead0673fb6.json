@@ -1,0 +1,48 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "7ef7cc5f5ee7419392674fead0673fb6",
+            "message": "gene expression with brain\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "7ef7cc5f5ee7419392674fead0673fb6",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "7ef7cc5f5ee7419392674fead0673fb6",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "7ef7cc5f5ee7419392674fead0673fb6",
+            "message": " age"
+        },
+        {
+            "sender": "bot",
+            "message": "Which range of values do you want? You can tell me the minimum or maximum value or both.\n The values are shown in the histogram."
+        },
+        {
+            "sender": "7ef7cc5f5ee7419392674fead0673fb6",
+            "message": "4\n"
+        },
+        {
+            "sender": "bot",
+            "message": "What metadatum do you want to filter now? say stop if you don't want other metadatum"
+        }
+    ]
+}

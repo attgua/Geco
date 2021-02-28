@@ -1,0 +1,96 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": "i need gene expression for breast cancer"
+        },
+        {
+            "sender": "bot",
+            "message": "nessun campo selezionato"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": "breast cancer\n"
+        },
+        {
+            "sender": "bot",
+            "message": "nessun campo selezionato"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": " breast cancer disease\n"
+        },
+        {
+            "sender": "bot",
+            "message": "The chosen value (exact experiment) is not correct. Choose between:"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": "breast cancer disease\n"
+        },
+        {
+            "sender": "bot",
+            "message": "The chosen value (exact experiment) is not correct. Choose between:"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": "cancer disease\n"
+        },
+        {
+            "sender": "bot",
+            "message": "The chosen value (exact experiment) is not correct. Choose between:"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": " disease"
+        },
+        {
+            "sender": "bot",
+            "message": "provide a disease"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": " invasive breast carcinoma"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ee750ddfd6bb42059f9110c4f94c77ba",
+            "message": "gene expression\n"
+        },
+        {
+            "sender": "bot",
+            "message": "nessun campo selezionato"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        }
+    ]
+}
