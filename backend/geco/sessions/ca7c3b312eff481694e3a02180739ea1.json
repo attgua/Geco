@@ -1,0 +1,88 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "mirna expression data_type\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "tissue brain\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Rename dataset? if so provide a name"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "no\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Now if you want you can filter giving a metadatum or recap your choices."
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "age\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Which range of values do you want? You can tell me the minimum or maximum value or both.\n The values are shown in the histogram."
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "minor of 31111\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Sorry I didn't get that. Can you rephrase?"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "20000\n"
+        },
+        {
+            "sender": "bot",
+            "message": "What metadatum do you want to filter now? say stop if you don't want other metadatum"
+        },
+        {
+            "sender": "ca7c3b312eff481694e3a02180739ea1",
+            "message": "stop\n"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want to keep your selection, modify it or modify the extracted data?"
+        }
+    ]
+}

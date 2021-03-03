@@ -1,0 +1,28 @@
+{
+    "names": [
+        {
+            "sender": "bot",
+            "message": "What data are you looking for?"
+        },
+        {
+            "sender": "bba1657135d74967b34594908bd9fbf1",
+            "message": " Experiments"
+        },
+        {
+            "sender": "bot",
+            "message": "Which field do you want to select?"
+        },
+        {
+            "sender": "bba1657135d74967b34594908bd9fbf1",
+            "message": "mirna expression data_type\n"
+        },
+        {
+            "sender": "bot",
+            "message": "The chosen value (exact experiment) is not correct. Choose between:"
+        },
+        {
+            "sender": "bot",
+            "message": "Do you want filter more? If so, which one do you want select now?"
+        }
+    ]
+}
