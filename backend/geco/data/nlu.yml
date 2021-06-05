@@ -7,15 +7,16 @@ nlu:
     - restart
 - intent: choice_exact_experiment
   examples: |
+    - i want [gene expression](data_type) as (data_type)(field)
     - i want [gene expression](data_type) for [breast cancer](disease)
     - I would like to retrieve items from [tcga](source) regarding [kidney](tissue)
     - I want [isoform expression quantification](data_type) for [igak myeloma](disease)
     - I want experiment about [thyroid carcinoma](disease) for [hg19](assembly)
     - [hg19](assembly) [masked copy number segment](data_type) of [ovarian serous cystadenocarcinoma](disease)
-    - i am looking form [broadpeak](file_format) experiments from [encode](source)
+    - i am looking for [broadpeak](file_format) experiments from [encode](source)
     - i need samples for [copy number variation](feature) for [ovary](tissue)
     - I want experiment about [liver hepatocellular carcinoma](disease) for [grch38](assembly)
-    - i need [chorion](tissue) and [chip-seq](technique)
+    - i need [chorion](tissue) and [chip-seq]{"entity": "data_type", "value": "peaks"}
     - i want [livear](disease) [hg19](assembly) [hues64](cell) patients
     - i need [kopt-k1](cell) [rrna](content_type) [cnv](data_type) [thynoma]{"entity": "disease", "value": "thymoma"} [cohesis](feature)
     - [experimental data](experiments) [tcga](source) from [source](field)
@@ -299,7 +300,6 @@ nlu:
     - [ips df 6.9](cell) [cell](field)
     - [tc-797](cell) [cell](field)
     - [amniotic epithelial cell](cell) [cell](field)
-    - [astrocyte of the hippocampus](cell) [cell](field)
     - [fibroblast of gingiva](cell) [cell](field)
     - [fibroblast of peridontal ligament](cell) [cell](field)
     - [fibroblast of the conjunctiva](cell) [cell](field)
@@ -717,7 +717,7 @@ nlu:
     - [disease](field) [colorectal adenocarcinoma](disease)
     - [disease](field) [carcinoma](disease) (prostate)
     - [malignant primitive neuroectodermal tumor](disease) [disease](field)
-    - [disease](field) [parathyroid adenoma](disease)
+    - [disease](field) [parathyroid adenoma]{"entity": "disease", "value": "parathyroid gland"}
     - [submaxillar tumor](disease) [disease](field)
     - [disease](field) [retinoblastoma](disease)
     - [primary hyperparathyroidism](disease) [disease](field)
@@ -1623,7 +1623,7 @@ nlu:
     - [fubp1](target) [target](field)
     - [genotyping array](technique) [technique](field)
     - [mirna-seq](technique) [technique](field)
-    - [chip-seq](technique) [technique](field)
+    - [chip-seq]{"entity": "data_type", "value": "peaks"} [technique](field)
     - [snp array](technique) [technique](field)
     - [methylation array](technique) [technique](field)
     - [dna methylation 450](technique) [technique](field)
@@ -1712,7 +1712,6 @@ nlu:
     - [other and ill-defined sites](tissue) [tissue](field)
     - [gi colon](tissue) [tissue](field)
     - [vascular](tissue) [tissue](field)
-    - [parathyroid adenoma](tissue) [tissue](field)
     - [suprapubic skin](tissue) [tissue](field)
     - [gi rectum](tissue) [tissue](field)
     - [placenta](tissue) [tissue](field)
@@ -1890,19 +1889,19 @@ nlu:
     - I want experiment about [endometrial adenocarcinoma](disease) for [hg19](assembly)
     - I want [somatic mutations]{"entity": "data_type", "value": "dna seq"} for [endometrial carcinoma](disease)
     - [grch38](assembly) [dna mutations]{"entity": "data_type", "value": "dna seq"} of [endometriosis](disease)
-    - data from [hg19](assembly) [chip-seq]{"entity": "data_type", "value": "domain"} for [esophageal carcinoma](disease)
-    - im looking for [chromatin immunoprecipitation sequencing]{"entity": "data_type", "value": "domain"} from [roadmap epigenomics](source) regarding [esophagitis](disease)
+    - data from [hg19](assembly) [chip-seq]{"entity": "data_type", "value": "peaks"} for [esophageal carcinoma](disease)
+    - im looking for [chromatin immunoprecipitation sequencing]{"entity": "data_type", "value": "peaks"} from [roadmap epigenomics](source) regarding [esophagitis](disease)
     - patients with [essential thrombocythemia](disease)
     - I need to select [cranial](tissue) data taken from [tads](source)
     - I need [duodenal mucosa](tissue) data taken from [tcga](source)
     - files from [1000 genomes](source) for [grch38](assembly)
-    - data regarding [chip-seq]{"entity": "data_type", "value": "domain"} for cell line [ach2](cell)
+    - data regarding [chip-seq]{"entity": "data_type", "value": "peaks"} for cell line [ach2](cell)
     - i need cell [achn](cell)
     - can i have [ago1](target) data?
     - please give me [adipose derived mesenchymal stem cell cultured cells](cell) data
     - I would like to have data regarding [duodenum](tissue) extracted from [hg19](assembly)
     - can i have [ago2](target) for cell line [ag04450](cell)
-    - I am looking for [chip sequencing]{"entity": "data_type", "value": "domain"} data extracted from [cistrome](source)
+    - I am looking for [chip sequencing]{"entity": "data_type", "value": "peaks"} data extracted from [cistrome](source)
     - data for [ear](tissue)
     - [tumoral]{"entity": "is_healthy", "value": "False"} patients affected by [ewing sarcoma](disease)
     - [embryo](tissue) extracted from [healthy]{"entity": "is_healthy", "value": "True"} patients
@@ -1926,6 +1925,13 @@ nlu:
     - i want [gene expression](data_type)
     - i want [mirna expression](data_type)
     - [gene expression](data_type)
+    - i need [gene expression](data_type) and [pancreatic adenocarcinoma](disease)
+    - i need [mirna expression](data_type)
+    - i need [thynoma]{"entity": "disease", "value": "thymoma"}
+    - give me [thynoma]{"entity": "disease", "value": "thymoma"}
+    - find the [gene expression data]{"entity": "data_type", "value": "gene expression"} for [pancreatic adenocarcinoma](disease)
+    - find the [mirna expressions]{"entity": "data_type", "value": "mirna expression"} from [tonsil](tissue) extracted with [grch38](assembly) [assembly](field)
+    - select either the [gene expressions]{"entity": "data_type", "value": "gene expression"} and from patients affected by [thymoma](disease) extracted with [grch38](assembly) [assembly](field)
 - intent: retrieve_annotations
   examples: |
     - [annotation](annotations)
@@ -1933,11 +1939,8 @@ nlu:
     - i want [annotations](annotations)
     - i need an [annotation](annotations)
     - i am looking form [annotations](annotations)
-    - i need structural [annotation](annotations)
-    - annotation
-    - annotations
-    - i want annotation
-    - i need annotation
+    - i want [annotation](annotations)
+    - i need [annotations](annotations)
     - i am looking form annotation
     - i need structural annotation
     - I want to have [gene](content_type) annotation from [refseq](source)
@@ -1945,87 +1948,87 @@ nlu:
     - I would like to have [gene](content_type) annotation data from [gencode](source)
     - [hg19](assembly) ann
     - [gene](content_type) annotations
-    - annotation for [hg19](assembly)
-    - annotations for [grch38](assembly)
-    - I want [hg19](assembly) annotations
-    - I need [grch38](assembly) annotations
+    - [annotation](annotations) for [hg19](assembly)
+    - [annotations](annotations) for [grch38](assembly)
+    - I want [hg19](assembly) [annotation](annotations)
+    - I need [grch38](assembly) [annotation](annotations)
     - I am looking for annotations for [hg19](assembly)
-    - can i have [grch38](assembly) annotations?
-    - I need annotations from [refseq](source)
-    - [cds](content_type) annotations from [refseq](source)
-    - [enhancer](content_type) annotations from [refseq](source) with [hg19](assembly)
-    - structural annotations of [vault rna](content_type)
+    - can i have [grch38](assembly) [annotations](annotations)?
+    - I need [annotations](annotations) from [refseq](source)
+    - [cds](content_type) [annotations](annotations) from [refseq](source)
+    - [enhancer](content_type) [annotations](annotations) from [refseq](source) with [hg19](assembly)
+    - structural [annotations](annotations) of [vault rna](content_type)
     - im looking for [mirna](content_type) annotations from [refseq](source)
     - [region](content_type) in [hg19](assembly)
     - [selenocysteine](content_type) in [hg19](assembly)
     - positions for [intron](content_type) in [hg19](assembly)
-    - [hg19](assembly) [utr](content_type) annotations from [roadmap epigenomics](source)
-    - im looking for [enhancer](content_type) annotations from [gencode](source)
+    - [hg19](assembly) [utr](content_type) [annotations](annotations) from [roadmap epigenomics](source)
+    - im looking for [enhancer](content_type) [annotations](annotations) from [gencode](source)
     - positions for [srp rna](content_type) in [hg19](assembly)
-    - [grch38](assembly) [y rna](content_type) annotations from [refseq](source)
-    - [grch38](assembly) [centromere](content_type) annotations from [gencode](source)
+    - [grch38](assembly) [y rna](content_type) [annotations](annotations) from [refseq](source)
+    - [grch38](assembly) [centromere](content_type) [annotations](annotations) from [gencode](source)
     - [c gene segment](content_type) in [grch38](assembly)
-    - [grch38](assembly) [enhancer](content_type) annotations from [gencode](source)
-    - im looking for [snorna](content_type) annotations from [refseq](source)
-    - im looking for [primary transcript](content_type) annotations from [gencode](source)
-    - im looking for [centromere](content_type) annotations from [roadmap epigenomics](source)
-    - im looking for [sequence feature](content_type) annotations from [roadmap epigenomics](source)
+    - [grch38](assembly) [enhancer](content_type) [annotations](annotations) from [gencode](source)
+    - im looking for [snorna](content_type) [annotations](annotations) from [refseq](source)
+    - im looking for [primary transcript](content_type) [annotations](annotations) from [gencode](source)
+    - im looking for [centromere](content_type) [annotations](annotations) from [roadmap epigenomics](source)
+    - im looking for [sequence feature](content_type) [annotations](annotations) from [roadmap epigenomics](source)
     - [refseq](source) coordinates for [region](content_type)
-    - structural annotations of [v gene segment](content_type)
-    - I want [gene](content_type) annotations for [grch38](assembly)
+    - structural [annotations](annotations) of [v gene segment](content_type)
+    - I want [gene](content_type) [annotations](annotations) for [grch38](assembly)
     - [roadmap epigenomics](source) coordinates for [enhancer](content_type)
     - [gencode](source) coordinates for [telomerase rna](content_type)
-    - im looking for [rnase p rna](content_type) annotations from [gencode](source)
+    - im looking for [rnase p rna](content_type) [annotations](annotations) from [gencode](source)
     - [refseq](source) coordinates for [start codon](content_type)
     - positions for [centromere](content_type) in [grch38](assembly)
     - positions for [utr](content_type) in [grch38](assembly)
-    - [grch38](assembly) [srp rna](content_type) annotations from [roadmap epigenomics](source)
+    - [grch38](assembly) [srp rna](content_type) [annotations](annotations) from [roadmap epigenomics](source)
     - [roadmap epigenomics](source) coordinates for [ncrna](content_type)
-    - structural annotations of [transcript](content_type)
-    - [hg19](assembly) [region](content_type) annotations from [gencode](source)
-    - [grch38](assembly) [trna](content_type) annotations from [refseq](source)
+    - structural [annotations](annotations) of [transcript](content_type)
+    - [hg19](assembly) [region](content_type) [annotations](annotations) from [gencode](source)
+    - [grch38](assembly) [trna](content_type) [annotations](annotations) from [refseq](source)
     - [d loop](content_type) in [grch38](assembly)
-    - im looking for [d gene segment](content_type) annotations from [refseq](source)
-    - I need [c gene segment](content_type) annotations
-    - im looking for [transcript](content_type) annotations from [gencode](source)
-    - I want [repeat region](content_type) annotations for [grch38](assembly)
+    - im looking for [d gene segment](content_type) [annotations](annotations) from [refseq](source)
+    - I need [c gene segment](content_type) [annotations](annotations)
+    - im looking for [transcript](content_type) [annotations](annotations) from [gencode](source)
+    - I want [repeat region](content_type) [annotations](annotations) for [grch38](assembly)
     - positions for [mirna](content_type) in [grch38](assembly)
-    - I need [exon](content_type) annotations
+    - I need [exon](content_type) [annotations](annotations)
     - [roadmap epigenomics](source) coordinates for [lnc rna](content_type)
-    - I want [exon](content_type) annotations for [grch38](assembly)
-    - [hg19](assembly) [start codon](content_type) annotations from [refseq](source)
-    - im looking for [intron](content_type) annotations from [roadmap epigenomics](source)
-    - structural annotations of [snrna](content_type)
-    - [hg19](assembly) [snrna](content_type) annotations from [gencode](source)
+    - I want [exon](content_type) [annotations](annotations) for [grch38](assembly)
+    - [hg19](assembly) [start codon](content_type) [annotations](annotations) from [refseq](source)
+    - im looking for [intron](content_type) [annotations](annotations) from [roadmap epigenomics](source)
+    - structural [annotations](annotations) of [snrna](content_type)
+    - [hg19](assembly) [snrna](content_type) [annotations](annotations) from [gencode](source)
     - positions for [transcript](content_type) in [grch38](assembly)
-    - [grch38](assembly) [ncrna](content_type) annotations from [gencode](source)
+    - [grch38](assembly) [ncrna](content_type) [annotations](annotations) from [gencode](source)
     - positions for [repeat region](content_type) in [grch38](assembly)
     - [intron](content_type) in [grch38](assembly)
-    - [hg19](assembly) [mirna](content_type) annotations from [refseq](source)
-    - [hg19](assembly) [d gene segment](content_type) annotations from [gencode](source)
+    - [hg19](assembly) [mirna](content_type) [annotations](annotations) from [refseq](source)
+    - [hg19](assembly) [d gene segment](content_type) [annotations](annotations) from [gencode](source)
     - positions for [rnase p rna](content_type) in [grch38](assembly)
-    - structural annotations of [exon](content_type)
-    - [hg19](assembly) [transcript](content_type) annotations from [refseq](source)
+    - structural [annotations](annotations) of [exon](content_type)
+    - [hg19](assembly) [transcript](content_type) [annotations](annotations) from [refseq](source)
     - [refseq](source) coordinates for [d gene segment](content_type)
-    - [hg19](assembly) [j gene segment](content_type) annotations from [roadmap epigenomics](source)
+    - [hg19](assembly) [j gene segment](content_type) [annotations](annotations) from [roadmap epigenomics](source)
     - [refseq](source) coordinates for [repeat region](content_type)
-    - [grch38](assembly) [exon](content_type) annotations from [gencode](source)
+    - [grch38](assembly) [exon](content_type) [annotations](annotations) from [gencode](source)
     - [hg19](assembly) [j gene segment](content_type) annotations from [refseq](source)
     - [roadmap epigenomics](source) coordinates for [cds](content_type)
-    - im looking for [lnc rna](content_type) annotations from [refseq](source)
-    - structural annotations of [ncrna](content_type)
-    - [hg19](assembly) [centromere](content_type) annotations from [refseq](source)
-    - im looking for [start codon](content_type) annotations from [gencode](source)
-    - [grch38](assembly) [antisense rna](content_type) annotations from [refseq](source)
-    - [grch38](assembly) [snrna](content_type) annotations from [gencode](source)
+    - im looking for [lnc rna](content_type) [annotations](annotations) from [refseq](source)
+    - structural [annotations](annotations) of [ncrna](content_type)
+    - [hg19](assembly) [centromere](content_type) [annotations](annotations) from [refseq](source)
+    - im looking for [start codon](content_type) [annotations](annotations) from [gencode](source)
+    - [grch38](assembly) [antisense rna](content_type) [annotations](annotations) from [refseq](source)
+    - [grch38](assembly) [snrna](content_type) [annotations](annotations) from [gencode](source)
     - [refseq](source) coordinates for [gene](content_type)
     - positions for [cds](content_type) in [grch38](assembly)
-    - im looking for [utr](content_type) annotations from [gencode](source)
-    - [grch38](assembly) [antisense rna](content_type) annotations from [roadmap epigenomics](source)
-    - im looking for [rnase p rna](content_type) annotations from [refseq](source)
+    - im looking for [utr](content_type) [annotations](annotations) from [gencode](source)
+    - [grch38](assembly) [antisense rna](content_type) [annotations](annotations) from [roadmap epigenomics](source)
+    - im looking for [rnase p rna](content_type) [annotations](annotations) from [refseq](source)
     - [roadmap epigenomics](source) coordinates for [mirna](content_type)
-    - [grch38](assembly) [mirna](content_type) annotations from [roadmap epigenomics](source)
-    - [grch38](assembly) [telomerase rna](content_type) annotations from [gencode](source)
+    - [grch38](assembly) [mirna](content_type) [annotations](annotations) from [roadmap epigenomics](source)
+    - [grch38](assembly) [telomerase rna](content_type) [annotations](annotations) from [gencode](source)
     - [stop codon](content_type) in [grch38](assembly)
 - intent: retrieve_experiments
   examples: |
@@ -2085,7 +2088,7 @@ nlu:
     - that sounds good
     - correct
     - ok
-    - [yes](affirm) give me another one
+    - yes give me another one
     - yeppo
     - yess
 - intent: deny
@@ -2111,10 +2114,10 @@ nlu:
     - db tizio
     - dataset
     - db
-    - [amilcare](dataset_rename)
-    - [giovanni_gallo](dataset_rename)
-    - [Tissue_experimental](dataset_rename)
-    - [Unione_db1_db2](dataset_rename)
+    - amilcare
+    - giovanni_gallo
+    - Tissue_experimental
+    - Unione_db1_db2
     - a
     - b
     - c
@@ -2406,6 +2409,7 @@ nlu:
     - [grch38_encode_narrow_2020_01](dataset_name)
     - [hg19_encode_broad_2020_01](dataset_name)
     - [grch38_tcga_copy_number_masked_2019_10](dataset_name)
+    - [grch38_tcga_mirna_expression_2019_10](dataset_name)
 - intent: choice_value_content_type
   examples: |
     - [clonal rearrangement, multiple peaks](content_type)
@@ -3008,7 +3012,7 @@ nlu:
     - [kirp]{"entity": "disease", "value": "papillary renal cell carcinoma"}
     - [adenoma of parathyroid]{"entity": "disease", "value": "parathyroid gland adenoma"}
     - [adenoma of the parathyroid gland]{"entity": "disease", "value": "parathyroid gland adenoma"}
-    - [parathyroid adenoma]{"entity": "disease", "value": "parathyroid gland adenoma"}
+    - [parathyroid adenoma]{"entity": "disease", "value": "parathyroid gland"}
     - [parathyroid gland adenoma](disease)
     - [parkinson disease]{"entity": "disease", "value": "parkinson's disease"}
     - [parkinson's disease](disease)
@@ -4096,12 +4100,12 @@ nlu:
     - [hippocampus major]{"entity": "tissue", "value": "ammon's horn"}
     - [hippocampus proper]{"entity": "tissue", "value": "ammon's horn"}
     - [hippocampus proprius]{"entity": "tissue", "value": "ammon's horn"}
-    - [hippocampus]{"entity": "tissue", "value": "ammon's horn"}
+    - [hippocampus]{"entity": "tissue", "value": "hippocampus fimbria"}
     - [middle part of inferior parietal lobule]{"entity": "tissue", "value": "angular gyrus"}
     - [preoccipital gyrus]{"entity": "tissue", "value": "angular gyrus"}
     - [trunk of aortic tree]{"entity": "tissue", "value": "aorta"}
     - [trunk of systemic arterial tree]{"entity": "tissue", "value": "aorta"}
-    - [vascular tissue]{"entity": "tissue", "value": "aorta"}
+    - [vascular tissue]{"entity": "tissue", "value": "ascending aorta"}
     - [arm bone organ]{"entity": "tissue", "value": "arm bone"}
     - [bone of arm]{"entity": "tissue", "value": "arm bone"}
     - [bone organ of arm]{"entity": "tissue", "value": "arm bone"}
@@ -4111,7 +4115,7 @@ nlu:
     - [arterial subtree]{"entity": "tissue", "value": "artery"}
     - [arterial tree organ part]{"entity": "tissue", "value": "artery"}
     - [arteries]{"entity": "tissue", "value": "artery"}
-    - [vascular tissue]{"entity": "tissue", "value": "artery"}
+    - [vascular tissue]{"entity": "tissue", "value": "ascending aorta"}
     - [ascending thoracic aorta]{"entity": "tissue", "value": "ascending aorta"}
     - [pars ascendens aortae]{"entity": "tissue", "value": "ascending aorta"}
     - [aorta]{"entity": "tissue", "value": "ascending aorta"}
@@ -4568,6 +4572,7 @@ nlu:
     - [biliary tract](tissue)
 - intent: choice_value_healthy
   examples: |
+    - give me [healthy]{"entity": "is_healthy", "value": "true"} patients
     - healthy
     - healthy status
     - health
@@ -4624,14 +4629,14 @@ nlu:
     - modify regions
     - add region
     - select only some regions
-- intent: cover
-  examples: |
-    - cover
-    - take one sample
-    - collapse samples
-    - keep only one sample
-    - put all samples together
-    - all regions in one sample
+#- intent: cover
+#  examples: |
+#    - cover
+#    - take one sample
+#    - collapse samples
+#    - keep only one sample
+#    - put all samples together
+#    - all regions in one sample
 - intent: join
   examples: |
     - I want to join the two datasets
@@ -4674,7 +4679,7 @@ nlu:
     - < 40
     - < 120
     - < 583490
-    - i want all value minor of 23194
+    - i want all values minor of 23194
     - value minor of 43552
     - minor 43552
     - inferior of 7802
@@ -4683,18 +4688,22 @@ nlu:
     - smaller than 432
     - smaller 802
     - inferior of 462
+    - minor:200000
 - intent: greater
   examples: |
     - > 423
     - > 75
     - > 89052789
-    - i want value all value greater than 23194
+    - i want value all values greater than 23194
     - grater than 43552
     - greater 7802
-    - highter of 789
+    - higher of 789
+    - higher than 789
     - major 311
     - biggest of 560
     - major of 569
+    - > 20000
+    - greater:20000
 - intent: value
   examples: |
     - 1
@@ -4817,6 +4826,10 @@ nlu:
     - 54;90
     - 76;102
     - 08
+    - > 20000
+    - 0.5
+    - 2;5
+    - 2 clusters
 - intent: metadatum
   examples: |
     - 'iospecimen_aliquot__plate_row':- 8
@@ -6138,6 +6151,8 @@ nlu:
     - stop
     - alt
     - enough
+    - I stop on this search
+    - I stop on
 - intent: keep
   examples: |
     - keep
@@ -6147,6 +6162,7 @@ nlu:
     - keep my selection
     - i want keep my selection
     - i wannna keep it
+    - i want to keep
 - intent: modify_extracted
   examples: |
     - i want to modify the extracted data
@@ -6181,14 +6197,23 @@ nlu:
     - let me try
     - i prefer to tune
     - tunung
+    - Automatic parameter tuning
+    - Parameter tuning
+    - Automatic tuning
 - intent: feature
   examples: |
     - feature
     - features
+    - on features
+    - give me the features
+    - operate on features
 - intent: sample
   examples: |
     - sample
     - samples
+    - on sample
+    - give me the sample
+    - operate on samples
 - intent: region
   examples: |
     - item_id
@@ -6199,6 +6224,7 @@ nlu:
     - [type](region)
     - [reads_per_million_mirna_mapped](region)
     - [gene_symbol](region)
+    - gene symbol
     - [composite_element_ref](region)
     - [beta_value](region)
     - [entrez_gene_id](region)
@@ -6226,16 +6252,38 @@ nlu:
     - [matched_norm_sample_uuid](region)
     - [fpkm](region)
     - [segment_mean](region)
+    - gene symbols
+    - [gene_symbo](region)
+    - [fpkm](region)
+    - [gene_symbol](region)
+    - [reads_per_million_mirna_mapped](region)
 - intent: cluster
   examples: |
     - i want cluster genes
     - cluster
     - i want clusters
-    - kmeans
     - i want to do clustering
     - i want to find cluster
     - find cluster
+- intent: kmeans
+  examples: |
+    - kmeans
     - perform kmeans cluster
+    - k-means clustering
+    - kmean
+    - do kmean clustering
+    - find clusters using kmeans
+    - K-means Clustering
+    - i want k-means clustering
+- intent: dbscan
+  examples: |
+    - dbscan
+    - perform dbscan cluster
+    - dbscan clustering
+    - do dbscan clustering
+    - find clusters using dbscan
+    - DBscan
+    - DBScan
 - synonym: thymoma
   examples: |
     - thynoma
@@ -6243,6 +6291,7 @@ nlu:
 - synonym: mirna expression
   examples: |
     - mirna expressione data
+    - mirna expressions
     - mirna expression quantification
     - mirna quantification
     - expressions of micrornas
@@ -6251,7 +6300,6 @@ nlu:
     - mirna seq
     - transcriptomics
     - quantification of micro rna
-    - mirna expressions
     - mirna quantifications
     - mirna expression quantifications
     - mirna expression data
@@ -6261,10 +6309,10 @@ nlu:
 - synonym: 'false'
   examples: |
     - tumoral
-    - tumor
-    - diseased
     - ill
+    - diseased
     - sick
+    - tumor
     - non-healthy
 - synonym: copy number segment
   examples: |
@@ -6282,9 +6330,9 @@ nlu:
 - synonym: 'true'
   examples: |
     - healthy
+    - non tumoral
     - control
     - normal
-    - non tumoral
     - normal tissue
     - control sample
     - healthy tissue
@@ -6316,6 +6364,21 @@ nlu:
 - synonym: data_type
   examples: |
     - data type
+- synonym: gene expression
+  examples: |
+    - gene expression data
+    - gene expression quantification
+    - gene expressions
+    - gene expression quantifications
+    - rna expression
+    - gene quantifications
+    - expression of genes
+    - expression of gene
+    - expressions of gene
+    - expression of long rna
+    - gene quantification
+    - sequencing of genes
+    - expressions of genes
 - synonym: dataset_name
   examples: |
     - dataset
@@ -7997,6 +8060,9 @@ nlu:
     - skin
     - skin region
     - skin zone
+- synonym: gene_symbol
+  examples: |
+    - gene symbol
 - synonym: 1205-lu
   examples: |
     - wm451-lu
@@ -8902,6 +8968,7 @@ nlu:
     - bone marrow fibrosis
     - chronic idiopathic myelofibrosis
     - cimf
+    - primary monocytes fromNBSPperipheralNBSPblood
     - idiopathic bone marrow fibrosis
     - idiopathic myelofibrosis
     - megakaryocytic myelosclerosis
@@ -8909,8 +8976,7 @@ nlu:
     - myelosclerosis
     - myelosclerosis with myeloid metaplasia
     - osteomyelofibrosis
-    - primary monocytes from peripheral blood
-    - primary neutrophils from peripheral blood
+    - primary neutrophils fromNBSPperipheralNBSPblood
 - synonym: promyelocytic leukemia cell line
   examples: |
     - mr4
@@ -9128,21 +9194,6 @@ nlu:
 - synonym: biosample_type
   examples: |
     - biosample type
-- synonym: gene expression
-  examples: |
-    - gene expression quantification
-    - gene expression data
-    - gene expressions
-    - gene expression quantifications
-    - rna expression
-    - gene quantifications
-    - expression of genes
-    - expression of gene
-    - expressions of gene
-    - expression of long rna
-    - gene quantification
-    - sequencing of genes
-    - expressions of genes
 - synonym: isoform expression
   examples: |
     - rna seq

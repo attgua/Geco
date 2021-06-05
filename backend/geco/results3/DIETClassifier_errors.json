@@ -1,0 +1,8502 @@
+[
+  {
+    "text": "i want livear hg19 hues64 patients",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "livear",
+        "entity": "disease"
+      },
+      {
+        "start": 14,
+        "end": 18,
+        "value": "hg19",
+        "entity": "assembly"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "value": "hues64",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.9996119141578674,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.8901060819625854,
+        "value": "hues64",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want experiment about uveal melanoma disease",
+    "entities": [
+      {
+        "start": 24,
+        "end": 38,
+        "value": "uveal melanoma",
+        "entity": "disease"
+      },
+      {
+        "start": 39,
+        "end": 46,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9850648045539856,
+        "value": "experiment",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 24,
+        "end": 38,
+        "confidence_entity": 0.9966230392456055,
+        "value": "uveal melanoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.9988815188407898,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need cell sk-n-mc",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 12,
+        "end": 19,
+        "value": "sk-n-mc",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9955126643180847,
+        "value": "sk-n-mc",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "smooth muscle cell of the brain vasculature cell",
+    "entities": [
+      {
+        "start": 0,
+        "end": 43,
+        "value": "smooth muscle cell of the brain vasculature",
+        "entity": "cell"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "value": "cell",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.993606686592102,
+        "value": "smooth muscle cell of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 26,
+        "end": 43,
+        "confidence_entity": 0.6503550410270691,
+        "value": "brain vasculature",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.9999589920043945,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "breast cancer (adenocarcinoma) disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "breast cancer",
+        "entity": "disease"
+      },
+      {
+        "start": 31,
+        "end": 38,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.7943370938301086,
+        "value": "breast carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.986903190612793,
+        "value": "adenocarcinoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.9974493384361267,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "disease carcinoma (prostate)",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "disease",
+        "entity": "field"
+      },
+      {
+        "start": 8,
+        "end": 17,
+        "value": "carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.976005494594574,
+        "value": "disease carcinoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.7395264506340027,
+        "value": "prostate gland",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mirna expression with brain",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "mirna expression",
+        "entity": "data_type"
+      },
+      {
+        "start": 22,
+        "end": 27,
+        "value": "brain",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.704503059387207,
+        "value": "mirna expression",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.8376054763793945,
+        "value": "brain",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hg19 dna copy number variation from cervicitis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "hg19",
+        "entity": "assembly"
+      },
+      {
+        "start": 5,
+        "end": 30,
+        "value": "cnv",
+        "entity": "data_type"
+      },
+      {
+        "start": 36,
+        "end": 46,
+        "value": "cervicitis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9991883635520935,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 5,
+        "end": 30,
+        "confidence_entity": 0.9705669283866882,
+        "value": "copy number segment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tissue",
+        "start": 36,
+        "end": 46,
+        "confidence_entity": 0.5559046864509583,
+        "value": "cervicitis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dna copy number polymorphisms from bone marrow",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "cnv",
+        "entity": "data_type"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "bone marrow",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 29,
+        "confidence_entity": 0.9831099510192871,
+        "value": "copy number segment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.42616933584213257,
+        "value": "bone marrow",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "data from hg19 copy number variations for clavien-dindo grade iv",
+    "entities": [
+      {
+        "start": 10,
+        "end": 14,
+        "value": "hg19",
+        "entity": "assembly"
+      },
+      {
+        "start": 15,
+        "end": 37,
+        "value": "copy number segment",
+        "entity": "data_type"
+      },
+      {
+        "start": 42,
+        "end": 64,
+        "value": "clavien-dindo grade iv",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9995606541633606,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 15,
+        "end": 37,
+        "confidence_entity": 0.8794401288032532,
+        "value": "cnv",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tissue",
+        "start": 56,
+        "end": 61,
+        "confidence_entity": 0.18297788500785828,
+        "value": "grade",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "grch38 dna mutations of endometriosis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 7,
+        "end": 20,
+        "value": "dna seq",
+        "entity": "data_type"
+      },
+      {
+        "start": 24,
+        "end": 37,
+        "value": "endometriosis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9999291896820068,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9921982884407043,
+        "value": "dna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 11,
+        "end": 20,
+        "confidence_entity": 0.4634486734867096,
+        "value": "variant calling",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tissue",
+        "start": 24,
+        "end": 37,
+        "confidence_entity": 0.9779271483421326,
+        "value": "endometriosis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can i have ago2 for cell line ag04450",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "ago2",
+        "entity": "target"
+      },
+      {
+        "start": 30,
+        "end": 37,
+        "value": "ag04450",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.3684985637664795,
+        "value": "ago2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.9976134300231934,
+        "value": "ag04450",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i want mirna expression data type",
+    "entities": [
+      {
+        "start": 7,
+        "end": 33,
+        "value": "mirna expression data type",
+        "entity": "data_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 7,
+        "end": 23,
+        "confidence_entity": 0.9819697141647339,
+        "value": "mirna expression",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.939486026763916,
+        "value": "data_type",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "find the gene expression data for pancreatic adenocarcinoma",
+    "entities": [
+      {
+        "start": 9,
+        "end": 29,
+        "value": "gene expression",
+        "entity": "data_type"
+      },
+      {
+        "start": 34,
+        "end": 59,
+        "value": "pancreatic adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 9,
+        "end": 24,
+        "confidence_entity": 0.9909473061561584,
+        "value": "gene expression",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 34,
+        "end": 59,
+        "confidence_entity": 0.9839991927146912,
+        "value": "pancreatic adenocarcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i am looking form annotations",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "annotations",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "structural annotations of vault rna",
+    "entities": [
+      {
+        "start": 26,
+        "end": 35,
+        "value": "vault rna",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.7227693796157837,
+        "value": "rna",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "region in hg19",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "region",
+        "entity": "content_type"
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "value": "hg19",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9998358488082886,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sample",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "sample",
+        "entity": "experiments"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "yes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "affirm",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7679910063743591,
+        "value": "yes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dataset",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9983336329460144,
+        "value": "dataset_name",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "blood derived normal",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9314857721328735,
+        "value": "blood derived normal",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "/experiments/encsr859czm/",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 1,
+        "end": 24,
+        "confidence_entity": 0.9925625920295715,
+        "value": "experiments/encsr859czm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "monoclonal",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9954383969306946,
+        "value": "monoclonal",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "negative",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.6649177670478821,
+        "value": "negative",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "true",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.987019419670105,
+        "value": "true",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "r1",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9998384714126587,
+        "value": "r1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "filtered cigar",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "filtered cigar",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.6343656778335571,
+        "value": "filtered",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "spastic paraplegia 6 (autosomal dominant) gene",
+    "entities": [
+      {
+        "start": 0,
+        "end": 46,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.5155414342880249,
+        "value": "spastic paraplegia 6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.5765496492385864,
+        "value": "autosomal",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 42,
+        "end": 46,
+        "confidence_entity": 0.9179635643959045,
+        "value": "gene",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "variants",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "variant calling",
+        "entity": "data_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.38111668825149536,
+        "value": "variant calling",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "aml",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "acute myeloid leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hematopoeitic - acute myleogenous leukemia (aml)",
+    "entities": [
+      {
+        "start": 0,
+        "end": 48,
+        "value": "acute myeloid leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "benign breast disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "breast fibrocystic change",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.8524101376533508,
+        "value": "benign breast",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.9996495246887207,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dlbcl",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "diffuse large b-cell lymphoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.43399351835250854,
+        "value": "diffuse large b-cell lymphoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "gist",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "gastrointestinal stromal tumor",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "gbm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "glioblastoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hereditary spherocytosis type 2",
+    "entities": [
+      {
+        "start": 0,
+        "end": 31,
+        "value": "hereditary spherocytosis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "mucositis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "mucositis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.939848005771637,
+        "value": "mucositis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "noonan syndrome 1",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "noonan syndrome 1",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pancreatic cancer (excluding islets), nos",
+    "entities": [
+      {
+        "start": 0,
+        "end": 41,
+        "value": "pancreatic carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "read",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rectal adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "t7-control",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "galnt7",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9630550146102905,
+        "value": "galnt7",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "loc100128293",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "loc100128293",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rara",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rara",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9953104853630066,
+        "value": "rara",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fatty tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "adipose tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8873826861381531,
+        "value": "fatty",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9793127775192261,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "osseous tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "bone tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9894300699234009,
+        "value": "osseous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9998619556427002,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gullet",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "esophagus",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.6363207101821899,
+        "value": "esophagus",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "vescica",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "gall bladder",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "gum tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "gingiva",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9998025298118591,
+        "value": "gingiva",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.9999774694442749,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pancreatic islet",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "islet of langerhans",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "limb sensu vertebrata",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "limb",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pulmo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "lung",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "lymph node",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "lymph node",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.957588791847229,
+        "value": "lymph node",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "lymph nodes",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "lymph node",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.6160352230072021,
+        "value": "lymph node",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "tunica interna of eyeball",
+    "entities": [
+      {
+        "start": 0,
+        "end": 25,
+        "value": "retina",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "fatty layer of subcutaneous tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 34,
+        "value": "subcutaneous adipose tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 27,
+        "confidence_entity": 0.8893319964408875,
+        "value": "fatty layer of subcutaneous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.7456517815589905,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "panniculus adiposus telae subcutaneae",
+    "entities": [
+      {
+        "start": 0,
+        "end": 37,
+        "value": "subcutaneous adipose tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "joint fluid",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "synovial fluid",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "colon transversum",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "transverse colon",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7958028316497803,
+        "value": "colon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "health",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.6281429529190063,
+        "value": "health",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "stop",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "region",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9982775449752808,
+        "value": "stop",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gene symbol",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.61,
+        "value": "gene_symbol",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "variant_type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "variant_type",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.4343340992927551,
+        "value": "variant_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "reference_allele",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "reference_allele",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "gene symbols",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.6749078631401062,
+        "value": "gene symbols",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need kopt-k1 rrna cnv thynoma cohesis",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "kopt-k1",
+        "entity": "cell"
+      },
+      {
+        "start": 15,
+        "end": 19,
+        "value": "rrna",
+        "entity": "content_type"
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "value": "cnv",
+        "entity": "data_type"
+      },
+      {
+        "start": 24,
+        "end": 31,
+        "value": "thymoma",
+        "entity": "disease"
+      },
+      {
+        "start": 32,
+        "end": 39,
+        "value": "cohesis",
+        "entity": "feature"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9740570783615112,
+        "value": "kopt-k1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.8115027546882629,
+        "value": "rrna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 20,
+        "end": 23,
+        "confidence_entity": 0.7781364321708679,
+        "value": "cnv",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.8862972259521484,
+        "value": "thymoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "feature",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.37269723415374756,
+        "value": "cohesis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need cell acc112",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 12,
+        "end": 18,
+        "value": "acc112",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.999672532081604,
+        "value": "acc112",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cell mammary epithelial cell",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 5,
+        "end": 28,
+        "value": "mammary epithelial cell",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9787490963935852,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 5,
+        "end": 23,
+        "confidence_entity": 0.6587498188018799,
+        "value": "mammary epithelial",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.9976212382316589,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chronic myelogenous leukemia (cml) disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 28,
+        "value": "chronic myelogenous leukemia",
+        "entity": "disease"
+      },
+      {
+        "start": 35,
+        "end": 42,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 28,
+        "confidence_entity": 0.5235785245895386,
+        "value": "chronic myeloid leukemia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9827353358268738,
+        "value": "chronic myeloid leukemia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 35,
+        "end": 42,
+        "confidence_entity": 0.801450252532959,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "other context feature",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "other context",
+        "entity": "feature"
+      },
+      {
+        "start": 14,
+        "end": 21,
+        "value": "feature",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.42256420850753784,
+        "value": "other context",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.999943733215332,
+        "value": "feature",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "[tag] feature",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "feature",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 1,
+        "end": 4,
+        "confidence_entity": 0.9502230286598206,
+        "value": "tag",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.9999663829803467,
+        "value": "feature",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tissue right leg bone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "tissue",
+        "entity": "field"
+      },
+      {
+        "start": 7,
+        "end": 21,
+        "value": "right leg bone",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.6018314957618713,
+        "value": "tissue right leg bone",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "adipose tissue data from dna methylation for adrenal cortex carcinoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "adipose tissue",
+        "entity": "tissue"
+      },
+      {
+        "start": 25,
+        "end": 40,
+        "value": "dna methylation",
+        "entity": "data_type"
+      },
+      {
+        "start": 45,
+        "end": 69,
+        "value": "adrenal cortex carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9597362279891968,
+        "value": "adipose tissue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "data_type",
+        "start": 25,
+        "end": 40,
+        "confidence_entity": 0.9624733924865723,
+        "value": "methylation beta value",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 45,
+        "end": 69,
+        "confidence_entity": 0.8928446173667908,
+        "value": "adrenal cortex carcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "could you retrieve domain data from adrenal gland pheochromocytoma?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "domain",
+        "entity": "data_type"
+      },
+      {
+        "start": 36,
+        "end": 66,
+        "value": "adrenal gland pheochromocytoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.530693531036377,
+        "value": "adrenal gland",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 50,
+        "end": 66,
+        "confidence_entity": 0.9057751893997192,
+        "value": "adrenal gland pheochromocytoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "exon quantification from alveolus of lung",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "exon quantification",
+        "entity": "data_type"
+      },
+      {
+        "start": 25,
+        "end": 41,
+        "value": "alveolus of lung",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 41,
+        "confidence_entity": 0.5864563584327698,
+        "value": "exon quantification from alveolus of lung",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need cell 22rv1",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "22rv1",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.8438999652862549,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9975810050964355,
+        "value": "22rv1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "samples of 786-0 of patients affected by breast ductal carcinoma",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "786-0",
+        "entity": "cell"
+      },
+      {
+        "start": 41,
+        "end": 64,
+        "value": "breast ductal carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.794180691242218,
+        "value": "786-0",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 41,
+        "end": 64,
+        "confidence_entity": 0.5614060759544373,
+        "value": "breast ductal carcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can i have aebp2 data?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "aebp2",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "dna copy number polymorphisms from diffuse large b-cell lymphoma for grch38",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "copy number segment",
+        "entity": "data_type"
+      },
+      {
+        "start": 35,
+        "end": 64,
+        "value": "diffuse large b-cell lymphoma",
+        "entity": "disease"
+      },
+      {
+        "start": 69,
+        "end": 75,
+        "value": "grch38",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 29,
+        "confidence_entity": 0.9952148199081421,
+        "value": "cnv",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "data_type",
+        "start": 35,
+        "end": 42,
+        "confidence_entity": 0.8939540982246399,
+        "value": "diffuse",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 43,
+        "end": 64,
+        "confidence_entity": 0.9497746229171753,
+        "value": "diffuse large b-cell lymphoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "assembly",
+        "start": 69,
+        "end": 75,
+        "confidence_entity": 0.9997218251228333,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "samples for aggf1 data",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "aggf1",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.1986246407032013,
+        "value": "aggf1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i want annotation",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "annotations",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.565801203250885,
+        "value": "annotation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need annotation",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "annotations",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.7148787379264832,
+        "value": "annotation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "im looking for sequence feature annotations from roadmap epigenomics",
+    "entities": [
+      {
+        "start": 15,
+        "end": 31,
+        "value": "sequence feature",
+        "entity": "content_type"
+      },
+      {
+        "start": 49,
+        "end": 68,
+        "value": "roadmap epigenomics",
+        "entity": "source"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.8335812091827393,
+        "value": "sequence",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 49,
+        "end": 68,
+        "confidence_entity": 0.9920811653137207,
+        "value": "roadmap epigenomics",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dataset name",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "dataset_name",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9882289171218872,
+        "value": "dataset_name",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Tissue_experimental",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Tissue_experimental",
+        "entity": "dataset_rename"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.739205002784729,
+        "value": "Tissue_experimental",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "f",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9756351709365845,
+        "value": "f",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "recurrent tumor",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.687343418598175,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "fastq file {encff522mwj|/files/encff522mwj/} has read length of 40bp. for mapping accuracy encode standards recommend that sequencing reads should be at least 50bp long. (see {encode chip-seq data standards|/data-standards/chip-seq/} )",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 82,
+        "end": 90,
+        "confidence_entity": 0.5347123146057129,
+        "value": "accuracy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 91,
+        "end": 97,
+        "confidence_entity": 0.9989475607872009,
+        "value": "encode",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 123,
+        "end": 133,
+        "confidence_entity": 0.9279665350914001,
+        "value": "sequencing",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 134,
+        "end": 139,
+        "confidence_entity": 0.8539748787879944,
+        "value": "reads",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 147,
+        "end": 149,
+        "confidence_entity": 0.6944265961647034,
+        "value": "be",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 176,
+        "end": 182,
+        "confidence_entity": 0.997687816619873,
+        "value": "encode",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 183,
+        "end": 191,
+        "confidence_entity": 0.9348790645599365,
+        "value": "peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "pbc1 (pcr bottlenecking coefficient 1, m1/m_distinct) is the ratio of the number of genomic locations where exactly one read maps uniquely (m1) to the number of genomic locations where some reads map (m_distinct). a pbc1 value in the range 0 - 0.5 is severe bottlenecking, 0.5 - 0.8 is moderate bottlenecking, 0.8 - 0.9 is mild bottlenecking, and > 0.9 is no bottlenecking. pbc1 value > 0.9 is recommended, but > 0.8 is acceptable. encode processed alignments file {encff296zwj|/files/encff296zwj/} was generated from a library with pbc1 value of 0.38.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 6,
+        "end": 9,
+        "confidence_entity": 0.6718514561653137,
+        "value": "pcr",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 36,
+        "end": 37,
+        "confidence_entity": 0.5561227798461914,
+        "value": "1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 74,
+        "end": 80,
+        "confidence_entity": 0.8841437101364136,
+        "value": "number",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 84,
+        "end": 91,
+        "confidence_entity": 0.9552261829376221,
+        "value": "genomic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 151,
+        "end": 157,
+        "confidence_entity": 0.8167185187339783,
+        "value": "number",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 161,
+        "end": 168,
+        "confidence_entity": 0.862724781036377,
+        "value": "genomic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 190,
+        "end": 195,
+        "confidence_entity": 0.7568903565406799,
+        "value": "reads",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 216,
+        "end": 220,
+        "confidence_entity": 0.2514072060585022,
+        "value": "pbc1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 240,
+        "end": 241,
+        "confidence_entity": 0.6237149238586426,
+        "value": "0",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 244,
+        "end": 247,
+        "confidence_entity": 0.44455915689468384,
+        "value": "0.5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 273,
+        "end": 276,
+        "confidence_entity": 0.4248392879962921,
+        "value": "0.5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 279,
+        "end": 282,
+        "confidence_entity": 0.4236770272254944,
+        "value": "0.8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 310,
+        "end": 313,
+        "confidence_entity": 0.47063133120536804,
+        "value": "0.8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 316,
+        "end": 319,
+        "confidence_entity": 0.5355436205863953,
+        "value": "0.9",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 349,
+        "end": 352,
+        "confidence_entity": 0.4556364119052887,
+        "value": "0.9",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 413,
+        "end": 416,
+        "confidence_entity": 0.4529390037059784,
+        "value": "0.8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 420,
+        "end": 430,
+        "confidence_entity": 0.24793414771556854,
+        "value": "acceptable",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 432,
+        "end": 448,
+        "confidence_entity": 0.5997028350830078,
+        "value": "encode processed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 520,
+        "end": 527,
+        "confidence_entity": 0.8722912669181824,
+        "value": "library",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "exon quantifications",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "exon",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9966613054275513,
+        "value": "exon",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "pheochromocytoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "adrenal gland pheochromocytoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pcpg",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "adrenal gland pheochromocytoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9997103810310364,
+        "value": "adrenal gland pheochromocytoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mammary dysplasia",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "breast fibrocystic change",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9974040389060974,
+        "value": "breast fibrocystic change",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "childhood cml",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "childhood chronic myelogenous leukemia, bcr-abl1 positive",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "et",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "essential thrombocythemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "metastatic neuroblastoma from bone marrow",
+    "entities": [
+      {
+        "start": 0,
+        "end": 41,
+        "value": "metastatic neuroblastoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 24,
+        "confidence_entity": 0.689529299736023,
+        "value": "metastatic neuroblastoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.9345363974571228,
+        "value": "bone marrow",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "prad",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "prostate adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6950132250785828,
+        "value": "prostate adenocarcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "t-cell all",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "t acute lymphoblastic leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rere",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rere",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rest",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rest",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ski",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "ski",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6806568503379822,
+        "value": "ski",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "syncrip",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "syncrip",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.8182454109191895,
+        "value": "syncrip",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "adrenal",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "adrenal gland",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "vascular tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "aorta",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8195881247520447,
+        "value": "vascular system",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.7347055077552795,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "calcium tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "bone tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9988430738449097,
+        "value": "calcium",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9989455342292786,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "epencephalon-1",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "cerebellum",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "meninges",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "meninges",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "healthy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "true",
+        "entity": "is_healthy"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hey dude",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7767849564552307,
+        "value": "hey dude",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "epi__epigenome_mnemonic",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "source",
+        "start": 0,
+        "end": 23,
+        "confidence_entity": 0.4570292830467224,
+        "value": "epi__epigenome_mnemonic",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gdc__disease_type",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9886224865913391,
+        "value": "gdc__disease_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "feature",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9855733513832092,
+        "value": "feature",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "samples",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.49432674050331116,
+        "value": "samples",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chrom",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "chrom",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9977782368659973,
+        "value": "chrom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "start",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "start",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "strand",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "strand",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "beta_value",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "beta_value",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "segment_mean",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "segment_mean",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want gene expression as (data_type)(field)",
+    "entities": [
+      {
+        "start": 7,
+        "end": 22,
+        "value": "gene expression",
+        "entity": "data_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 7,
+        "end": 25,
+        "confidence_entity": 0.6965056657791138,
+        "value": "gene expression as",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 27,
+        "end": 43,
+        "confidence_entity": 0.7907987236976624,
+        "value": "data_type)(field",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "give me in vitro differentiated cells biosample_type",
+    "entities": [
+      {
+        "start": 8,
+        "end": 37,
+        "value": "in vitro differentiated cells",
+        "entity": "biosample_type"
+      },
+      {
+        "start": 38,
+        "end": 52,
+        "value": "biosample_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "biosample_type",
+        "start": 17,
+        "end": 37,
+        "confidence_entity": 0.3609735071659088,
+        "value": "differentiated cells",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 38,
+        "end": 52,
+        "confidence_entity": 0.9989891648292542,
+        "value": "biosample_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cell fibroblast of lung",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 5,
+        "end": 23,
+        "value": "fibroblast of lung",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9913141131401062,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 5,
+        "end": 18,
+        "confidence_entity": 0.66,
+        "value": "fibroblast of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.5543973445892334,
+        "value": "alveolus of lung",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "a549 etoh 0.02pct lung carcinoma cell line cell",
+    "entities": [
+      {
+        "start": 0,
+        "end": 42,
+        "value": "a549 etoh 0.02pct lung carcinoma cell line",
+        "entity": "cell"
+      },
+      {
+        "start": 43,
+        "end": 47,
+        "value": "cell",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 0,
+        "end": 37,
+        "confidence_entity": 0.8017711639404297,
+        "value": "a549 etoh 0.02pct lung carcinoma cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.9997660517692566,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "breast variant human mammary epithelial cells (vhmec) cell",
+    "entities": [
+      {
+        "start": 0,
+        "end": 45,
+        "value": "breast variant human mammary epithelial cells",
+        "entity": "cell"
+      },
+      {
+        "start": 54,
+        "end": 58,
+        "value": "cell",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 0,
+        "end": 45,
+        "confidence_entity": 0.9541250467300415,
+        "value": "breast variant human mammary epithelial cells",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 47,
+        "end": 52,
+        "confidence_entity": 0.987876296043396,
+        "value": "vhmec",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 54,
+        "end": 58,
+        "confidence_entity": 0.9973841309547424,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rhabdoid tumor (wilm's tumor) disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "rhabdoid tumor",
+        "entity": "disease"
+      },
+      {
+        "start": 30,
+        "end": 37,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9132997393608093,
+        "value": "rhabdoid",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.9998778104782104,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "connective, subcutaneous and other soft tissues tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 47,
+        "value": "connective, subcutaneous and other soft tissues",
+        "entity": "tissue"
+      },
+      {
+        "start": 48,
+        "end": 54,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9995347261428833,
+        "value": "connective",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 12,
+        "end": 54,
+        "confidence_entity": 0.9941034913063049,
+        "value": "subcutaneous and other soft tissues tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "blood tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "blood",
+        "entity": "tissue"
+      },
+      {
+        "start": 6,
+        "end": 12,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9977869987487793,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fat tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "fat",
+        "entity": "tissue"
+      },
+      {
+        "start": 4,
+        "end": 10,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9835192561149597,
+        "value": "subcutaneous adipose tissue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "stromal connective tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "stromal connective",
+        "entity": "tissue"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 25,
+        "confidence_entity": 0.9901142120361328,
+        "value": "stromal connective tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hg19 and cell line and h1 and dna seq and cancer and mutations and broadpeak and tads and zfx and wxs and brain",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "hg19",
+        "entity": "assembly"
+      },
+      {
+        "start": 9,
+        "end": 18,
+        "value": "cell line",
+        "entity": "biosample_type"
+      },
+      {
+        "start": 23,
+        "end": 25,
+        "value": "h1",
+        "entity": "cell"
+      },
+      {
+        "start": 30,
+        "end": 37,
+        "value": "dna seq",
+        "entity": "data_type"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "cancer",
+        "entity": "disease"
+      },
+      {
+        "start": 53,
+        "end": 62,
+        "value": "mutations",
+        "entity": "feature"
+      },
+      {
+        "start": 67,
+        "end": 76,
+        "value": "broadpeak",
+        "entity": "file_format"
+      },
+      {
+        "start": 81,
+        "end": 85,
+        "value": "tads",
+        "entity": "source"
+      },
+      {
+        "start": 90,
+        "end": 93,
+        "value": "zfx",
+        "entity": "target"
+      },
+      {
+        "start": 98,
+        "end": 101,
+        "value": "wxs",
+        "entity": "technique"
+      },
+      {
+        "start": 106,
+        "end": 111,
+        "value": "brain",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9991105198860168,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.6253305673599243,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.2459147572517395,
+        "value": "h1 and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.717003345489502,
+        "value": "masked somatic mutation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 42,
+        "end": 48,
+        "confidence_entity": 0.9243038296699524,
+        "value": "cancer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 53,
+        "end": 62,
+        "confidence_entity": 0.9056017398834229,
+        "value": "variant calling",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "file_format",
+        "start": 67,
+        "end": 80,
+        "confidence_entity": 0.7774238586425781,
+        "value": "broadpeak and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 81,
+        "end": 97,
+        "confidence_entity": 0.5399038195610046,
+        "value": "tads and zfx and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "technique",
+        "start": 98,
+        "end": 101,
+        "confidence_entity": 0.5286735892295837,
+        "value": "wxs",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 106,
+        "end": 111,
+        "confidence_entity": 0.6381169557571411,
+        "value": "brain",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can we have data from tumoral tissue from blood",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "False",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 42,
+        "end": 47,
+        "value": "blood",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.9988791346549988,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I would like to have grch38 assembly data regarding embryonic facial prominence of tumoral patients with follicular lymphoma",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 52,
+        "end": 79,
+        "value": "embryonic facial prominence",
+        "entity": "tissue"
+      },
+      {
+        "start": 83,
+        "end": 90,
+        "value": "False",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 105,
+        "end": 124,
+        "value": "follicular lymphoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9998071789741516,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 52,
+        "end": 82,
+        "confidence_entity": 0.4934520721435547,
+        "value": "embryonic facial prominence of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "is_healthy",
+        "start": 83,
+        "end": 90,
+        "confidence_entity": 0.9951269626617432,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 105,
+        "end": 124,
+        "confidence_entity": 0.9987176656723022,
+        "value": "follicular lymphoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need tumoral entity patients and mirna expression",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "false",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 35,
+        "end": 51,
+        "value": "mirna expression",
+        "entity": "data_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9969233870506287,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "data_type",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.9478397965431213,
+        "value": "entity",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 35,
+        "end": 51,
+        "confidence_entity": 0.9908636212348938,
+        "value": "mirna expression",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "annotation",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "annotations",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.5024710893630981,
+        "value": "annotation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "annotations",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "annotations",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.8861792087554932,
+        "value": "annotation",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "d loop in grch38",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "d loop",
+        "entity": "content_type"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "grch38",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.887656033039093,
+        "value": "d",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9996302127838135,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "grch38 antisense rna annotations from refseq",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 7,
+        "end": 20,
+        "value": "antisense rna",
+        "entity": "content_type"
+      },
+      {
+        "start": 38,
+        "end": 44,
+        "value": "refseq",
+        "entity": "source"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9997819066047668,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.8477534651756287,
+        "value": "rna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 38,
+        "end": 44,
+        "confidence_entity": 0.9991911053657532,
+        "value": "refseq",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "grch38 antisense rna annotations from roadmap epigenomics",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 7,
+        "end": 20,
+        "value": "antisense rna",
+        "entity": "content_type"
+      },
+      {
+        "start": 38,
+        "end": 57,
+        "value": "roadmap epigenomics",
+        "entity": "source"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9997850060462952,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.8260943293571472,
+        "value": "rna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 38,
+        "end": 57,
+        "confidence_entity": 0.9935451745986938,
+        "value": "roadmap epigenomics",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "stop codon in grch38",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "stop codon",
+        "entity": "content_type"
+      },
+      {
+        "start": 14,
+        "end": 20,
+        "value": "grch38",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 5,
+        "end": 10,
+        "confidence_entity": 0.81749027967453,
+        "value": "codon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.9993634819984436,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "biosample type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "biosample type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "region",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.568782389163971,
+        "value": "type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dataset_name",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "dataset_name",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "dataset name",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "dataset_name",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9410694241523743,
+        "value": "dataset_name",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "y",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.6252360939979553,
+        "value": "y",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "never",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8777673244476318,
+        "value": "never",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "amilcare",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "amilcare",
+        "entity": "dataset_rename"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9890711307525635,
+        "value": "amilcare",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "giovanni_gallo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "giovanni_gallo",
+        "entity": "dataset_rename"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "h",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9988228678703308,
+        "value": "h",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "solid tissue normal",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.53,
+        "value": "solid tissue",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "is_healthy",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.8977612257003784,
+        "value": "true",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "bone marrow",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9995470643043518,
+        "value": "bone marrow",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "other and ill-defined sites",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 27,
+        "confidence_entity": 0.9975910186767578,
+        "value": "other and ill-defined sites icd-o-3",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "immune system",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.9985221028327942,
+        "value": "immune system",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "homo sapiens male adult (84 years) occipital lobe tissue",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 33,
+        "confidence_entity": 0.8064412474632263,
+        "value": "homo sapiens male adult (84 years",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 35,
+        "end": 49,
+        "confidence_entity": 0.5841358304023743,
+        "value": "occipital lobe",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 50,
+        "end": 56,
+        "confidence_entity": 0.999177873134613,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "https://sharedoc.nchri.org/tcga-bcr/default.aspx",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 48,
+        "confidence_entity": 0.898357093334198,
+        "value": "https://sharedoc.nchri.org/tcga-bcr/default.aspx",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "positive",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.6195575594902039,
+        "value": "positive",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "peaks",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "clonal rearrangement, multiple peaks",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.6136771440505981,
+        "value": "clonal rearrangement, multiple peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "hotspots",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.47944414615631104,
+        "value": "nipa1 wt allele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mgc102724",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9998524188995361,
+        "value": "nipa1 wt allele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "stable",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "stable",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.28077566623687744,
+        "value": "stable",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "acute promyelocytic leukemia, atrichia with papular lesions",
+    "entities": [
+      {
+        "start": 0,
+        "end": 59,
+        "value": "acute promyelocytic leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 28,
+        "confidence_entity": 0.658820629119873,
+        "value": "acute promyelocytic leukemia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 30,
+        "end": 38,
+        "confidence_entity": 0.79,
+        "value": "atrichia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 44,
+        "end": 59,
+        "confidence_entity": 0.557188868522644,
+        "value": "papular lesions",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "lgg",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "brain glioma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9041217565536499,
+        "value": "brain glioma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cholangiocar.- intra/extrahepatic",
+    "entities": [
+      {
+        "start": 0,
+        "end": 33,
+        "value": "cholangiocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12)",
+    "entities": [
+      {
+        "start": 0,
+        "end": 139,
+        "value": "cornelia de lange syndrome",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.9903085827827454,
+        "value": "de lange phenotype",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 20,
+        "end": 39,
+        "confidence_entity": 0.9998117089271545,
+        "value": "developmental delay",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 41,
+        "end": 61,
+        "confidence_entity": 0.9998273253440857,
+        "value": "profound retardation",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 63,
+        "end": 71,
+        "confidence_entity": 0.9998072981834412,
+        "value": "seizures",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 73,
+        "end": 100,
+        "confidence_entity": 0.9994183778762817,
+        "value": "3 cousins are also affected",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 102,
+        "end": 116,
+        "confidence_entity": 0.9991231560707092,
+        "value": "46,xy,-22,+der",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hbl",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "hepatoblastoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9994757771492004,
+        "value": "hepatoblastoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "leukemia, disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.944818913936615,
+        "value": "leukemia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.999940037727356,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "liver and intrahepatic bile duct carcinoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 42,
+        "value": "liver carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9082670211791992,
+        "value": "right lobe of liver",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "midline carcinoma of children and young adults with nut rearrangement",
+    "entities": [
+      {
+        "start": 0,
+        "end": 69,
+        "value": "nut carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.7690646648406982,
+        "value": "midline carcinoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 40,
+        "end": 46,
+        "confidence_entity": 0.9778002500534058,
+        "value": "adults",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 52,
+        "end": 69,
+        "confidence_entity": 0.5883010625839233,
+        "value": "nut rearrangement",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ov",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "ovarian serous cystadenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "kahler disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "plasma cell myeloma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.8119747638702393,
+        "value": "kahler",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9999673366546631,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rb",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "retinoblastoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9999669790267944,
+        "value": "retinoblastoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "uvm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "uveal melanoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7698804140090942,
+        "value": "uveal melanoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cdc40",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "cdc40",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pml",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "pml",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9794834852218628,
+        "value": "pml",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dnase",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "tatdn2p3",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8589696884155273,
+        "value": "tatdn2p3",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "wrn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "wrn",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "cartilage",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "cartilage element",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9371358156204224,
+        "value": "cartilage element",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "caput mediale musculus gastrocnemii",
+    "entities": [
+      {
+        "start": 0,
+        "end": 35,
+        "value": "gastrocnemius medialis",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "inner membrane amniotic membrane tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 39,
+        "value": "inner membrane amniotic membrane tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 32,
+        "confidence_entity": 0.9533678889274597,
+        "value": "inner membrane amniotic membrane",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 33,
+        "end": 39,
+        "confidence_entity": 0.9960438013076782,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "pleural tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "pleura",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9978864789009094,
+        "value": "pleural",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.995871365070343,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "postsulcal part of dorsum of tongue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 35,
+        "value": "posterior part of tongue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 11,
+        "end": 35,
+        "confidence_entity": 0.9945847392082214,
+        "value": "part of dorsum of tongue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "prostate",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "prostate gland",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "healthy status",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.4695013463497162,
+        "value": "healthy status",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "item_id",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.4885687530040741,
+        "value": "item_id",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gene_symbol",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "gene_symbol",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "all_gene_symbols",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "all_gene_symbols",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "dbsnp_rs",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "dbsnp_rs",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "gene_symbo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "gene_symbo",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i need chorion and chip-seq",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "chorion",
+        "entity": "tissue"
+      },
+      {
+        "start": 19,
+        "end": 27,
+        "value": "chip-seq",
+        "entity": "technique"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.576503574848175,
+        "value": "domain",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "experimental data tcga from source",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "experimental data",
+        "entity": "experiments"
+      },
+      {
+        "start": 18,
+        "end": 22,
+        "value": "tcga",
+        "entity": "source"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "value": "source",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8671643733978271,
+        "value": "experimental data",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.23774424195289612,
+        "value": "tcga from",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.9999306201934814,
+        "value": "source",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "t-acute lymphoblastic leukemia (t-all; type iii cortical) disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "t-acute lymphoblastic leukemia",
+        "entity": "disease"
+      },
+      {
+        "start": 58,
+        "end": 65,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 22,
+        "end": 30,
+        "confidence_entity": 0.5809832811355591,
+        "value": "leukemia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 58,
+        "end": 65,
+        "confidence_entity": 0.9993659853935242,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12) disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 116,
+        "value": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der",
+        "entity": "disease"
+      },
+      {
+        "start": 140,
+        "end": 147,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 140,
+        "end": 147,
+        "confidence_entity": 0.8386704325675964,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "technique wgbs",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "technique",
+        "entity": "field"
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "value": "wgbs",
+        "entity": "technique"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9998193383216858,
+        "value": "technique",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cell",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.42172902822494507,
+        "value": "wgbs",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gum tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "gum",
+        "entity": "tissue"
+      },
+      {
+        "start": 4,
+        "end": 10,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9968225955963135,
+        "value": "gingiva",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "coronary artery tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "coronary artery",
+        "entity": "tissue"
+      },
+      {
+        "start": 16,
+        "end": 22,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 22,
+        "confidence_entity": 0.6550425291061401,
+        "value": "coronary artery tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "subcutaneous adipose tissue tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 27,
+        "value": "subcutaneous adipose tissue",
+        "entity": "tissue"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.5898923873901367,
+        "value": "subcutaneous adipose",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9988123178482056,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.9999237060546875,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "patients with breast adenocarcinoma",
+    "entities": [
+      {
+        "start": 14,
+        "end": 35,
+        "value": "breast adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 14,
+        "end": 20,
+        "confidence_entity": 0.5453411340713501,
+        "value": "breast",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can i have abcf1 for cell line 537 mel",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "abcf1",
+        "entity": "target"
+      },
+      {
+        "start": 31,
+        "end": 38,
+        "value": "537 mel",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.990478515625,
+        "value": "abcf1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 31,
+        "end": 34,
+        "confidence_entity": 0.5500728487968445,
+        "value": "537",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "body of uterus data from dna copy number variants for childhood chronic myelogenous leukemia, bcr-abl1 positive",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "body of uterus",
+        "entity": "tissue"
+      },
+      {
+        "start": 25,
+        "end": 49,
+        "value": "cnv",
+        "entity": "data_type"
+      },
+      {
+        "start": 54,
+        "end": 111,
+        "value": "childhood chronic myelogenous leukemia, bcr-abl1 positive",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8197063207626343,
+        "value": "body",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.926494300365448,
+        "value": "uterus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "data_type",
+        "start": 25,
+        "end": 49,
+        "confidence_entity": 0.5977957844734192,
+        "value": "copy number segment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 54,
+        "end": 63,
+        "confidence_entity": 0.9867895245552063,
+        "value": "childhood",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 64,
+        "end": 92,
+        "confidence_entity": 0.5046337246894836,
+        "value": "chronic myeloid leukemia",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 94,
+        "end": 111,
+        "confidence_entity": 0.23326165974140167,
+        "value": "bcr-abl1 positive",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "experiments data for bone tissue from grch38",
+    "entities": [
+      {
+        "start": 21,
+        "end": 32,
+        "value": "bone tissue",
+        "entity": "tissue"
+      },
+      {
+        "start": 38,
+        "end": 44,
+        "value": "grch38",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.9868424534797668,
+        "value": "bone tissue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.975449800491333,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 38,
+        "end": 44,
+        "confidence_entity": 0.9994924068450928,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we would like to have items from hg19 from healthy cerebellar cortex",
+    "entities": [
+      {
+        "start": 33,
+        "end": 37,
+        "value": "hg19",
+        "entity": "assembly"
+      },
+      {
+        "start": 43,
+        "end": 50,
+        "value": "True",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 51,
+        "end": 68,
+        "value": "cerebellar cortex",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 33,
+        "end": 37,
+        "confidence_entity": 0.9994214773178101,
+        "value": "hg19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "is_healthy",
+        "start": 43,
+        "end": 61,
+        "confidence_entity": 0.8887174725532532,
+        "value": "healthy cerebellar",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 62,
+        "end": 68,
+        "confidence_entity": 0.9533206820487976,
+        "value": "cortex",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "encode data for coronary artery disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "encode",
+        "entity": "source"
+      },
+      {
+        "start": 16,
+        "end": 39,
+        "value": "coronary artery disease",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.36792615056037903,
+        "value": "encode",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 16,
+        "end": 31,
+        "confidence_entity": 0.568554162979126,
+        "value": "coronary artery",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.8516810536384583,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can we have data from tumoral tissue from connective tissue?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "False",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 42,
+        "end": 59,
+        "value": "connective tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.989972710609436,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tissue",
+        "start": 42,
+        "end": 52,
+        "confidence_entity": 0.5047714710235596,
+        "value": "connective",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 53,
+        "end": 59,
+        "confidence_entity": 0.6741567850112915,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please give me adipose derived mesenchymal stem cell cultured cells data",
+    "entities": [
+      {
+        "start": 15,
+        "end": 67,
+        "value": "adipose derived mesenchymal stem cell cultured cells",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 15,
+        "end": 67,
+        "confidence_entity": 0.15872029960155487,
+        "value": "adipose derived mesenchymal stem cell cultured cells",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i want mirna expression data type",
+    "entities": [
+      {
+        "start": 7,
+        "end": 23,
+        "value": "mirna expression",
+        "entity": "data_type"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "value": "data_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 7,
+        "end": 33,
+        "confidence_entity": 0.9863269329071045,
+        "value": "mirna expression data type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need structural annotation",
+    "entities": [
+      {
+        "start": 18,
+        "end": 28,
+        "value": "annotation",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "grch38 y rna annotations from refseq",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "y rna",
+        "entity": "content_type"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "refseq",
+        "entity": "source"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.999177873134613,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.49210506677627563,
+        "value": "rna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 30,
+        "end": 36,
+        "confidence_entity": 0.9992232322692871,
+        "value": "refseq",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "experimental data](experiments)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8953048586845398,
+        "value": "experimental",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "experiments",
+        "start": 13,
+        "end": 30,
+        "confidence_entity": 0.7713661193847656,
+        "value": "data](experiments",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dataset",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "dataset_name",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want to start over",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.6124951839447021,
+        "value": "start over",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "correct",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.7870742082595825,
+        "value": "correct",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ok",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9759305119514465,
+        "value": "ok",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Unione_db1_db2",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Unione_db1_db2",
+        "entity": "dataset_rename"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "primary tumor",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 13,
+        "confidence_entity": 0.999876856803894,
+        "value": "primary tumor",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "encbs357nwo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9998873472213745,
+        "value": "encbs357nwo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "nationwide children's hospital",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.8728586435317993,
+        "value": "nationwide children",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 22,
+        "end": 30,
+        "confidence_entity": 0.38036924600601196,
+        "value": "hospital",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mgc35570",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999470710754395,
+        "value": "nipa1 wt allele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "peaks and background as input for idr",
+    "entities": [
+      {
+        "start": 0,
+        "end": 37,
+        "value": "peaks and background as input for idr",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.4736202359199524,
+        "value": "clonal rearrangement, multiple peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "content_type",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.5038232803344727,
+        "value": "background",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.7599764466285706,
+        "value": "input",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.6640879511833191,
+        "value": "idr",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "breast adenocarcinoma, breast cancer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 36,
+        "value": "breast adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9883302450180054,
+        "value": "breast",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 23,
+        "end": 36,
+        "confidence_entity": 0.999229907989502,
+        "value": "breast carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "chol",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cholangiocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "kich",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "chromophobe renal cell carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7649693489074707,
+        "value": "chromophobe renal cell carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "es",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "ewing sarcoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.586507260799408,
+        "value": "ewing sarcoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "stad",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "gastric adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7063474059104919,
+        "value": "gastric adenocarcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "lihc",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "hepatocellular carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9397876858711243,
+        "value": "hepatocellular carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "luad",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "lung adenocarcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9864491820335388,
+        "value": "lung adenocarcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "lusc",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "lung squamous cell carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9763604998588562,
+        "value": "lung squamous cell carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "meso",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "mesothelioma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5827414393424988,
+        "value": "mesothelioma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "carcinoma with t(15;19)(q13;p13.1) translocation",
+    "entities": [
+      {
+        "start": 0,
+        "end": 48,
+        "value": "nut carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "parathyroid adenoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "parathyroid gland adenoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.6513741612434387,
+        "value": "parathyroid gland",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "pnet",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "primitive neuroectodermal tumor",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "prostate carcinoma, prostatitis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 31,
+        "value": "prostate carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.9408859610557556,
+        "value": "prostate carcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rcc",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "renal cell carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9817830920219421,
+        "value": "renal cell carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rhabdoid tumor (wilm's tumor)",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "rhabdoid tumor",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.906201958656311,
+        "value": "rhabdoid tumor",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "t-all",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "t acute lymphoblastic leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tgct",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "testicular germ cell tumor",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9761781096458435,
+        "value": "testicular germ cell tumor",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "ucec",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "uterine corpus endometrial carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6029467582702637,
+        "value": "uterine corpus endometrial carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rela",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rela",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5674716234207153,
+        "value": "rela",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "other and ill-defined sites",
+    "entities": [
+      {
+        "start": 0,
+        "end": 27,
+        "value": "other and ill-defined sites icd-o-3",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "soft tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "soft tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.43771398067474365,
+        "value": "soft",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 5,
+        "end": 11,
+        "confidence_entity": 0.9999271631240845,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "subcutaneous adipose tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 27,
+        "value": "subcutaneous adipose tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.6210185289382935,
+        "value": "subcutaneous adipose",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9983839988708496,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fat tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "subcutaneous adipose tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9995619654655457,
+        "value": "adipose tissue",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.9999465942382812,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tumor",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "false",
+        "entity": "is_healthy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8249281644821167,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "normal tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "true",
+        "entity": "is_healthy"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.8360242247581482,
+        "value": "true",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.8470341563224792,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9998428821563721,
+        "value": "hi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "subtract",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.712395191192627,
+        "value": "subtract",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "stop",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "stop",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "type",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.48970600962638855,
+        "value": "type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "composite_element_ref",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "composite_element_ref",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.2938781976699829,
+        "value": "composite_element_ref",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cgi_coordinate",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "cgi_coordinate",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want cluster genes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.33525601029396057,
+        "value": "gene",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i need samples for copy number variation for ovary",
+    "entities": [
+      {
+        "start": 19,
+        "end": 40,
+        "value": "copy number variation",
+        "entity": "feature"
+      },
+      {
+        "start": 45,
+        "end": 50,
+        "value": "ovary",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 19,
+        "end": 40,
+        "confidence_entity": 0.8139346241950989,
+        "value": "copy number segment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "tissue",
+        "start": 45,
+        "end": 50,
+        "confidence_entity": 0.9992194175720215,
+        "value": "ovary",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want experiment about uveal melanoma disease",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "value": "experiment",
+        "entity": "experiments"
+      },
+      {
+        "start": 24,
+        "end": 38,
+        "value": "uveal melanoma",
+        "entity": "disease"
+      },
+      {
+        "start": 39,
+        "end": 46,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 24,
+        "end": 38,
+        "confidence_entity": 0.9995521903038025,
+        "value": "uveal melanoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.9999294281005859,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please give me e4f1 target data",
+    "entities": [
+      {
+        "start": 15,
+        "end": 19,
+        "value": "e4f1",
+        "entity": "target"
+      },
+      {
+        "start": 20,
+        "end": 26,
+        "value": "target",
+        "entity": "field"
+      },
+      {
+        "start": 27,
+        "end": 31,
+        "value": "data",
+        "entity": "experiments"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.9989966750144958,
+        "value": "e4f1",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.9944414496421814,
+        "value": "target",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mirna expressione data for grch38 assembly from kidney",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "mirna expression",
+        "entity": "data_type"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 48,
+        "end": 54,
+        "value": "kidney",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8994077444076538,
+        "value": "mirna expressione",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.9995738863945007,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9850538372993469,
+        "value": "assembly",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 48,
+        "end": 54,
+        "confidence_entity": 0.999213457107544,
+        "value": "kidney",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need feature tag",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "feature",
+        "entity": "field"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "value": "tag",
+        "entity": "feature"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9964058995246887,
+        "value": "feature",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.8397599458694458,
+        "value": "tag",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "please give me the rna content_type",
+    "entities": [
+      {
+        "start": 19,
+        "end": 22,
+        "value": "rna",
+        "entity": "content_type"
+      },
+      {
+        "start": 23,
+        "end": 35,
+        "value": "content_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.5295327305793762,
+        "value": "the rna",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 23,
+        "end": 35,
+        "confidence_entity": 0.3437470495700836,
+        "value": "content_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "all the target taf1",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "target",
+        "entity": "field"
+      },
+      {
+        "start": 15,
+        "end": 19,
+        "value": "taf1",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.4435437321662903,
+        "value": "all the target taf1",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need cell nci-h929",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 12,
+        "end": 20,
+        "value": "nci-h929",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 12,
+        "end": 20,
+        "confidence_entity": 0.9931474328041077,
+        "value": "nci-h929",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "now i need caudate nucleus tissue",
+    "entities": [
+      {
+        "start": 11,
+        "end": 26,
+        "value": "caudate nucleus",
+        "entity": "tissue"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.5780032873153687,
+        "value": "i need",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 11,
+        "end": 26,
+        "confidence_entity": 0.7967709898948669,
+        "value": "caudate nucleus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.9925328493118286,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cell imr90",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 5,
+        "end": 10,
+        "value": "imr90",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.6544206738471985,
+        "value": "cell imr90",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cell  bipolar neuron",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cell",
+        "entity": "field"
+      },
+      {
+        "start": 6,
+        "end": 20,
+        "value": "bipolar neuron",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8128171563148499,
+        "value": "cell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 6,
+        "end": 20,
+        "confidence_entity": 0.5084134340286255,
+        "value": "bipolar neuron",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "peaks data_type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "peaks",
+        "entity": "data_type"
+      },
+      {
+        "start": 6,
+        "end": 15,
+        "value": "data_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.6163885593414307,
+        "value": "clonal rearrangement, multiple peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "field",
+        "start": 6,
+        "end": 15,
+        "confidence_entity": 0.9998931884765625,
+        "value": "data_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "variant calling data_type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "variant calling",
+        "entity": "data_type"
+      },
+      {
+        "start": 16,
+        "end": 25,
+        "value": "data_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.5102822780609131,
+        "value": "variant calling",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 16,
+        "end": 25,
+        "confidence_entity": 0.99989914894104,
+        "value": "data_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fibrocystic disease disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "fibrocystic disease",
+        "entity": "disease"
+      },
+      {
+        "start": 20,
+        "end": 27,
+        "value": "disease",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 27,
+        "confidence_entity": 0.8311614394187927,
+        "value": "fibrocystic disease disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bed file_format",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "bed",
+        "entity": "file_format"
+      },
+      {
+        "start": 4,
+        "end": 15,
+        "value": "file_format",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.2606442868709564,
+        "value": "bed",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 4,
+        "end": 15,
+        "confidence_entity": 0.9998778104782104,
+        "value": "file_format",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dna methylation 450 technique",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "dna methylation 450",
+        "entity": "technique"
+      },
+      {
+        "start": 20,
+        "end": 29,
+        "value": "technique",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.2589324712753296,
+        "value": "dna methylation 450",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 20,
+        "end": 29,
+        "confidence_entity": 0.9999862909317017,
+        "value": "technique",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "dna methylation 27 technique",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "dna methylation 27",
+        "entity": "technique"
+      },
+      {
+        "start": 19,
+        "end": 28,
+        "value": "technique",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "feature",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.2589324712753296,
+        "value": "dna methylation 27",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.9999862909317017,
+        "value": "technique",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "vascular tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "vascular",
+        "entity": "tissue"
+      },
+      {
+        "start": 9,
+        "end": 15,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9889709949493408,
+        "value": "ascending aorta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "adipose tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "adipose",
+        "entity": "tissue"
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "value": "tissue",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9875261187553406,
+        "value": "adipose tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "brain with rna-seq and ctcf and encode and bed",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "brain",
+        "entity": "disease"
+      },
+      {
+        "start": 11,
+        "end": 18,
+        "value": "rna-seq",
+        "entity": "tissue"
+      },
+      {
+        "start": 23,
+        "end": 27,
+        "value": "ctcf",
+        "entity": "target"
+      },
+      {
+        "start": 32,
+        "end": 38,
+        "value": "encode",
+        "entity": "source"
+      },
+      {
+        "start": 43,
+        "end": 46,
+        "value": "bed",
+        "entity": "file_format"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8592368364334106,
+        "value": "brain",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 11,
+        "end": 31,
+        "confidence_entity": 0.26678672432899475,
+        "value": "rna-seq and ctcf and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 32,
+        "end": 46,
+        "confidence_entity": 0.8796976804733276,
+        "value": "encode and bed",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "grch38 peaks of bladder urothelial carcinoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "peaks",
+        "entity": "data_type"
+      },
+      {
+        "start": 16,
+        "end": 44,
+        "value": "bladder urothelial carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9990890026092529,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.5142722129821777,
+        "value": "clonal rearrangement, multiple peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 16,
+        "end": 23,
+        "confidence_entity": 0.9071788191795349,
+        "value": "bladder",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 24,
+        "end": 44,
+        "confidence_entity": 0.8190199732780457,
+        "value": "urothelial carcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "im looking for variant calling from cistrome regarding brain glioma",
+    "entities": [
+      {
+        "start": 15,
+        "end": 30,
+        "value": "variant calling",
+        "entity": "data_type"
+      },
+      {
+        "start": 36,
+        "end": 44,
+        "value": "cistrome",
+        "entity": "source"
+      },
+      {
+        "start": 55,
+        "end": 67,
+        "value": "brain glioma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.8454444408416748,
+        "value": "variant",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.8683356046676636,
+        "value": "calling",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9989897608757019,
+        "value": "cistrome",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 55,
+        "end": 67,
+        "confidence_entity": 0.982231080532074,
+        "value": "brain glioma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like to have grch38 assembly data regarding biliary tract of tumoral patients with breast fibrocystic change",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 52,
+        "end": 65,
+        "value": "biliary tract",
+        "entity": "tissue"
+      },
+      {
+        "start": 69,
+        "end": 76,
+        "value": "False",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 91,
+        "end": 116,
+        "value": "breast fibrocystic change",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9996875524520874,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 52,
+        "end": 68,
+        "confidence_entity": 0.6927124261856079,
+        "value": "biliary tract of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "is_healthy",
+        "start": 69,
+        "end": 76,
+        "confidence_entity": 0.9806663393974304,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 91,
+        "end": 116,
+        "confidence_entity": 0.49,
+        "value": "breast fibrocystic change",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can i have aff1 for cell line a549",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "aff1",
+        "entity": "target"
+      },
+      {
+        "start": 30,
+        "end": 34,
+        "value": "a549",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cell",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.6304851174354553,
+        "value": "a549",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "samples of a673 of patients affected by colorectal cancer pathway",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "a673",
+        "entity": "cell"
+      },
+      {
+        "start": 40,
+        "end": 65,
+        "value": "colorectal cancer pathway",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 40,
+        "end": 65,
+        "confidence_entity": 0.9968565702438354,
+        "value": "colorectal cancer pathway",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like to have grch38 assembly data regarding central nervous system of tumoral patients with colorectal carcinoma",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "grch38",
+        "entity": "assembly"
+      },
+      {
+        "start": 52,
+        "end": 74,
+        "value": "central nervous system",
+        "entity": "tissue"
+      },
+      {
+        "start": 78,
+        "end": 85,
+        "value": "False",
+        "entity": "is_healthy"
+      },
+      {
+        "start": 100,
+        "end": 120,
+        "value": "colorectal carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "assembly",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9997714161872864,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 52,
+        "end": 67,
+        "confidence_entity": 0.7226428389549255,
+        "value": "central nervous",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "is_healthy",
+        "start": 78,
+        "end": 85,
+        "confidence_entity": 0.9923611283302307,
+        "value": "false",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "disease",
+        "start": 100,
+        "end": 120,
+        "confidence_entity": 0.9991699457168579,
+        "value": "colorectal carcinoma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "experiments data for coronary artery from grch38",
+    "entities": [
+      {
+        "start": 21,
+        "end": 36,
+        "value": "coronary artery",
+        "entity": "tissue"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "grch38",
+        "entity": "assembly"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 21,
+        "end": 36,
+        "confidence_entity": 0.49426358938217163,
+        "value": "coronary artery",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "assembly",
+        "start": 42,
+        "end": 48,
+        "confidence_entity": 0.999672532081604,
+        "value": "grch38",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "im looking for chromatin immunoprecipitation sequencing from roadmap epigenomics regarding esophagitis",
+    "entities": [
+      {
+        "start": 15,
+        "end": 55,
+        "value": "domain",
+        "entity": "data_type"
+      },
+      {
+        "start": 61,
+        "end": 80,
+        "value": "roadmap epigenomics",
+        "entity": "source"
+      },
+      {
+        "start": 91,
+        "end": 102,
+        "value": "esophagitis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 15,
+        "end": 55,
+        "confidence_entity": 0.9944782257080078,
+        "value": "peaks",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "source",
+        "start": 61,
+        "end": 80,
+        "confidence_entity": 0.9937461614608765,
+        "value": "roadmap epigenomics",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tissue",
+        "start": 91,
+        "end": 102,
+        "confidence_entity": 0.8678662776947021,
+        "value": "esophagitis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i need cell achn",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "achn",
+        "entity": "cell"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.83555668592453,
+        "value": "achn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "annotation",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "annotation",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "annotations",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "annotations",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want annotations",
+    "entities": [
+      {
+        "start": 7,
+        "end": 18,
+        "value": "annotations",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i need an annotation",
+    "entities": [
+      {
+        "start": 10,
+        "end": 20,
+        "value": "annotation",
+        "entity": "annotations"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i am looking form annotation",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "annotations",
+        "start": 18,
+        "end": 28,
+        "confidence_entity": 0.7854924201965332,
+        "value": "annotation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "im looking for primary transcript annotations from gencode",
+    "entities": [
+      {
+        "start": 15,
+        "end": 33,
+        "value": "primary transcript",
+        "entity": "content_type"
+      },
+      {
+        "start": 51,
+        "end": 58,
+        "value": "gencode",
+        "entity": "source"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "biosample_type",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.46013298630714417,
+        "value": "primary",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "content_type",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.9985042810440063,
+        "value": "transcript",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "source",
+        "start": 51,
+        "end": 58,
+        "confidence_entity": 0.9992863535881042,
+        "value": "gencode",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "esperiments",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "esperiments",
+        "entity": "experiments"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "content_type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "content_type",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "region",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9639072418212891,
+        "value": "content_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "of course",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9970279335975647,
+        "value": "of course",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes give me another one",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "yes",
+        "entity": "affirm"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "nope",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6134424209594727,
+        "value": "nope",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "b",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.5636884570121765,
+        "value": "b",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "c",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.3812040090560913,
+        "value": "c",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "e",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.9961678385734558,
+        "value": "e",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "copy_number_segment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.40905818343162537,
+        "value": "copy_number_segment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "open",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8827364444732666,
+        "value": "open",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "low read depth",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.8180403709411621,
+        "value": "low read depth",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "false",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7392552495002747,
+        "value": "false",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fsp3",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999678134918213,
+        "value": "nipa1 wt allele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "spg6",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "nipa1 wt allele",
+        "entity": "content_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6182575821876526,
+        "value": "nipa1 wt allele",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "transcriptomics",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "mirna expression",
+        "entity": "data_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.2797376215457916,
+        "value": "mirna expression",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "blca",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "bladder urothelial carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7333199977874756,
+        "value": "bladder urothelial carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "small non-cleaved cell lymphoma, burkitt's type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 47,
+        "value": "burkitt lymphoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 31,
+        "confidence_entity": 0.5013238191604614,
+        "value": "small non-cleaved cell lymphoma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 33,
+        "end": 40,
+        "confidence_entity": 0.3207429349422455,
+        "value": "burkitt",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "disease",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.887693464756012,
+        "value": "type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "skcm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cutaneous melanoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9934155941009521,
+        "value": "cutaneous melanoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "fibrosarcoma - not infantile",
+    "entities": [
+      {
+        "start": 0,
+        "end": 28,
+        "value": "fibrosarcoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hnsc",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "head and neck squamous cell carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9219173192977905,
+        "value": "head and neck squamous cell carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "brca",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "invasive breast carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6761513948440552,
+        "value": "invasive breast carcinoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "posterior uveitis",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "posterior uveitis",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.9984394907951355,
+        "value": "posterior uveitis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hutchinson-gilford disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "progeria",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.9705829620361328,
+        "value": "hutchinson-gilford",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 19,
+        "end": 26,
+        "confidence_entity": 0.7885423898696899,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "progeria",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "progeria",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9557899236679077,
+        "value": "progeria",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "renal cell carcinoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "renal cell carcinoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.6709355115890503,
+        "value": "renal cell",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "t-acute lymphoblastic leukemia (t-all; type iii cortical)",
+    "entities": [
+      {
+        "start": 0,
+        "end": 57,
+        "value": "t acute lymphoblastic leukemia",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.8985028862953186,
+        "value": "t-acute lymphoblastic",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "thym",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "thymoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.4816729426383972,
+        "value": "thymoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "ucs",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "uterine carcinosarcoma",
+        "entity": "disease"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6046655178070068,
+        "value": "uterine carcinosarcoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "lcorl",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "lcorl",
+        "entity": "target"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.6688190698623657,
+        "value": "lcorl",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ans",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "autonomic nervous system",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "osteogenic tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "bone tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9943946599960327,
+        "value": "osteogenic",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9998970031738281,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "portion of connective tissue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 28,
+        "value": "connective tissue",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.9900709986686707,
+        "value": "portion of connective",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "field",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.8444914221763611,
+        "value": "tissue",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fallopian tube secretory",
+    "entities": [
+      {
+        "start": 0,
+        "end": 24,
+        "value": "fallopian tube",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "lip",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "lip",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.44755807518959045,
+        "value": "lip",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "parathyroid adenoma",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "parathyroid gland",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.9997891783714294,
+        "value": "parathyroid gland adenoma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "neck of uterus",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "uterine cervix",
+        "entity": "tissue"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "disease",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9100240468978882,
+        "value": "uterine cervix",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "healthy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "is_healthy",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9951085448265076,
+        "value": "true",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "let's go",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9995654225349426,
+        "value": "let's go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "biggest of 560",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.6557143926620483,
+        "value": "biggest of 560",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "biosample__accession",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.9991046786308289,
+        "value": "biosample__accession",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "exp__findpeaks",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "content_type",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.762380063533783,
+        "value": "exp__findpeaks",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gdc__tissue_source_site__tissue_source_site_id",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 46,
+        "confidence_entity": 0.524914026260376,
+        "value": "gdc__tissue_source_site__tissue_source_site_id",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "age",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6143486499786377,
+        "value": "age",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "enough",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.8296828269958496,
+        "value": "enough",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "/",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.5361459851264954,
+        "value": "/",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sum",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.501156747341156,
+        "value": "sum",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "try different configurations",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 28,
+        "confidence_entity": 0.9760386347770691,
+        "value": "try different configurations",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "let me try",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "tissue",
+        "start": 0,
+        "end": 10,
+        "confidence_entity": 0.9995866417884827,
+        "value": "let me try",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sample",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "experiments",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9669208526611328,
+        "value": "sample",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "reads_per_million_mirna_mapped",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "reads_per_million_mirna_mapped",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "feature_type",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "feature_type",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.740842342376709,
+        "value": "feature_type",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "variant_classification",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "variant_classification",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "data_type",
+        "start": 0,
+        "end": 22,
+        "confidence_entity": 0.6260734796524048,
+        "value": "variant_classification",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fpkm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "fpkm",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "target",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9997796416282654,
+        "value": "fpkm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

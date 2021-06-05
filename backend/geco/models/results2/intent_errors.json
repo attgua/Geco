@@ -1,0 +1,1994 @@
+[
+  {
+    "text": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12) disease",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9810060262680054
+    }
+  },
+  {
+    "text": "fat tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9981908798217773
+    }
+  },
+  {
+    "text": "coronary artery tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9998087286949158
+    }
+  },
+  {
+    "text": "give me non tumoral patients",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.8488807082176208
+    }
+  },
+  {
+    "text": "give me thynoma",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.7807252407073975
+    }
+  },
+  {
+    "text": "selenocysteine in hg19",
+    "intent": "retrieve_annotations",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.5089367628097534
+    }
+  },
+  {
+    "text": "cell",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9989297389984131
+    }
+  },
+  {
+    "text": "feature",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "feature",
+      "confidence": 0.9913626909255981
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.9108370542526245
+    }
+  },
+  {
+    "text": "nope",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.8529956936836243
+    }
+  },
+  {
+    "text": "dataset gigio",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.47232094407081604
+    }
+  },
+  {
+    "text": "dataset",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.9862284064292908
+    }
+  },
+  {
+    "text": "b",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9827727675437927
+    }
+  },
+  {
+    "text": "blood derived normal",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9764717817306519
+    }
+  },
+  {
+    "text": "other and ill-defined sites",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9998345375061035
+    }
+  },
+  {
+    "text": "encbs357nwo",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9346144199371338
+    }
+  },
+  {
+    "text": "fastq file {encff522mwj|/files/encff522mwj/} has read length of 40bp. for mapping accuracy encode standards recommend that sequencing reads should be at least 50bp long. (see {encode chip-seq data standards|/data-standards/chip-seq/} )",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.990452766418457
+    }
+  },
+  {
+    "text": "monoclonal",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9998842477798462
+    }
+  },
+  {
+    "text": "true",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.5612170696258545
+    }
+  },
+  {
+    "text": "r1",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9999980926513672
+    }
+  },
+  {
+    "text": "exon quantifications",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.9995356798171997
+    }
+  },
+  {
+    "text": "masked dna mutations",
+    "intent": "choice_value_data_type",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.7612510919570923
+    }
+  },
+  {
+    "text": "anll",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.425309419631958
+    }
+  },
+  {
+    "text": "igl",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.638737142086029
+    }
+  },
+  {
+    "text": "parathyroid adenoma",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9991004467010498
+    }
+  },
+  {
+    "text": "parathyroid gland adenoma",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9993958473205566
+    }
+  },
+  {
+    "text": "ucs",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.988480806350708
+    }
+  },
+  {
+    "text": "exosc5",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.7485260367393494
+    }
+  },
+  {
+    "text": "h4k20me3 modified histone binding",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.8687155842781067
+    }
+  },
+  {
+    "text": "rere",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.6546154618263245
+    }
+  },
+  {
+    "text": "dnase",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.6977364420890808
+    }
+  },
+  {
+    "text": "trove2",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.5662425756454468
+    }
+  },
+  {
+    "text": "ans",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.3257845938205719
+    }
+  },
+  {
+    "text": "cortex of cerebellar hemisphere",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9994154572486877
+    }
+  },
+  {
+    "text": "portion of connective tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.999998152256012
+    }
+  },
+  {
+    "text": "coronary arterial tree",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9996256828308105
+    }
+  },
+  {
+    "text": "leg skeletal muscle tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9574897885322571
+    }
+  },
+  {
+    "text": "noduli lymphoidei aggregati",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.5696014165878296
+    }
+  },
+  {
+    "text": "diseased",
+    "intent": "choice_value_healthy",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.9731838703155518
+    }
+  },
+  {
+    "text": "normal tissue",
+    "intent": "choice_value_healthy",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9465726613998413
+    }
+  },
+  {
+    "text": "I would like to do the union of the two datasets",
+    "intent": "union",
+    "intent_prediction": {
+      "name": "difference",
+      "confidence": 0.4137946665287018
+    }
+  },
+  {
+    "text": "< 120",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.9393253326416016
+    }
+  },
+  {
+    "text": "greater:20000",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.506592869758606
+    }
+  },
+  {
+    "text": "epi__nreads_36bp_30m_h3k4me3",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9149971604347229
+    }
+  },
+  {
+    "text": "'gender':- 2",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8213207721710205
+    }
+  },
+  {
+    "text": "region_file_size",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "project_region",
+      "confidence": 0.94561368227005
+    }
+  },
+  {
+    "text": "sum",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9968829154968262
+    }
+  },
+  {
+    "text": "start",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.31030258536338806
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9581304788589478
+    }
+  },
+  {
+    "text": "beta_value",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "operation",
+      "confidence": 0.32656949758529663
+    }
+  },
+  {
+    "text": "segment_mean",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.31966015696525574
+    }
+  },
+  {
+    "text": "disease parkinson's disease",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.5708612203598022
+    }
+  },
+  {
+    "text": "vascular tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9938672184944153
+    }
+  },
+  {
+    "text": "I want to select source",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9998494386672974
+    }
+  },
+  {
+    "text": "dataset",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.9930413961410522
+    }
+  },
+  {
+    "text": "esperimento x",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "retrieve_experiments",
+      "confidence": 0.9791315197944641
+    }
+  },
+  {
+    "text": "c",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.7528650164604187
+    }
+  },
+  {
+    "text": "e",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9864410161972046
+    }
+  },
+  {
+    "text": "f",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9847595691680908
+    }
+  },
+  {
+    "text": "firstTry",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "tuning",
+      "confidence": 0.7712152004241943
+    }
+  },
+  {
+    "text": "bone marrow",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9999116659164429
+    }
+  },
+  {
+    "text": "low read depth",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.46869367361068726
+    }
+  },
+  {
+    "text": "homo sapiens male adult (84 years) occipital lobe tissue",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999999403953552
+    }
+  },
+  {
+    "text": "mgc102724",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9999826550483704
+    }
+  },
+  {
+    "text": "mgc35570",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9997320175170898
+    }
+  },
+  {
+    "text": "non imprinted in prader-willi/angelman syndrome 1 wt allele",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.7848260998725891
+    }
+  },
+  {
+    "text": "peaks and background as input for idr",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.999786376953125
+    }
+  },
+  {
+    "text": "acute promyelocytic leukemia, atrichia with papular lesions",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999825358390808
+    }
+  },
+  {
+    "text": "fibrocystic disease",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9926270842552185
+    }
+  },
+  {
+    "text": "cornelia de lange syndrome 1; cdls1; nipped-b-like; nipbl",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9991611242294312
+    }
+  },
+  {
+    "text": "es",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.530707597732544
+    }
+  },
+  {
+    "text": "hnsc",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.926349401473999
+    }
+  },
+  {
+    "text": "hbl",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9973891973495483
+    }
+  },
+  {
+    "text": "mucositis",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9852098822593689
+    }
+  },
+  {
+    "text": "kirp",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9986293315887451
+    }
+  },
+  {
+    "text": "hutchinson-gilford disease",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9997811913490295
+    }
+  },
+  {
+    "text": "read",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.5036141276359558
+    }
+  },
+  {
+    "text": "thym",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9841987490653992
+    }
+  },
+  {
+    "text": "uvm",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "feature",
+      "confidence": 0.2842823266983032
+    }
+  },
+  {
+    "text": "mitf",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.934559166431427
+    }
+  },
+  {
+    "text": "epencephalon-1",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.7788060903549194
+    }
+  },
+  {
+    "text": "endometrial",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9575579166412354
+    }
+  },
+  {
+    "text": "fallopian tube secretory",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.7124660015106201
+    }
+  },
+  {
+    "text": "gum tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "chambered heart",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.35583168268203735
+    }
+  },
+  {
+    "text": "other and ill-defined sites icd-o-3",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.7379626631736755
+    }
+  },
+  {
+    "text": "other and ill-defined sites in lip, oral cavity and pharynx",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.3767532706260681
+    }
+  },
+  {
+    "text": "tumor",
+    "intent": "choice_value_healthy",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.6803708076477051
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.5546191334724426
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "tuning",
+      "confidence": 0.734156608581543
+    }
+  },
+  {
+    "text": "> 20000",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.9044695496559143
+    }
+  },
+  {
+    "text": "biosample__accession",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.21400459110736847
+    }
+  },
+  {
+    "text": "alt",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.7134922742843628
+    }
+  },
+  {
+    "text": "*",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.5310279726982117
+    }
+  },
+  {
+    "text": "subtract",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9992744326591492
+    }
+  },
+  {
+    "text": "sample",
+    "intent": "sample",
+    "intent_prediction": {
+      "name": "retrieve_experiments",
+      "confidence": 0.8173646330833435
+    }
+  },
+  {
+    "text": "reads_per_million_mirna_mapped",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.43701955676078796
+    }
+  },
+  {
+    "text": "gum tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9997726678848267
+    }
+  },
+  {
+    "text": "grch38 peaks of bladder urothelial carcinoma",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9962041974067688
+    }
+  },
+  {
+    "text": "grch38 dna mutations of endometriosis",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.806032121181488
+    }
+  },
+  {
+    "text": "now i want sick people",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.9763120412826538
+    }
+  },
+  {
+    "text": "target",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999924302101135
+    }
+  },
+  {
+    "text": "technique",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9996346235275269
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.7878812551498413
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.3514058589935303
+    }
+  },
+  {
+    "text": "don't like that",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5170822143554688
+    }
+  },
+  {
+    "text": "Tissue_experimental",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "retrieve_experiments",
+      "confidence": 0.9601241946220398
+    }
+  },
+  {
+    "text": "h",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.998420238494873
+    }
+  },
+  {
+    "text": "primary tumor",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9964483976364136
+    }
+  },
+  {
+    "text": "solid tissue normal",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.7882626056671143
+    }
+  },
+  {
+    "text": "copy_number_segment",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "region",
+      "confidence": 0.6206651926040649
+    }
+  },
+  {
+    "text": "open",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "operation",
+      "confidence": 0.24464908242225647
+    }
+  },
+  {
+    "text": "immune system",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9995530247688293
+    }
+  },
+  {
+    "text": "pbc1 (pcr bottlenecking coefficient 1, m1/m_distinct) is the ratio of the number of genomic locations where exactly one read maps uniquely (m1) to the number of genomic locations where some reads map (m_distinct). a pbc1 value in the range 0 - 0.5 is severe bottlenecking, 0.5 - 0.8 is moderate bottlenecking, 0.8 - 0.9 is mild bottlenecking, and > 0.9 is no bottlenecking. pbc1 value > 0.9 is recommended, but > 0.8 is acceptable. encode processed alignments file {encff296zwj|/files/encff296zwj/} was generated from a library with pbc1 value of 0.38.",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8959171772003174
+    }
+  },
+  {
+    "text": "/experiments/encsr859czm/",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "retrieve_experiments",
+      "confidence": 0.9889150857925415
+    }
+  },
+  {
+    "text": "false",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9935447573661804
+    }
+  },
+  {
+    "text": "spastic paraplegia 6 (autosomal dominant) gene",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.984767735004425
+    }
+  },
+  {
+    "text": "spg6",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.999976396560669
+    }
+  },
+  {
+    "text": "benign breast disease",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999890923500061
+    }
+  },
+  {
+    "text": "chol",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "project_region",
+      "confidence": 0.4357825219631195
+    }
+  },
+  {
+    "text": "kich",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9936546087265015
+    }
+  },
+  {
+    "text": "skcm",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9981134533882141
+    }
+  },
+  {
+    "text": "brca",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.5152508616447449
+    }
+  },
+  {
+    "text": "leukemia, disease",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999908804893494
+    }
+  },
+  {
+    "text": "lusc",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9241093993186951
+    }
+  },
+  {
+    "text": "meso",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.27465224266052246
+    }
+  },
+  {
+    "text": "paad",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.6204454302787781
+    }
+  },
+  {
+    "text": "kahler disease",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.999882161617279
+    }
+  },
+  {
+    "text": "homez",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.348088800907135
+    }
+  },
+  {
+    "text": "vascular tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.6462694406509399
+    }
+  },
+  {
+    "text": "calcium tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999952912330627
+    }
+  },
+  {
+    "text": "osteogenic tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9998502135276794
+    }
+  },
+  {
+    "text": "central zone of follice",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9952565431594849
+    }
+  },
+  {
+    "text": "testis",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9998082518577576
+    }
+  },
+  {
+    "text": "control",
+    "intent": "choice_value_healthy",
+    "intent_prediction": {
+      "name": "choice_value_dataset_name",
+      "confidence": 0.24297310411930084
+    }
+  },
+  {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9997856616973877
+    }
+  },
+  {
+    "text": "< 40",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.971690833568573
+    }
+  },
+  {
+    "text": "< 583490",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.971690833568573
+    }
+  },
+  {
+    "text": "i want value all values greater than 23194",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "minor",
+      "confidence": 0.79218989610672
+    }
+  },
+  {
+    "text": "biggest of 560",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.577913224697113
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "region",
+      "confidence": 0.9952495694160461
+    }
+  },
+  {
+    "text": "-",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.773713231086731
+    }
+  },
+  {
+    "text": "feature",
+    "intent": "feature",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.9909635782241821
+    }
+  },
+  {
+    "text": "samples",
+    "intent": "sample",
+    "intent_prediction": {
+      "name": "retrieve_experiments",
+      "confidence": 0.9610658884048462
+    }
+  },
+  {
+    "text": "type",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.763643205165863
+    }
+  },
+  {
+    "text": "gene_type",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.9550666809082031
+    }
+  },
+  {
+    "text": "feature_type",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.9943113923072815
+    }
+  },
+  {
+    "text": "variant_classification",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.800347626209259
+    }
+  },
+  {
+    "text": "variant_type",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.5283496975898743
+    }
+  },
+  {
+    "text": "refractory immunoblastic b cell lymphoma progressed from follicular centroblastic/centrocytic lymphoma disease",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9327105283737183
+    }
+  },
+  {
+    "text": "fibrocystic disease disease",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9755590558052063
+    }
+  },
+  {
+    "text": "connective, subcutaneous and other soft tissues tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.7596431970596313
+    }
+  },
+  {
+    "text": "gene expression",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.9398353695869446
+    }
+  },
+  {
+    "text": "sample",
+    "intent": "retrieve_experiments",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.9797900915145874
+    }
+  },
+  {
+    "text": "i want to start over",
+    "intent": "reset",
+    "intent_prediction": {
+      "name": "region",
+      "confidence": 0.36519312858581543
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3539169132709503
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.42058247327804565
+    }
+  },
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9836369752883911
+    }
+  },
+  {
+    "text": "database 1",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.7133291959762573
+    }
+  },
+  {
+    "text": "amilcare",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.825229823589325
+    }
+  },
+  {
+    "text": "Unione_db1_db2",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "union",
+      "confidence": 0.9010432958602905
+    }
+  },
+  {
+    "text": "recurrent tumor",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.4564231336116791
+    }
+  },
+  {
+    "text": "michael-snyder:b-250",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.5774356126785278
+    }
+  },
+  {
+    "text": "https://sharedoc.nchri.org/tcga-bcr/default.aspx",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9766620397567749
+    }
+  },
+  {
+    "text": "nationwide children's hospital",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9860385656356812
+    }
+  },
+  {
+    "text": "peaks",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.4388408660888672
+    }
+  },
+  {
+    "text": "hotspots",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.8619443774223328
+    }
+  },
+  {
+    "text": "nipa1 wt allele",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.48952817916870117
+    }
+  },
+  {
+    "text": "pcpg",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9430162310600281
+    }
+  },
+  {
+    "text": "trisomy 21",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8940991163253784
+    }
+  },
+  {
+    "text": "stad",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9644961357116699
+    }
+  },
+  {
+    "text": "lihc",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9952276945114136
+    }
+  },
+  {
+    "text": "metastatic neuroblastoma from bone marrow",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9251354932785034
+    }
+  },
+  {
+    "text": "ov",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.9137819409370422
+    }
+  },
+  {
+    "text": "premature senility syndrome",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.6889892816543579
+    }
+  },
+  {
+    "text": "prad",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9867916703224182
+    }
+  },
+  {
+    "text": "ucec",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9875902533531189
+    }
+  },
+  {
+    "text": "aqr",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.7712454199790955
+    }
+  },
+  {
+    "text": "arnt",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.5709413886070251
+    }
+  },
+  {
+    "text": "drosha",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.7614966034889221
+    }
+  },
+  {
+    "text": "lcorl",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9997841715812683
+    }
+  },
+  {
+    "text": "syncrip",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.7853800058364868
+    }
+  },
+  {
+    "text": "osseous tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.987617552280426
+    }
+  },
+  {
+    "text": "pulmo",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.24458205699920654
+    }
+  },
+  {
+    "text": "other and ill-defined sites",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.9960795640945435
+    }
+  },
+  {
+    "text": "parathyroid adenoma",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9999963641166687
+    }
+  },
+  {
+    "text": "subcutaneous adipose tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9900173544883728
+    }
+  },
+  {
+    "text": "> 75",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.9060786366462708
+    }
+  },
+  {
+    "text": "I stop on this search",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "retrieve_annotations",
+      "confidence": 0.6736337542533875
+    }
+  },
+  {
+    "text": "+",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.9163467884063721
+    }
+  },
+  {
+    "text": "/",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.9075688123703003
+    }
+  },
+  {
+    "text": "let me try",
+    "intent": "tuning",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5996116399765015
+    }
+  },
+  {
+    "text": "chrom",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9888124465942383
+    }
+  },
+  {
+    "text": "strand",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.7704148888587952
+    }
+  },
+  {
+    "text": "fpkm",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9989475011825562
+    }
+  },
+  {
+    "text": "1000 genomes data for acute lymphoblastic leukemia",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9492684602737427
+    }
+  },
+  {
+    "text": "I need acute promyelocytic leukemia",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.5156333446502686
+    }
+  },
+  {
+    "text": "exon quantification from alveolus of lung",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.6397783160209656
+    }
+  },
+  {
+    "text": "I am looking for masked somatic mutation",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.9285935163497925
+    }
+  },
+  {
+    "text": "samples",
+    "intent": "retrieve_experiments",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.9586789011955261
+    }
+  },
+  {
+    "text": "file_format",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9624431729316711
+    }
+  },
+  {
+    "text": "disease",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9915434718132019
+    }
+  },
+  {
+    "text": "now i want assembly",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.5811781883239746
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.7566730976104736
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9240790605545044
+    }
+  },
+  {
+    "text": "marco",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "strings",
+      "confidence": 0.642703652381897
+    }
+  },
+  {
+    "text": "mister",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "cluster",
+      "confidence": 0.6918036341667175
+    }
+  },
+  {
+    "text": "g",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.44981473684310913
+    }
+  },
+  {
+    "text": "indeterminate",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5702812671661377
+    }
+  },
+  {
+    "text": "negative",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.6890712380409241
+    }
+  },
+  {
+    "text": "positive",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.42593029141426086
+    }
+  },
+  {
+    "text": "washington university",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.690335214138031
+    }
+  },
+  {
+    "text": "clonal rearrangement, multiple peaks",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9975470304489136
+    }
+  },
+  {
+    "text": "fsp3",
+    "intent": "choice_value_content_type",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9999949336051941
+    }
+  },
+  {
+    "text": "gene expression",
+    "intent": "choice_value_data_type",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.999396562576294
+    }
+  },
+  {
+    "text": "all",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "reset",
+      "confidence": 0.3722497820854187
+    }
+  },
+  {
+    "text": "lgg",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "operation",
+      "confidence": 0.29373717308044434
+    }
+  },
+  {
+    "text": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12)",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999812245368958
+    }
+  },
+  {
+    "text": "et",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.8138046264648438
+    }
+  },
+  {
+    "text": "noonan syndrome 1",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "greater",
+      "confidence": 0.8425813913345337
+    }
+  },
+  {
+    "text": "carcinoma with t(15;19)(q13;p13.1) translocation",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9998788237571716
+    }
+  },
+  {
+    "text": "posterior uveitis",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9807106852531433
+    }
+  },
+  {
+    "text": "rb",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_target",
+      "confidence": 0.9999845027923584
+    }
+  },
+  {
+    "text": "tgct",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "rename_database",
+      "confidence": 0.6274437308311462
+    }
+  },
+  {
+    "text": "t7-control",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_healthy",
+      "confidence": 0.9872175455093384
+    }
+  },
+  {
+    "text": "h3.3",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.9235900640487671
+    }
+  },
+  {
+    "text": "h3.1",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.9235900640487671
+    }
+  },
+  {
+    "text": "nanog",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9983530640602112
+    }
+  },
+  {
+    "text": "nipbl",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.6760298013687134
+    }
+  },
+  {
+    "text": "ski",
+    "intent": "choice_value_target",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9983357787132263
+    }
+  },
+  {
+    "text": "inner membrane amniotic membrane tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "pleural tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999990463256836
+    }
+  },
+  {
+    "text": "rectosigmoid junction",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.9645326137542725
+    }
+  },
+  {
+    "text": "skeletal muscle tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.7991744875907898
+    }
+  },
+  {
+    "text": "soft tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999901056289673
+    }
+  },
+  {
+    "text": "fat tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.9999995827674866
+    }
+  },
+  {
+    "text": "map the first dataset into the second",
+    "intent": "map",
+    "intent_prediction": {
+      "name": "difference",
+      "confidence": 0.4639434218406677
+    }
+  },
+  {
+    "text": "> 423",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.7636152505874634
+    }
+  },
+  {
+    "text": "> 89052789",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.7636152505874634
+    }
+  },
+  {
+    "text": "'ethnicity':- 6",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.4708637595176697
+    }
+  },
+  {
+    "text": "age",
+    "intent": "metadatum",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.9513323307037354
+    }
+  },
+  {
+    "text": "enough",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.8104543685913086
+    }
+  },
+  {
+    "text": "multiply",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9956040978431702
+    }
+  },
+  {
+    "text": "multiplication",
+    "intent": "operation",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9712018370628357
+    }
+  },
+  {
+    "text": "try different configurations",
+    "intent": "tuning",
+    "intent_prediction": {
+      "name": "difference",
+      "confidence": 0.8298126459121704
+    }
+  },
+  {
+    "text": "composite_element_ref",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "metadatum",
+      "confidence": 0.5557553172111511
+    }
+  },
+  {
+    "text": "cgi_coordinate",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "retrieve_annotations",
+      "confidence": 0.9947039484977722
+    }
+  },
+  {
+    "text": "reference_allele",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "difference",
+      "confidence": 0.5027129650115967
+    }
+  },
+  {
+    "text": "dbsnp_rs",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "dbscan",
+      "confidence": 0.9766191840171814
+    }
+  }
+]

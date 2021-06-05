@@ -1,0 +1,352 @@
+{
+  "metadatum": {
+    "precision": 0.9984532095901005,
+    "recall": 0.9969111969111969,
+    "f1-score": 0.9976816074188563,
+    "support": 1295,
+    "confused_with": {
+      "choice_value_tissue": 1,
+      "choice_value_content_type": 1
+    }
+  },
+  "choice_value_target": {
+    "precision": 0.9612068965517241,
+    "recall": 0.9856353591160221,
+    "f1-score": 0.9732678668848881,
+    "support": 905,
+    "confused_with": {
+      "choice_value_tissue": 5,
+      "strings": 3
+    }
+  },
+  "choice_value_content_type": {
+    "precision": 0.9444444444444444,
+    "recall": 0.5483870967741935,
+    "f1-score": 0.6938775510204082,
+    "support": 31,
+    "confused_with": {
+      "choice_value_target": 5,
+      "choice_exact_experiment": 3
+    }
+  },
+  "map": {
+    "precision": 0.8,
+    "recall": 0.8,
+    "f1-score": 0.8000000000000002,
+    "support": 5,
+    "confused_with": {
+      "choice_value_target": 1
+    }
+  },
+  "project_region": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "project_metadata": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "choice_value_data_type": {
+    "precision": 0.8823529411764706,
+    "recall": 0.967741935483871,
+    "f1-score": 0.923076923076923,
+    "support": 31,
+    "confused_with": {
+      "choice_value_healthy": 1
+    }
+  },
+  "dbscan": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "difference": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 6,
+    "confused_with": {}
+  },
+  "minor": {
+    "precision": 0.7777777777777778,
+    "recall": 0.5384615384615384,
+    "f1-score": 0.6363636363636364,
+    "support": 13,
+    "confused_with": {
+      "value": 4,
+      "greater": 2
+    }
+  },
+  "value": {
+    "precision": 0.9111111111111111,
+    "recall": 0.9919354838709677,
+    "f1-score": 0.9498069498069498,
+    "support": 124,
+    "confused_with": {
+      "cluster": 1
+    }
+  },
+  "union": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9411764705882353,
+    "support": 8,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.8181818181818182,
+    "recall": 0.6923076923076923,
+    "f1-score": 0.7500000000000001,
+    "support": 13,
+    "confused_with": {
+      "choice_value_tissue": 2,
+      "join": 1
+    }
+  },
+  "tuning": {
+    "precision": 0.8333333333333334,
+    "recall": 0.625,
+    "f1-score": 0.7142857142857143,
+    "support": 8,
+    "confused_with": {
+      "affirm": 1,
+      "choice_value_dataset_name": 1
+    }
+  },
+  "greater": {
+    "precision": 0.7777777777777778,
+    "recall": 0.5384615384615384,
+    "f1-score": 0.6363636363636364,
+    "support": 13,
+    "confused_with": {
+      "value": 4,
+      "minor": 2
+    }
+  },
+  "choice_value_healthy": {
+    "precision": 0.7058823529411765,
+    "recall": 0.6,
+    "f1-score": 0.6486486486486486,
+    "support": 20,
+    "confused_with": {
+      "choice_exact_experiment": 4,
+      "choice_value_disease": 3
+    }
+  },
+  "operation": {
+    "precision": 0.6666666666666666,
+    "recall": 0.4,
+    "f1-score": 0.5,
+    "support": 10,
+    "confused_with": {
+      "rename_database": 3,
+      "choice_value_tissue": 2
+    }
+  },
+  "feature": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1-score": 0.9090909090909091,
+    "support": 5,
+    "confused_with": {}
+  },
+  "kmeans": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "rename_database": {
+    "precision": 0.34375,
+    "recall": 0.44,
+    "f1-score": 0.3859649122807018,
+    "support": 25,
+    "confused_with": {
+      "choice_value_target": 3,
+      "choice_value_tissue": 3
+    }
+  },
+  "cluster": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1-score": 0.923076923076923,
+    "support": 6,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.5714285714285714,
+    "recall": 0.4,
+    "f1-score": 0.47058823529411764,
+    "support": 10,
+    "confused_with": {
+      "choice_value_target": 2,
+      "greet": 1
+    }
+  },
+  "review": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 8,
+    "confused_with": {
+      "choice_value_tissue": 1,
+      "rename_database": 1
+    }
+  },
+  "choice_exact_experiment": {
+    "precision": 0.9789311408016445,
+    "recall": 0.98858329008822,
+    "f1-score": 0.983733539891557,
+    "support": 1927,
+    "confused_with": {
+      "choice_value_tissue": 10,
+      "choice_value_disease": 6
+    }
+  },
+  "search_field": {
+    "precision": 0.6,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.5853658536585366,
+    "support": 21,
+    "confused_with": {
+      "choice_exact_experiment": 6,
+      "rename_database": 1
+    }
+  },
+  "retrieve_experiments": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 16,
+    "confused_with": {
+      "sample": 2,
+      "choice_exact_experiment": 1
+    }
+  },
+  "keep": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "region": {
+    "precision": 0.88,
+    "recall": 0.5789473684210527,
+    "f1-score": 0.6984126984126985,
+    "support": 38,
+    "confused_with": {
+      "search_field": 3,
+      "retrieve_annotations": 2
+    }
+  },
+  "retrieve_annotations": {
+    "precision": 0.9611650485436893,
+    "recall": 1.0,
+    "f1-score": 0.9801980198019802,
+    "support": 99,
+    "confused_with": {}
+  },
+  "reset": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 6,
+    "confused_with": {
+      "choice_exact_experiment": 1
+    }
+  },
+  "join": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1-score": 0.9090909090909091,
+    "support": 10,
+    "confused_with": {}
+  },
+  "stop": {
+    "precision": 0.3333333333333333,
+    "recall": 0.2,
+    "f1-score": 0.25,
+    "support": 5,
+    "confused_with": {
+      "region": 2,
+      "rename_database": 1,
+      "choice_exact_experiment": 1
+    }
+  },
+  "strings": {
+    "precision": 0.9710144927536232,
+    "recall": 0.8854625550660793,
+    "f1-score": 0.9262672811059909,
+    "support": 227,
+    "confused_with": {
+      "choice_value_tissue": 11,
+      "choice_value_disease": 4
+    }
+  },
+  "sample": {
+    "precision": 0.5714285714285714,
+    "recall": 0.8,
+    "f1-score": 0.6666666666666666,
+    "support": 5,
+    "confused_with": {
+      "retrieve_experiments": 1
+    }
+  },
+  "choice_value_dataset_name": {
+    "precision": 0.9696969696969697,
+    "recall": 1.0,
+    "f1-score": 0.9846153846153847,
+    "support": 32,
+    "confused_with": {}
+  },
+  "choice_value_tissue": {
+    "precision": 0.8888888888888888,
+    "recall": 0.9508196721311475,
+    "f1-score": 0.9188118811881187,
+    "support": 488,
+    "confused_with": {
+      "choice_exact_experiment": 12,
+      "choice_value_disease": 4
+    }
+  },
+  "choice_value_disease": {
+    "precision": 0.9667170953101362,
+    "recall": 0.9194244604316547,
+    "f1-score": 0.9424778761061947,
+    "support": 695,
+    "confused_with": {
+      "choice_value_tissue": 18,
+      "choice_value_target": 17
+    }
+  },
+  "accuracy": 0.9587260318492038,
+  "macro avg": {
+    "precision": 0.8379399222345377,
+    "recall": 0.8027063445338705,
+    "f1-score": 0.8106663250302327,
+    "support": 6154
+  },
+  "weighted avg": {
+    "precision": 0.9589459345873368,
+    "recall": 0.9587260318492038,
+    "f1-score": 0.9576594664140857,
+    "support": 6154
+  }
+}

@@ -1,5 +1,5 @@
 from data_structure.database import *
-
+import pandas as pd
 
 class Utils(object):
     def chat_message(message: str):
@@ -78,16 +78,16 @@ class Utils(object):
 
     def pie_chart(pie_dict):
         viz = []
-        for (k,v) in pie_dict.items():
+        for (k, v) in pie_dict.items():
             viz.append({
                 "vizType": "pie-chart",
                 "title": k,
                 "data": v
             })
-           # print(viz)
-        return {"type" : "data_summary",
-                "payload" : {
-                    "viz":viz
+        return {"type": "data_summary",
+                "show": "dataviz",
+                "payload": {
+                    "viz": viz
                 }}
 
     def hist(values, title):
@@ -101,10 +101,10 @@ class Utils(object):
                 }}
 
     def tools_setup(add, remove):
-        return {"type" : "tools_setup",
+        return {"type": "tools_setup",
                 "payload": {
-                    "add" : [add],
-                    "remove" : [remove]}}
+                    "add": [add],
+                    "remove": [remove]}}
 
     def workflow(state, download=False, link_list=[]):
         if download:
@@ -115,19 +115,51 @@ class Utils(object):
             return {"type": "workflow",
                     "payload": {"state": state}}
 
-    def table_viz(show, df, show_index=True, order_by=None):
+    def table_viz(df, show_index=True, order_by=None):
+        show = 'tableViewer'
+        if not isinstance(df.index, pd.MultiIndex):
+            df = df[df.index.notnull()]
+        df = df.T
+        if not isinstance(df.index, pd.MultiIndex):
+            df = df[df.index.notnull()]
+        df.index = map(str, df.index)
+        df.columns = map(str, df.columns)
         data = df.to_dict()
+        # data = {str(k):v for k,v in data.items()}
+        # print(list(data.items())[:3])
         return {"type": "table",
-                    "show": show,
-                    "payload": {
-                            "data":data,
-                        "options":{
-                                "show_index": show_index
-                                #"order_by": string
-                        }
+                "show": show,
+                "payload": {
+                    "data": data,
+                    "options": {
+                        "show_index": show_index
+                        # "order_by": string
+                    }
                 }}
 
+    def scatter(x, y, labels, u_labels):
+        #dict_scat1 = {}
+        #for l in u_labels:
+        #    dict_scat1[l] = {}
+        #    dict_scat1[l]['x'] = x[labels == l]
+        #    dict_scat1[l]['y'] = y[labels == l]
+        dict_scatter1 = {l: {'x': x[labels == l], 'y': y[labels == l]} for l in u_labels}
+        dict_scatter = [{"label": int(l),
+                      'data': (lambda x, y:
+                               [{'x': float(z[0]), 'y': float(z[1])} for z in zip(x, y)])(v['x'], v['y'])}
+                     for l, v in dict_scatter1.items()]
 
+        viz = [{"vizType": "scatter",
+                "title": 'ScatterPlot',
+                "data": dict_scatter}]
+
+        return {"type": "data_summary",
+                "payload": {
+                    "viz": viz
+                }}
 
     def pyconsole_debug(payload):
         print("################## DEBUG: {}".format(payload))
+
+    def wait_msg(text):
+        return('wait_msg', Utils.chat_message(text))

@@ -1,0 +1,364 @@
+{
+  "greater": {
+    "precision": 0.7777777777777778,
+    "recall": 0.5384615384615384,
+    "f1-score": 0.6363636363636364,
+    "support": 13,
+    "confused_with": {
+      "value": 5,
+      "minor": 1
+    }
+  },
+  "greet": {
+    "precision": 0.7692307692307693,
+    "recall": 0.7692307692307693,
+    "f1-score": 0.7692307692307693,
+    "support": 13,
+    "confused_with": {
+      "choice_value_target": 1,
+      "join": 1
+    }
+  },
+  "choice_value_target": {
+    "precision": 0.9643243243243244,
+    "recall": 0.9856353591160221,
+    "f1-score": 0.9748633879781421,
+    "support": 905,
+    "confused_with": {
+      "choice_value_disease": 3,
+      "deny": 2
+    }
+  },
+  "metadatum": {
+    "precision": 0.9992254066615027,
+    "recall": 0.9961389961389961,
+    "f1-score": 0.9976798143851509,
+    "support": 1295,
+    "confused_with": {
+      "choice_value_tissue": 2,
+      "search_field": 1
+    }
+  },
+  "dbscan": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "union": {
+    "precision": 0.875,
+    "recall": 0.875,
+    "f1-score": 0.875,
+    "support": 8,
+    "confused_with": {
+      "difference": 1
+    }
+  },
+  "value": {
+    "precision": 0.8732394366197183,
+    "recall": 1.0,
+    "f1-score": 0.9323308270676691,
+    "support": 124,
+    "confused_with": {}
+  },
+  "choice_value_content_type": {
+    "precision": 1.0,
+    "recall": 0.6129032258064516,
+    "f1-score": 0.76,
+    "support": 31,
+    "confused_with": {
+      "choice_value_target": 6,
+      "choice_value_disease": 3
+    }
+  },
+  "region": {
+    "precision": 0.7931034482758621,
+    "recall": 0.6052631578947368,
+    "f1-score": 0.6865671641791046,
+    "support": 38,
+    "confused_with": {
+      "choice_value_tissue": 2,
+      "search_field": 2
+    }
+  },
+  "feature": {
+    "precision": 0.8,
+    "recall": 0.8,
+    "f1-score": 0.8000000000000002,
+    "support": 5,
+    "confused_with": {
+      "search_field": 1
+    }
+  },
+  "choice_value_disease": {
+    "precision": 0.957037037037037,
+    "recall": 0.9294964028776979,
+    "f1-score": 0.9430656934306569,
+    "support": 695,
+    "confused_with": {
+      "choice_value_tissue": 17,
+      "choice_value_target": 12
+    }
+  },
+  "sample": {
+    "precision": 0.5,
+    "recall": 0.6,
+    "f1-score": 0.5454545454545454,
+    "support": 5,
+    "confused_with": {
+      "retrieve_experiments": 2
+    }
+  },
+  "join": {
+    "precision": 0.8181818181818182,
+    "recall": 0.9,
+    "f1-score": 0.8571428571428572,
+    "support": 10,
+    "confused_with": {
+      "difference": 1
+    }
+  },
+  "project_metadata": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "choice_value_dataset_name": {
+    "precision": 1.0,
+    "recall": 0.96875,
+    "f1-score": 0.9841269841269841,
+    "support": 32,
+    "confused_with": {
+      "choice_value_data_type": 1
+    }
+  },
+  "choice_value_tissue": {
+    "precision": 0.8990291262135922,
+    "recall": 0.9487704918032787,
+    "f1-score": 0.9232303090727817,
+    "support": 488,
+    "confused_with": {
+      "choice_exact_experiment": 12,
+      "choice_value_disease": 5
+    }
+  },
+  "rename_database": {
+    "precision": 0.4,
+    "recall": 0.32,
+    "f1-score": 0.35555555555555557,
+    "support": 25,
+    "confused_with": {
+      "choice_value_target": 3,
+      "search_field": 2
+    }
+  },
+  "stop": {
+    "precision": 0.6666666666666666,
+    "recall": 0.4,
+    "f1-score": 0.5,
+    "support": 5,
+    "confused_with": {
+      "choice_value_tissue": 2,
+      "region": 1
+    }
+  },
+  "reset": {
+    "precision": 0.7142857142857143,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.7692307692307692,
+    "support": 6,
+    "confused_with": {
+      "kmeans": 1
+    }
+  },
+  "choice_value_data_type": {
+    "precision": 0.8285714285714286,
+    "recall": 0.9354838709677419,
+    "f1-score": 0.8787878787878788,
+    "support": 31,
+    "confused_with": {
+      "choice_value_tissue": 1,
+      "choice_exact_experiment": 1
+    }
+  },
+  "minor": {
+    "precision": 0.875,
+    "recall": 0.5384615384615384,
+    "f1-score": 0.6666666666666667,
+    "support": 13,
+    "confused_with": {
+      "value": 5,
+      "greater": 1
+    }
+  },
+  "retrieve_experiments": {
+    "precision": 0.6875,
+    "recall": 0.6875,
+    "f1-score": 0.6875,
+    "support": 16,
+    "confused_with": {
+      "sample": 2,
+      "choice_exact_experiment": 1
+    }
+  },
+  "project_region": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 10,
+    "confused_with": {}
+  },
+  "difference": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 6,
+    "confused_with": {}
+  },
+  "tuning": {
+    "precision": 0.8571428571428571,
+    "recall": 0.75,
+    "f1-score": 0.7999999999999999,
+    "support": 8,
+    "confused_with": {
+      "choice_value_tissue": 1,
+      "greet": 1
+    }
+  },
+  "choice_value_healthy": {
+    "precision": 0.6363636363636364,
+    "recall": 0.7,
+    "f1-score": 0.6666666666666666,
+    "support": 20,
+    "confused_with": {
+      "choice_value_disease": 2,
+      "choice_exact_experiment": 1
+    }
+  },
+  "deny": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 8,
+    "confused_with": {
+      "choice_value_tissue": 1,
+      "sample": 1
+    }
+  },
+  "choice_exact_experiment": {
+    "precision": 0.9815005138746146,
+    "recall": 0.9911779968863519,
+    "f1-score": 0.9863155176865478,
+    "support": 1927,
+    "confused_with": {
+      "choice_value_disease": 7,
+      "choice_value_tissue": 7
+    }
+  },
+  "cluster": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 6,
+    "confused_with": {
+      "kmeans": 1
+    }
+  },
+  "retrieve_annotations": {
+    "precision": 0.98,
+    "recall": 0.98989898989899,
+    "f1-score": 0.9849246231155778,
+    "support": 99,
+    "confused_with": {
+      "choice_exact_experiment": 1
+    }
+  },
+  "strings": {
+    "precision": 0.995049504950495,
+    "recall": 0.8854625550660793,
+    "f1-score": 0.9370629370629371,
+    "support": 227,
+    "confused_with": {
+      "choice_value_tissue": 12,
+      "choice_value_disease": 4
+    }
+  },
+  "review": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1-score": 0.9333333333333333,
+    "support": 8,
+    "confused_with": {
+      "choice_exact_experiment": 1
+    }
+  },
+  "search_field": {
+    "precision": 0.5714285714285714,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.5714285714285714,
+    "support": 21,
+    "confused_with": {
+      "choice_exact_experiment": 6,
+      "rename_database": 1
+    }
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1-score": 0.4615384615384615,
+    "support": 10,
+    "confused_with": {
+      "choice_value_target": 2,
+      "choice_value_tissue": 2
+    }
+  },
+  "map": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 5,
+    "confused_with": {
+      "deny": 1
+    }
+  },
+  "kmeans": {
+    "precision": 0.7272727272727273,
+    "recall": 1.0,
+    "f1-score": 0.8421052631578948,
+    "support": 8,
+    "confused_with": {}
+  },
+  "operation": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1-score": 0.33333333333333337,
+    "support": 10,
+    "confused_with": {
+      "rename_database": 3,
+      "deny": 1
+    }
+  },
+  "keep": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "accuracy": 0.9592135196620084,
+  "macro avg": {
+    "precision": 0.8328339037009655,
+    "recall": 0.7800192139659325,
+    "f1-score": 0.7874890771335752,
+    "support": 6154
+  },
+  "weighted avg": {
+    "precision": 0.9599451710865244,
+    "recall": 0.9592135196620084,
+    "f1-score": 0.957918432932239,
+    "support": 6154
+  }
+}

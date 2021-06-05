@@ -1,0 +1,194 @@
+{
+  "data_type": {
+    "precision": 0.9093959731543624,
+    "recall": 0.954225352112676,
+    "f1-score": 0.9312714776632303,
+    "support": 284,
+    "confused_with": {
+      "disease": 3
+    }
+  },
+  "field": {
+    "precision": 0.9731506849315068,
+    "recall": 0.9888641425389755,
+    "f1-score": 0.9809444904722453,
+    "support": 1796,
+    "confused_with": {
+      "tissue": 7
+    }
+  },
+  "target": {
+    "precision": 0.9838169642857143,
+    "recall": 0.9887829500841279,
+    "f1-score": 0.9862937062937063,
+    "support": 1783,
+    "confused_with": {
+      "tissue": 6
+    }
+  },
+  "is_healthy": {
+    "precision": 0.8666666666666667,
+    "recall": 0.9285714285714286,
+    "f1-score": 0.896551724137931,
+    "support": 56,
+    "confused_with": {
+      "tissue": 1
+    }
+  },
+  "biosample_type": {
+    "precision": 0.95,
+    "recall": 0.8260869565217391,
+    "f1-score": 0.8837209302325583,
+    "support": 23,
+    "confused_with": {
+      "field": 1
+    }
+  },
+  "experiments": {
+    "precision": 0.7692307692307693,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8,
+    "support": 24,
+    "confused_with": {}
+  },
+  "tissue": {
+    "precision": 0.9376708583925643,
+    "recall": 0.9527777777777777,
+    "f1-score": 0.9451639570129513,
+    "support": 1800,
+    "confused_with": {
+      "disease": 20
+    }
+  },
+  "source": {
+    "precision": 0.7967479674796748,
+    "recall": 0.98989898989899,
+    "f1-score": 0.882882882882883,
+    "support": 99,
+    "confused_with": {
+      "disease": 1
+    }
+  },
+  "file_format": {
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1-score": 0.823529411764706,
+    "support": 9,
+    "confused_with": {
+      "target": 1,
+      "source": 1
+    }
+  },
+  "content_type": {
+    "precision": 0.9597989949748744,
+    "recall": 0.8642533936651584,
+    "f1-score": 0.9095238095238096,
+    "support": 221,
+    "confused_with": {
+      "tissue": 5
+    }
+  },
+  "dataset_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 33,
+    "confused_with": {}
+  },
+  "feature": {
+    "precision": 0.8571428571428571,
+    "recall": 0.9320388349514563,
+    "f1-score": 0.8930232558139534,
+    "support": 103,
+    "confused_with": {
+      "data_type": 4,
+      "tissue": 2
+    }
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "annotations": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "region": {
+    "precision": 0.8421052631578947,
+    "recall": 0.45714285714285713,
+    "f1-score": 0.5925925925925926,
+    "support": 35,
+    "confused_with": {
+      "field": 3
+    }
+  },
+  "assembly": {
+    "precision": 0.9888888888888889,
+    "recall": 1.0,
+    "f1-score": 0.9944134078212291,
+    "support": 89,
+    "confused_with": {}
+  },
+  "disease": {
+    "precision": 0.9779787652379079,
+    "recall": 0.9474285714285714,
+    "f1-score": 0.9624613003095974,
+    "support": 2625,
+    "confused_with": {
+      "tissue": 32
+    }
+  },
+  "technique": {
+    "precision": 1.0,
+    "recall": 0.8620689655172413,
+    "f1-score": 0.9259259259259259,
+    "support": 58,
+    "confused_with": {
+      "feature": 6,
+      "cell": 1
+    }
+  },
+  "cell": {
+    "precision": 0.9956217162872154,
+    "recall": 0.982713915298185,
+    "f1-score": 0.9891257068290562,
+    "support": 1157,
+    "confused_with": {
+      "feature": 7
+    }
+  },
+  "dataset_rename": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "field": 1,
+      "disease": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.9651105651105651,
+    "recall": 0.9621791103272584,
+    "f1-score": 0.9636426083116629,
+    "support": 10206
+  },
+  "macro avg": {
+    "precision": 0.7841608184915448,
+    "recall": 0.7642982623310147,
+    "f1-score": 0.7698712289638188,
+    "support": 10206
+  },
+  "weighted avg": {
+    "precision": 0.9652765894088619,
+    "recall": 0.9621791103272584,
+    "f1-score": 0.9632056245988543,
+    "support": 10206
+  }
+}

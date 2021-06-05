@@ -1,0 +1,168 @@
+{
+  "feature": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 103,
+    "confused_with": {}
+  },
+  "file_format": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "region": {
+    "precision": 1.0,
+    "recall": 0.9411764705882353,
+    "f1-score": 0.9696969696969697,
+    "support": 34,
+    "confused_with": {}
+  },
+  "dataset_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 33,
+    "confused_with": {}
+  },
+  "field": {
+    "precision": 0.9966573816155989,
+    "recall": 0.9972129319955407,
+    "f1-score": 0.9969350794093064,
+    "support": 1794,
+    "confused_with": {
+      "tissue": 3
+    }
+  },
+  "source": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 99,
+    "confused_with": {}
+  },
+  "tissue": {
+    "precision": 0.994920993227991,
+    "recall": 0.9799888827126181,
+    "f1-score": 0.9873984878185382,
+    "support": 1799,
+    "confused_with": {
+      "field": 3
+    }
+  },
+  "assembly": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 90,
+    "confused_with": {}
+  },
+  "biosample_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 23,
+    "confused_with": {}
+  },
+  "annotations": {
+    "precision": 0.625,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.7142857142857143,
+    "support": 6,
+    "confused_with": {}
+  },
+  "technique": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 58,
+    "confused_with": {}
+  },
+  "dataset_rename": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "content_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 221,
+    "confused_with": {}
+  },
+  "target": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1783,
+    "confused_with": {}
+  },
+  "data_type": {
+    "precision": 1.0,
+    "recall": 0.9926739926739927,
+    "f1-score": 0.9963235294117647,
+    "support": 273,
+    "confused_with": {
+      "field": 2
+    }
+  },
+  "is_healthy": {
+    "precision": 0.9821428571428571,
+    "recall": 1.0,
+    "f1-score": 0.9909909909909909,
+    "support": 55,
+    "confused_with": {}
+  },
+  "experiments": {
+    "precision": 0.9565217391304348,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9361702127659574,
+    "support": 24,
+    "confused_with": {}
+  },
+  "cell": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1157,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "disease": {
+    "precision": 0.9996023856858847,
+    "recall": 0.9602750190985485,
+    "f1-score": 0.9795441262419637,
+    "support": 2618,
+    "confused_with": {
+      "tissue": 2
+    }
+  },
+  "micro avg": {
+    "precision": 0.9979110713219934,
+    "recall": 0.9850746268656716,
+    "f1-score": 0.991451302070465,
+    "support": 10184
+  },
+  "macro avg": {
+    "precision": 0.9777422678401384,
+    "recall": 0.9810663648534469,
+    "f1-score": 0.9785672555310603,
+    "support": 10184
+  },
+  "weighted avg": {
+    "precision": 0.9979919122194789,
+    "recall": 0.9850746268656716,
+    "f1-score": 0.9914083129362745,
+    "support": 10184
+  }
+}

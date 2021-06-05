@@ -1,0 +1,170 @@
+[
+  {
+    "text": "de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12) disease",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_disease",
+      "confidence": 0.9548972249031067
+    }
+  },
+  {
+    "text": "vascular tissue",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.6953353881835938
+    }
+  },
+  {
+    "text": "gene expression",
+    "intent": "choice_exact_experiment",
+    "intent_prediction": {
+      "name": "choice_value_data_type",
+      "confidence": 0.6297979950904846
+    }
+  },
+  {
+    "text": "sample",
+    "intent": "retrieve_experiments",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.8523958921432495
+    }
+  },
+  {
+    "text": "samples",
+    "intent": "retrieve_experiments",
+    "intent_prediction": {
+      "name": "sample",
+      "confidence": 0.8133785724639893
+    }
+  },
+  {
+    "text": "feature",
+    "intent": "search_field",
+    "intent_prediction": {
+      "name": "feature",
+      "confidence": 0.9270737171173096
+    }
+  },
+  {
+    "text": "dataset",
+    "intent": "rename_database",
+    "intent_prediction": {
+      "name": "search_field",
+      "confidence": 0.7707337737083435
+    }
+  },
+  {
+    "text": "change",
+    "intent": "change_field",
+    "intent_prediction": {
+      "name": "modify",
+      "confidence": 0.5262723565101624
+    }
+  },
+  {
+    "text": "other and ill-defined sites",
+    "intent": "strings",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.8930829167366028
+    }
+  },
+  {
+    "text": "all",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "all",
+      "confidence": 0.9249933362007141
+    }
+  },
+  {
+    "text": "parathyroid adenoma",
+    "intent": "choice_value_disease",
+    "intent_prediction": {
+      "name": "choice_value_tissue",
+      "confidence": 0.6244809031486511
+    }
+  },
+  {
+    "text": "gum tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.7283855676651001
+    }
+  },
+  {
+    "text": "fat tissue",
+    "intent": "choice_value_tissue",
+    "intent_prediction": {
+      "name": "choice_exact_experiment",
+      "confidence": 0.6361259818077087
+    }
+  },
+  {
+    "text": "< 40",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "< 120",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "< 583490",
+    "intent": "minor",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "> 423",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "> 75",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "> 89052789",
+    "intent": "greater",
+    "intent_prediction": {
+      "name": "value",
+      "confidence": 0.8655403256416321
+    }
+  },
+  {
+    "text": "start",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "start",
+      "confidence": 0.7199612259864807
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "region",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9157811403274536
+    }
+  }
+]

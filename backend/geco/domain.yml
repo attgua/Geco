@@ -3,26 +3,31 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- retrieve_experiments
-- choice_value_tissue
+- choice_exact_experiment
+- affirm
+- feature
+- region
+- choice_value_dataset_name
+- value
 - deny
+- metadatum
+- greater
+- kmeans
+- keep
+- sample
+- dbscan
+- retrieve_experiments
+- choice_value_healthy
+- choice_value_tissue
 - choice_value_data_type
 - rename_database
 - search_field
-- choice_exact_experiment
-- choice_value_dataset_name
 - start
-- choice_value_healthy
-- affirm
 - review
-- region
-- keep
 - choice_value_disease
 - operation
 - choice_value_assembly
 - choice_value_cell
-- value
-- metadatum
 - modify
 - tuning
 - modify_extracted
@@ -53,14 +58,9 @@ intents:
 - strings
 - change_field
 - back
-- feature
-- sample
 - cluster
-- greater
 - minor
-
 entities:
-- affirm
 - annotations
 - assembly
 - biosample_type
@@ -69,17 +69,169 @@ entities:
 - data
 - data_type
 - dataset_name
-- dataset_rename
 - disease
 - experiments
 - feature
 - field
 - file_format
 - is_healthy
+- region
 - source
 - target
 - technique
 - tissue
+- peaks
+- cnv
+- copy number segment
+- masked copy number segment
+- isoform quantification
+- exon quantification
+- gene quantification
+- spljxn quantification
+- dna methylation
+- gene expression quantification
+- isoform expression quantification
+- mirna expression quantification
+- masked somatic mutation
+- mirna quantification
+- dna seq
+- variant calling
+- gene expression
+- methylation beta value
+- mirna expression
+- hg19
+- grch38
+- tcga
+- encode
+- 1000 genomes
+- roadmap epigenomics
+- tads
+- refseq
+- gencode
+- cistrome
+- grch38_encode_narrow_2020_01
+- hg19_tcga_rnaseq_spljxn
+- hg19_roadmap_epigenomics_broad
+- hg19_tcga_rnaseqv2_exon
+- grch38_tcga_gene_expression_2019_10
+- hg19_tcga_mirnaseq_isoform
+- grch38_tcga_methylation_2019_10
+- grch38_tcga_somatic_mutation_masked_2019_10
+- hg19_tcga_mirnaseq_mirna
+- hg19_tcga_rnaseqv2_isoform
+- grch38_encode_broad_2020_01
+- grch38_tcga_mirna_expression_2019_10
+- grch38_tcga_copy_number_2019_10
+- grch38_1000genomes_2020_01
+- hg19_roadmap_epigenomics_bed
+- hg19_tcga_rnaseqv2_spljxn
+- hg19_roadmap_epigenomics_rna_expression
+- hg19_encode_broad_2020_01
+- hg19_roadmap_epigenomics_gapped
+- hg19_tcga_rnaseqv2_gene
+- hg19_tcga_rnaseq_gene
+- hg19_tcga_dnaseq
+- hg19_encode_narrow_2020_01
+- hg19_tcga_rnaseq_exon
+- grch38_tcga_mirna_isoform_expression_2019_10
+- hg19_1000genomes_2020_01
+- grch38_tcga_copy_number_masked_2019_10
+- hg19_roadmap_epigenomics_dmr
+- hg19_tcga_dnamethylation
+- hg19_roadmap_epigenomics_narrow
+- hg19_tcga_cnv
+- breast invasive carcinoma
+- kidney renal clear cell carcinoma
+- lung adenocarcinoma
+- head and neck squamous cell carcinoma
+- ovarian serous cystadenocarcinoma
+- lung squamous cell carcinoma
+- thyroid carcinoma
+- uterine corpus endometrial carcinoma
+- prostate adenocarcinoma
+- brain lower grade glioma
+- colon adenocarcinoma
+- skin cutaneous melanoma
+- bladder urothelial carcinoma
+- liver hepatocellular carcinoma
+- stomach adenocarcinoma
+- glioblastoma multiforme
+- kidney renal papillary cell carcinoma
+- chronic myelogenous leukemia (cml)
+- cervical squamous cell carcinoma and endocervical adenocarcinoma
+- sarcoma
+- acute myeloid leukemia
+- esophageal carcinoma
+- pancreatic adenocarcinoma
+- pheochromocytoma and paraganglioma
+- hepatocellular carcinoma
+- testicular germ cell tumors
+- rectum adenocarcinoma
+- thymoma
+- adrenocortical carcinoma
+- mesothelioma
+- uveal melanoma
+- kidney chromophobe
+- breast cancer (adenocarcinoma)
+- uterine carcinosarcoma
+- lymphoid neoplasm diffuse large b-cell lymphoma
+- cholangiocarcinoma
+- metastatic neuroblastoma from bone marrow
+- cervical adenocarcinoma
+- b cell lymphoma
+- colorectal carcinoma
+- immunoglobulin a lambda myeloma
+- grade iv, adenocarcinoma
+- apparently healthy
+- endometrial adenocarcinoma
+- refractory immunoblastic b cell lymphoma progressed from follicular centroblastic/centrocytic lymphoma
+- t-cell acute lymphoblastic leukemia cell line atcc crl-2629
+- pancreatic carcinoma
+- human b cell non-hodgkin's lymphoma
+- t-acute lymphoblastic leukemia (t-all; type iii cortical)
+- fibrocystic disease
+- large cell lymphoma; diffuse mixed histiocytic and lymphocytic lymphoma; follicular b cell lymphoma
+- ewing's sarcoma
+- malignant pluripotent embryonal carcinoma
+- acute promyelocytic leukemia
+- mammary ductal carcinoma
+- igak myeloma
+- colorectal adenocarcinoma
+- carcinoma (prostate)
+- malignant primitive neuroectodermal tumor
+- parathyroid adenoma
+- submaxillar tumor
+- retinoblastoma
+- primary hyperparathyroidism
+- burkitt's lymphoma
+- parkinson's disease
+- medulloblastoma
+- acute t cell leukemia
+- cancer
+- de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12)
+- neuroblastoma
+- cornelia de lange syndrome 1; cdls1; nipped-b-like; nipbl
+- hepatocellular adenocarcinoma
+- malignant glioblastoma
+- melanoma
+- fibrosarcoma
+- down syndrome
+- renal cell adenocarcinoma
+- rhabdoid tumor (wilm's tumor)
+- carcinoma; large cell lung cancer
+- cystadenocarcinoma
+- dukes' type c, grade iv, colorectal adenocarcinoma
+- malignant melanoma
+- metastatic melanoma
+- neuroglioma
+- osteosarcoma
+- plasmacytoma; myeloma
+- renal carcinoma
+- squamous cell carcinoma; mesothelioma
+- pheochromocythoma and paraganglioma
+- hepatic rhabdoid tumor
+- rhabdomyosarcoma
+
 slots:
   DS:
     type: bool
@@ -801,6 +953,11 @@ slots:
     - hg19_roadmap_epigenomics_narrow
     - hg19_tcga_cnv
     - __other__
+  dataset_number:
+    type: float
+    influence_conversation: true
+    max_value: 1.0
+    min_value: 0.0
   dataset_rename:
     type: text
     influence_conversation: true
@@ -2110,16 +2267,18 @@ responses:
   - text: Do you want to add other aggregation functions? If so, tell me which one
   utter_map_4b:
   - text: Do you want to assign a name to your dataset? If so provide a name
+  utter_wait:
+  - text: Now I will put the data in a table, so as you can analyze them easily. This step can take some time, I'm sorry that you will wait.
+  utter_wait_2:
+  - text: Please wait, this step can take some time.
   utter_pivot_0:
-  - text: Now i will put the data in a table, so as you can analyze them easily. Do you want feature or sample data?
+  - text: According to what you want to analyze, I'll build your table. Do you want to do operations on the features (e.g. genes) or on the samples?
   utter_pivot_1:
-  - text: You have to define what to put in the rows. Which region do you want?
+  - text: You have to define what to put in the columns. Which region do you want? You can find the possible choices on the right.
   utter_pivot_1b:
-  - text: You have to define what to put in the columuns. Which region do you want?
+  - text: You have to define what to put in the rows. Which region do you want? You can find the possible choices on the right.
   utter_pivot_2:
-  - text: I will put in the columuns 'item_id' ok ?
-  utter_pivot_2b:
-  - text: I will put in the rows 'item_id' ok ?
+  - text: On the right, if you click on "Table", you can see the table. Is it ok?
   utter_pivot_3:
   - text: which region data do you want to use to fill your table?
   utter_pivot_4:
@@ -2129,15 +2288,37 @@ responses:
   utter_pivot_6:
   - text: Do you want to add a label to the feature? Choose one in the right panel
   utter_pivot_7:
-  - text: which operation do you want to do?
+  - text: On the right, if you click on "Table", you can see the table. Is it ok?
+  utter_pivot_8:
+  - text: Do you want to join the two tables?
+  utter_operation:
+  - text: Which operation do you want to do? You can choose among the ones in the right panel.
   utter_please_k-means_0:
   - text: Give me the number of clusters you need. In case you don't know, you can try some tuning
   utter_please_k-means_1:
   - text: Here is your clustering!
   utter_please_k-means_2:
-  - text: Which is the minimum and maximum number of clusters you want to try?
+  - text: Which is the minimum and maximum number of clusters you want to try? Please separate them with a ;
   utter_please_k-means_3:
   - text: Here is your analysis! Choose the final number of clusters you want to keep. Otherwise you can modify the parameters and re-run the analysis
+  utter_dbscan_0:
+  - text: Ok, I will perform DBScan clustering.
+  utter_dbscan_1:
+  - text: Do you want to apply parameter tuning?
+  utter_dbscan_2:
+  - text: 'Ok! You have to define 2 parameters: the maximum distance between 2 samples and the number of samples in a neighborhood for a point to be considered as a core point.'
+  utter_dbscan_3:
+  - text: Start with the max distance, the default is 0.5. Do you want to change it? If yes, please provide me the number.
+  utter_dbscan_4:
+  - text: The minimum number of samples is 5 as default. Do you want to change it? If yes, please provide me the number.
+  utter_dbscan_5:
+  - text: Which is the maximum epsilon you want to try?
+  utter_dbscan_6:
+  - text: Which is the minimum number of samples you want to try?
+  utter_dbscan_7:
+  - text: Which is the maximum number of samples you want to try?
+  utter_donor:
+  - text: The datasets on the right contain different data for some of the patients that you selected before. You can see the percentage of the common patients for each dataset. If you want you can select one otherwise say no and let's move on.
 actions:
 - action_GMQL_binary
 - action_GMQL_unary
@@ -2153,6 +2334,7 @@ actions:
 - action_data
 - action_difference
 - action_download_database
+- action_download_database_2
 - action_give_exact_experiment
 - action_give_more_fields
 - action_insert
@@ -2160,6 +2342,7 @@ actions:
 - action_is_healthy_no
 - action_is_healthy_yes
 - action_join
+- action_join_tables
 - action_keep_modify
 - action_map
 - action_metadata_exploration
@@ -2172,20 +2355,26 @@ actions:
 - action_reset
 - action_reset_total
 - action_run_workflow
+- action_save_database
 - action_save_dataset
+- action_save_dataset_2
 - action_save_feature
 - action_save_region
 - action_save_sample
 - action_set_gmql
 - action_show_all_metadatum
 - action_show_all_region
+- action_show_donor
 - action_show_feature
 - action_show_feature_sample
 - action_show_field
 - action_show_metadatum
 - action_show_operations
+- action_show_possible_region
 - action_show_sample
 - action_show_value
+- action_take_dbscan_1
+- action_take_dbscan_2
 - action_take_min_max
 - action_take_value
 - action_union
@@ -2196,6 +2385,12 @@ actions:
 - utter_GMQL_unary
 - utter_confirm_2a
 - utter_confirm_your_choices
+- utter_dbscan_0
+- utter_dbscan_1
+- utter_dbscan_2
+- utter_dbscan_3
+- utter_dbscan_4
+- utter_donor
 - utter_field_name
 - utter_filter
 - utter_filter_more
@@ -2204,13 +2399,16 @@ actions:
 - utter_join_2
 - utter_keep_modify
 - utter_new_dataset
+- utter_operation
 - utter_pivot_0
 - utter_pivot_1
 - utter_pivot_1b
-- utter_pivot_2
-- utter_pivot_2b
 - utter_pivot_3
+- utter_pivot_4
+- utter_pivot_7
+- utter_pivot_8
 - utter_please_k-means_0
+- utter_please_k-means_1
 - utter_please_k-means_2
 - utter_please_k-means_3
 - utter_project_metadata_1
@@ -2219,4 +2417,7 @@ actions:
 - utter_project_region_3
 - utter_provide_value
 - utter_rename_dataset
+- utter_wait
+- utter_wait_2
 - utter_what_data
+- utter_what_metadata

@@ -1,0 +1,173 @@
+{
+  "dataset_name": {
+    "precision": 1.0,
+    "recall": 0.9696969696969697,
+    "f1-score": 0.9846153846153847,
+    "support": 33,
+    "confused_with": {}
+  },
+  "feature": {
+    "precision": 0.9789473684210527,
+    "recall": 0.9029126213592233,
+    "f1-score": 0.9393939393939394,
+    "support": 103,
+    "confused_with": {
+      "data_type": 7
+    }
+  },
+  "assembly": {
+    "precision": 0.8811881188118812,
+    "recall": 1.0,
+    "f1-score": 0.9368421052631579,
+    "support": 89,
+    "confused_with": {}
+  },
+  "cell": {
+    "precision": 0.9885764499121266,
+    "recall": 0.9757155247181266,
+    "f1-score": 0.9821038847664775,
+    "support": 1153,
+    "confused_with": {
+      "tissue": 9
+    }
+  },
+  "target": {
+    "precision": 0.9805230940456316,
+    "recall": 0.9882220975883342,
+    "f1-score": 0.9843575418994414,
+    "support": 1783,
+    "confused_with": {
+      "content_type": 4
+    }
+  },
+  "file_format": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.9411764705882353,
+    "support": 9,
+    "confused_with": {
+      "data_type": 1
+    }
+  },
+  "annotations": {
+    "precision": 0.8656716417910447,
+    "recall": 0.9666666666666667,
+    "f1-score": 0.9133858267716535,
+    "support": 60,
+    "confused_with": {}
+  },
+  "disease": {
+    "precision": 0.9804078368652539,
+    "recall": 0.9340952380952381,
+    "f1-score": 0.9566913772922357,
+    "support": 2625,
+    "confused_with": {
+      "tissue": 36
+    }
+  },
+  "region": {
+    "precision": 0.8333333333333334,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.6779661016949152,
+    "support": 35,
+    "confused_with": {
+      "tissue": 2
+    }
+  },
+  "tissue": {
+    "precision": 0.9396790260099612,
+    "recall": 0.947016174010039,
+    "f1-score": 0.9433333333333334,
+    "support": 1793,
+    "confused_with": {
+      "disease": 18
+    }
+  },
+  "content_type": {
+    "precision": 0.9521276595744681,
+    "recall": 0.8099547511312217,
+    "f1-score": 0.8753056234718826,
+    "support": 221,
+    "confused_with": {
+      "cell": 8
+    }
+  },
+  "is_healthy": {
+    "precision": 0.7627118644067796,
+    "recall": 0.8035714285714286,
+    "f1-score": 0.782608695652174,
+    "support": 56,
+    "confused_with": {
+      "field": 2
+    }
+  },
+  "technique": {
+    "precision": 0.9814814814814815,
+    "recall": 0.9464285714285714,
+    "f1-score": 0.9636363636363636,
+    "support": 56,
+    "confused_with": {
+      "data_type": 1
+    }
+  },
+  "biosample_type": {
+    "precision": 0.9411764705882353,
+    "recall": 0.6956521739130435,
+    "f1-score": 0.7999999999999999,
+    "support": 23,
+    "confused_with": {
+      "cell": 2
+    }
+  },
+  "field": {
+    "precision": 0.9742183214481623,
+    "recall": 0.9899665551839465,
+    "f1-score": 0.9820293060547415,
+    "support": 1794,
+    "confused_with": {
+      "tissue": 5
+    }
+  },
+  "source": {
+    "precision": 0.9519230769230769,
+    "recall": 1.0,
+    "f1-score": 0.9753694581280787,
+    "support": 99,
+    "confused_with": {}
+  },
+  "data_type": {
+    "precision": 0.8896321070234113,
+    "recall": 0.9300699300699301,
+    "f1-score": 0.9094017094017094,
+    "support": 286,
+    "confused_with": {
+      "assembly": 8,
+      "tissue": 6
+    }
+  },
+  "experiments": {
+    "precision": 0.7037037037037037,
+    "recall": 0.7916666666666666,
+    "f1-score": 0.7450980392156864,
+    "support": 24,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9653880287940045,
+    "recall": 0.9558679945323179,
+    "f1-score": 0.960604425256341,
+    "support": 10242
+  },
+  "macro avg": {
+    "precision": 0.9225167530188669,
+    "recall": 0.8951084905231593,
+    "f1-score": 0.9051841756210783,
+    "support": 10242
+  },
+  "weighted avg": {
+    "precision": 0.9658205916115166,
+    "recall": 0.9558679945323179,
+    "f1-score": 0.9603342950571035,
+    "support": 10242
+  }
+}

@@ -1,0 +1,4435 @@
+version: "2.0"
+nlu:
+- intent: any
+  examples: |
+    - any
+- intent: all
+  examples: |
+    - all
+- intent: back
+  examples: |
+    - go back
+- intent: modify_selection
+  examples: |
+    - modify selection
+- intent: start
+  examples: |
+    - restart
+- intent: choice_value_assembly
+  examples: |
+    - i prefer [hg19](assembly)
+- intent: modify_extracted
+  examples: |
+    - modify extracted data
+- intent: change_field
+  examples: |
+    - change
+- intent: insert
+  examples: |
+    - add
+- intent: modify
+  examples: |
+    - change
+- intent: map
+  examples: |
+    - I want to map the two datasets
+- intent: stop
+  examples: |
+    - stop
+- intent: feature
+  examples: |
+    - on features
+- intent: sample
+  examples: |
+    - samples
+- intent: reset
+  examples: |
+    - reset slot
+- intent: difference
+  examples: |
+    - difference
+- intent: cluster
+  examples: |
+    - i want to do clustering
+- intent: dbscan
+  examples: |
+    - find clusters using dbscan
+- intent: deny
+  examples: |
+    - don't like that
+- intent: project_metadata
+  examples: |
+    - choose one metadatum
+- intent: union
+  examples: |
+    - compute the union of the two datasets
+- intent: review
+  examples: |
+    - recap my choices
+- intent: keep
+  examples: |
+    - i want to keep my selection
+- intent: tuning
+  examples: |
+    - try different configurations
+- intent: kmeans
+  examples: |
+    - k-means clustering
+    - kmean
+- intent: affirm
+  examples: |
+    - yess
+    - correct
+- intent: project_region
+  examples: |
+    - select only some regions
+    - modify regions
+- intent: join
+  examples: |
+    - can you join them?
+    - I want to join the two datasets
+- intent: operation
+  examples: |
+    - divide
+    - +
+- intent: greet
+  examples: |
+    - let's go
+    - hi
+    - good morning
+- intent: minor
+  examples: |
+    - minor 43552
+    - less than 78
+- intent: greater
+  examples: |
+    - i want value all values greater than 23194
+    - > 89052789
+    - greater:20000
+- intent: retrieve_experiments
+  examples: |
+    - experimental data](experiments)
+    - [experim](experiments)
+    - [experimental data](experiments)
+- intent: choice_value_healthy
+  examples: |
+    - [healthy sample]{"entity": "is_healthy", "value": "true"}
+    - [sick]{"entity": "is_healthy", "value": "false"}
+    - [ill]{"entity": "is_healthy", "value": "false"}
+    - [diseased]{"entity": "is_healthy", "value": "false"}
+- intent: search_field
+  examples: |
+    - i want [assembly](field)
+    - [dataset_name](field)
+    - [tissue](field)
+    - [disease](field)
+- intent: rename_database
+  examples: |
+    - a
+    - f
+    - db tizio
+    - h
+    - dataset gigio
+- intent: choice_value_content_type
+  examples: |
+    - [non imprinted in prader-willi/angelman syndrome 1 wt allele]{"entity": "content_type", "value": "nipa1 wt allele"}
+    - [rna binding protein](content_type)
+    - [transcribed fragments]{"entity": "content_type", "value": "transcribed_fragment"}
+    - [peaks]{"entity": "content_type", "value": "clonal rearrangement, multiple peaks"}
+    - [mgc35570]{"entity": "content_type", "value": "nipa1 wt allele"}
+    - [rna binding protein, recombinant protein, transcription factor]{"entity": "content_type", "value": "rna binding protein"}
+- intent: choice_value_data_type
+  examples: |
+    - [transcriptomics]{"entity": "data_type", "value": "mirna expression"}
+    - [micro rna sequencing]{"entity": "data_type", "value": "mirna expression"}
+    - [mutations]{"entity": "data_type", "value": "variant calling"}
+    - [quantification of splice junctions]{"entity": "data_type", "value": "spljxn quantification"}
+    - [germline variants]{"entity": "data_type", "value": "variant calling"}
+    - [splice junction quantification]{"entity": "data_type", "value": "spljxn quantification"}
+    - [dna methylations]{"entity": "data_type", "value": "methylation beta value"}
+- intent: choice_value_dataset_name
+  examples: |
+    - [hg19_encode_narrow_2020_01](dataset_name)
+    - [grch38_1000genomes_2020_01](dataset_name)
+    - [hg19_tcga_rnaseqv2_isoform](dataset_name)
+    - [hg19_tcga_rnaseqv2_spljxn](dataset_name)
+    - [hg19_roadmap_epigenomics_narrow](dataset_name)
+    - [grch38_tcga_mirna_isoform_expression_2019_10](dataset_name)
+- intent: region
+  examples: |
+    - [stop](region)
+    - [ensembl_transcript_id](region)
+    - [entrez_gene_id](region)
+    - [position_to_tss](region)
+    - [tumor_seq_allele2](region)
+    - [all_positions_to_tss](region)
+    - gene symbols
+    - gene symbol
+- intent: retrieve_annotations
+  examples: |
+    - [refseq](source) coordinates for [gene](content_type)
+    - [grch38](assembly) [antisense rna](content_type) annotations from [roadmap epigenomics](source)
+    - structural annotations of [v gene segment](content_type)
+    - positions for [utr](content_type) in [grch38](assembly)
+    - annotation
+    - [hg19](assembly) [j gene segment](content_type) annotations from [refseq](source)
+    - [grch38](assembly) [srp rna](content_type) annotations from [roadmap epigenomics](source)
+    - [annotation](annotations)
+    - [intron](content_type) in [grch38](assembly)
+    - [hg19](assembly) [start codon](content_type) annotations from [refseq](source)
+    - [hg19](assembly) [centromere](content_type) annotations from [refseq](source)
+    - can i have [grch38](assembly) annotations?
+    - [hg19](assembly) [j gene segment](content_type) annotations from [roadmap epigenomics](source)
+    - structural annotations of [snrna](content_type)
+    - [selenocysteine](content_type) in [hg19](assembly)
+    - structural annotations of [ncrna](content_type)
+    - im looking for [lnc rna](content_type) annotations from [refseq](source)
+    - [hg19](assembly) [snrna](content_type) annotations from [gencode](source)
+    - [enhancer](content_type) annotations from [refseq](source) with [hg19](assembly)
+- intent: value
+  examples: |
+    - 5
+    - 90
+    - 23.30
+    - 16.90
+    - 18.40
+    - 11.00
+    - 12.50
+    - 17.00
+    - 10
+    - 18
+    - 20.00
+    - 6.70
+    - 15.00
+    - 12.40
+    - 12.00
+    - 8.00
+    - 4.00
+    - 12
+    - 2 clusters
+    - 32
+    - 36.80
+    - 35.00
+    - 23.70
+    - 46.70
+    - 4
+- intent: strings
+  examples: |
+    - tcga-02-0021-01a-01d
+    - tcga-02-0055-01a-01r
+    - 008936f4-7439-47fc-9cb6-ab26768889ab
+    - 006019bc-3a86-4e95-9663-6f6f747aba81
+    - 0149aaca-4970-41a4-9df1-bae0332ba4ce
+    - positive
+    - 023d552d-0ad0-4d78-9444-0b83f681d61e
+    - 00b5f40b-66b1-4539-8c48-0d7f8c8628d7
+    - 01b156e0-e2ac-429d-897d-1acfddde2a12
+    - tcga-02-0046-10a-01d
+    - 018b5d05-6932-4f5b-97c5-ff0853e64110
+    - 01e7e6b4-ea5d-476a-a4e7-d983800fc840
+    - tcga-02-0051-10a-01g
+    - 018adf6e-b3f8-4fe1-b820-f650f731dfd6
+    - 00799848-afc6-467c-8ec9-33834087917e
+    - 0162d10e-52d3-4877-9820-1dd21912895b
+    - tcga-02-0001-01c-01d
+    - tcga-02-0054-01a-01d
+    - 0143d48e-4a51-4179-901f-908e68ed9565
+    - 009dbd89-7eae-4013-b4cf-9377312cfb4d
+    - 00aea3d4-1ccd-4fc9-bf1e-a6b3e546bcfc
+    - primary tumor
+    - 01318d76-0234-4bb9-ac76-bfaae4790d1d
+    - 0044b049-f870-44a1-aae5-ca4aa60553d1
+    - tcga-02-0059-10a-01g
+    - 0040fbe4-3d32-4a50-b525-cdd2a3a8b6c9
+    - blood derived normal
+    - tcga-02-0048-10a-01g
+    - tcga-02-0074-10a-01d
+    - tcga-02-0026-10a-01g
+    - michael-snyder:b-250
+    - 021644a1-7770-4bb9-b437-4531e11e1336
+    - tcga-01-0630-11a-01d
+    - 02037c0d-5255-4b9d-926c-65d3c8b0cd72
+    - immune system
+    - tcga-02-0051-01a-01g
+    - tcga-01-0636-11a-01d
+    - tcga-02-0070-01a-01g
+    - tcga-02-0026-01b-01g
+    - tcga-02-0079-01a-01d
+    - solid tissue normal
+    - tcga-02-0016-01a-01g
+    - tcga-02-0037-10a-01d
+    - pbc1 (pcr bottlenecking coefficient 1, m1/m_distinct) is the ratio of the number of genomic locations where exactly one read maps uniquely (m1) to the number of genomic locations where some reads map (m_distinct). a pbc1 value in the range 0 - 0.5 is severe bottlenecking, 0.5 - 0.8 is moderate bottlenecking, 0.8 - 0.9 is mild bottlenecking, and > 0.9 is no bottlenecking. pbc1 value > 0.9 is recommended, but > 0.8 is acceptable. encode processed alignments file {encff296zwj|/files/encff296zwj/} was generated from a library with pbc1 value of 0.38.
+    - 00ff4877-98f6-4c1c-ba51-feea34e77288
+    - 001258b8-29df-49e7-9e83-4398af6218b5
+- intent: choice_value_tissue
+  examples: |
+    - [uterine cervix](tissue)
+    - [retina of camera-type eye]{"entity": "tissue", "value": "retina"}
+    - [vascular tissue]{"entity": "tissue", "value": "artery"}
+    - [pancreatic islet]{"entity": "tissue", "value": "islet of langerhans"}
+    - [pons varolii]{"entity": "tissue", "value": "pons"}
+    - [upper limb bone]{"entity": "tissue", "value": "arm bone"}
+    - [genitalia of female organism gonada]{"entity": "tissue", "value": "ovary"}
+    - [neck of uterus]{"entity": "tissue", "value": "uterine cervix"}
+    - [musculus]{"entity": "tissue", "value": "muscle structure"}
+    - [skin of lower arm]{"entity": "tissue", "value": "skin of forearm"}
+    - [fetal muscle trunk]{"entity": "tissue", "value": "somitomeric trunk muscle"}
+    - [female organism reproductive system gonad]{"entity": "tissue", "value": "ovary"}
+    - [pars postsulcalis (dorsum linguae)]{"entity": "tissue", "value": "posterior part of tongue"}
+    - [region of skin]{"entity": "tissue", "value": "zone of skin"}
+    - [small bowel]{"entity": "tissue", "value": "small intestine"}
+    - [umbilical cord blood](tissue)
+    - [gi duodenum]{"entity": "tissue", "value": "duodenum"}
+    - [urothelium](tissue)
+    - [skin of zeugopod of arm]{"entity": "tissue", "value": "skin of forearm"}
+    - [putamen](tissue)
+    - [lip](tissue)
+    - [prepuce of penis](tissue)
+    - [skeletal muscle]{"entity": "tissue", "value": "skeletal muscle tissue"}
+    - [vascular tissue]{"entity": "tissue", "value": "aorta"}
+    - [limb sensu vertebrata]{"entity": "tissue", "value": "limb"}
+    - [pancreas](tissue)
+    - [zone of skin](tissue)
+    - [gums]{"entity": "tissue", "value": "gingiva"}
+    - [left atrium]{"entity": "tissue", "value": "left cardiac atrium"}
+    - [thyroid]{"entity": "tissue", "value": "thyroid gland"}
+    - [lymph nodes]{"entity": "tissue", "value": "lymph node"}
+    - [large intestine](tissue)
+    - [right leg bone]{"entity": "tissue", "value": "leg bone"}
+    - [superior lobe of left lung]{"entity": "tissue", "value": "upper lobe of left lung"}
+    - [fatty layer of subcutaneous tissue]{"entity": "tissue", "value": "subcutaneous adipose tissue"}
+    - [large bowel mucosa]{"entity": "tissue", "value": "colonic mucosa"}
+    - [tonsil](tissue)
+    - [hippocampal fimbria]{"entity": "tissue", "value": "hippocampus fimbria"}
+    - [lower segment of arm skin]{"entity": "tissue", "value": "skin of forearm"}
+    - [cervical canal of uterus]{"entity": "tissue", "value": "uterine cervix"}
+    - [gyrus temporalis superior]{"entity": "tissue", "value": "superior temporal gyrus"}
+    - [mammary region]{"entity": "tissue", "value": "breast"}
+    - [prostate]{"entity": "tissue", "value": "prostate gland"}
+    - [corpus uteri]{"entity": "tissue", "value": "body of uterus"}
+    - [sigmoid colon](tissue)
+    - [prefrontal cortex](tissue)
+    - [midbrain](tissue)
+    - [liver right lobe]{"entity": "tissue", "value": "right lobe of liver"}
+    - [islet of langerhans](tissue)
+    - [heart right ventricle](tissue)
+    - [forearm skin biopsy]{"entity": "tissue", "value": "skin of forearm"}
+    - [portion of skin]{"entity": "tissue", "value": "zone of skin"}
+    - [uterus, nos]{"entity": "tissue", "value": "uterus"}
+    - [ammon horn]{"entity": "tissue", "value": "ammon's horn"}
+    - [larynx](tissue)
+    - [fatty tissue]{"entity": "tissue", "value": "adipose tissue"}
+    - [fetal large intestine]{"entity": "tissue", "value": "large intestine"}
+    - [portion of blood]{"entity": "tissue", "value": "blood"}
+    - [muscle of hindlimb zeugopod or stylopod]{"entity": "tissue", "value": "muscle of leg"}
+    - [hippocampus]{"entity": "tissue", "value": "ammon's horn"}
+    - [leg bone](tissue)
+    - [ascending thoracic aorta]{"entity": "tissue", "value": "ascending aorta"}
+    - [cardiac right ventricle]{"entity": "tissue", "value": "heart right ventricle"}
+    - [skin region]{"entity": "tissue", "value": "zone of skin"}
+    - [muscle of upper or lower hindlimb segment]{"entity": "tissue", "value": "muscle of leg"}
+    - [limb](tissue)
+    - [nucleus putamen]{"entity": "tissue", "value": "putamen"}
+    - [psoas muscle](tissue)
+    - [hepatic body system]{"entity": "tissue", "value": "liver"}
+    - [pleural tissue]{"entity": "tissue", "value": "pleura"}
+    - [left kidney](tissue)
+    - [fimbria-fornix]{"entity": "tissue", "value": "hippocampus fimbria"}
+    - [subcutaneous fat layer]{"entity": "tissue", "value": "subcutaneous adipose tissue"}
+    - [cardiac right atrium]{"entity": "tissue", "value": "right cardiac atrium"}
+    - [mucous membrane of rectum]{"entity": "tissue", "value": "mucosa of rectum"}
+    - [laryngeal pharynx]{"entity": "tissue", "value": "hypopharynx"}
+    - [biliary system]{"entity": "tissue", "value": "biliary tract"}
+    - [female organism reproductive system gonada]{"entity": "tissue", "value": "ovary"}
+    - [preoptico-hypothalamic area]{"entity": "tissue", "value": "hypothalamus"}
+    - [textus connectivus]{"entity": "tissue", "value": "connective tissue"}
+    - [middle frontal gyrus](tissue)
+    - [left cardiac atrium](tissue)
+    - [caudal segment of uterus]{"entity": "tissue", "value": "uterine cervix"}
+    - [fetal adrenal gland]{"entity": "tissue", "value": "adrenal gland"}
+    - [large bowel]{"entity": "tissue", "value": "colon"}
+    - [left upper lobe]{"entity": "tissue", "value": "upper lobe of left lung"}
+    - [calcium tissue]{"entity": "tissue", "value": "bone tissue"}
+    - [adrenal]{"entity": "tissue", "value": "adrenal gland"}
+    - [subcutaneous adipose tissue](tissue)
+    - [fetal thymus]{"entity": "tissue", "value": "thymus"}
+    - [coronary arterial tree]{"entity": "tissue", "value": "coronary artery"}
+    - [mucosa of colon]{"entity": "tissue", "value": "colonic mucosa"}
+    - [pancreatic insula]{"entity": "tissue", "value": "islet of langerhans"}
+    - [left arm bone]{"entity": "tissue", "value": "arm bone"}
+    - [uterus nos]{"entity": "tissue", "value": "uterus"}
+    - [fat]{"entity": "tissue", "value": "adipose tissue"}
+    - [vescica]{"entity": "tissue", "value": "gall bladder"}
+- intent: choice_value_disease
+  examples: |
+    - [renal carcinoma ]{"entity": "disease", "value": "renal cell carcinoma"}
+    - [leukemias]{"entity": "disease", "value": "leukemia"}
+    - [melanoma, malignant]{"entity": "disease", "value": "melanoma"}
+    - [acute lymphogenous leukemia]{"entity": "disease", "value": "acute lymphoblastic leukemia"}
+    - [pancreas cancer]{"entity": "disease", "value": "pancreatic carcinoma"}
+    - [plasma cell myeloma](disease)
+    - [adenocarcinoma of uterine cervix]{"entity": "disease", "value": "cervical adenocarcinoma"}
+    - [hepatoma]{"entity": "disease", "value": "hepatocellular carcinoma"}
+    - [acute myeloblastic leukemia type 3]{"entity": "disease", "value": "acute promyelocytic leukemia"}
+    - [lymphoma, follicular centre cell]{"entity": "disease", "value": "follicular lymphoma"}
+    - [cylindroid adenocarcinoma]{"entity": "disease", "value": "adenoid cystic carcinoma"}
+    - [carcinosarcoma of the uterus]{"entity": "disease", "value": "uterine carcinosarcoma"}
+    - [breast cancer, carcinoma]{"entity": "disease", "value": "breast carcinoma"}
+    - [lymphoma, large-cell]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [carcinoma of breast]{"entity": "disease", "value": "breast carcinoma"}
+    - [cancer of lung]{"entity": "disease", "value": "lung carcinoma"}
+    - [leukemias, general]{"entity": "disease", "value": "leukemia"}
+    - [lymphoma, large lymphoid, diffuse]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [coronary disease]{"entity": "disease", "value": "coronary artery disease"}
+    - [colorectal cancer]{"entity": "disease", "value": "colorectal carcinoma"}
+    - [osteosarcoma](disease)
+    - [carcinoma of the colon]{"entity": "disease", "value": "colon carcinoma"}
+    - [diffuse, large b-cell, lymphoma]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [chromaffin paraganglioma of the adrenal gland]{"entity": "disease", "value": "adrenal gland pheochromocytoma"}
+    - [lymphoma large diffuse]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [cancer of the lung]{"entity": "disease", "value": "lung carcinoma"}
+    - [carcinoma of endometrium]{"entity": "disease", "value": "endometrial carcinoma"}
+    - [uterine malignant mixed mesodermal (mullerian) tumor]{"entity": "disease", "value": "uterine carcinosarcoma"}
+    - [hutchinson-gilford progeria syndrome]{"entity": "disease", "value": "progeria"}
+    - [infiltrating carcinoma of the breast]{"entity": "disease", "value": "invasive breast carcinoma"}
+    - [intrahepatic bile duct cancer (cholangiocarcinoma)]{"entity": "disease", "value": "cholangiocarcinoma"}
+    - [myeloid leukemia, chronic]{"entity": "disease", "value": "chronic myeloid leukemia"}
+    - [prostate carcinoma, prostatitis]{"entity": "disease", "value": "prostate carcinoma"}
+    - [testicular germ cell neoplasms]{"entity": "disease", "value": "testicular germ cell tumor"}
+    - [adenocarcinoma of the colon]{"entity": "disease", "value": "colon adenocarcinoma"}
+    - [lymphoblastic leukemia]{"entity": "disease", "value": "acute lymphoblastic leukemia"}
+    - [parathyroid gland adenoma](disease)
+    - [carcinoma of thyroid]{"entity": "disease", "value": "thyroid gland carcinoma"}
+    - [malignant epidermoid cell neoplasm]{"entity": "disease", "value": "squamous cell carcinoma"}
+    - [acute t cell lymphocytic leukemia]{"entity": "disease", "value": "t acute lymphoblastic leukemia"}
+    - [adrenal cortical adenocarcinoma]{"entity": "disease", "value": "adrenal cortex carcinoma"}
+    - [adrenal gland chromaffinoma]{"entity": "disease", "value": "adrenal gland pheochromocytoma"}
+    - [gastric (stomach) cancer]{"entity": "disease", "value": "gastric carcinoma"}
+    - [cutaneous (skin) melanoma]{"entity": "disease", "value": "cutaneous melanoma"}
+    - [leukemia, disease]{"entity": "disease", "value": "leukemia"}
+    - [squamous cell cancer]{"entity": "disease", "value": "squamous cell carcinoma"}
+    - [carcinoma of pancreas]{"entity": "disease", "value": "pancreatic carcinoma"}
+    - [chromophobe adenocarcinoma]{"entity": "disease", "value": "chromophobe renal cell carcinoma"}
+    - [testicular germ cell tumors]{"entity": "disease", "value": "testicular germ cell tumor"}
+    - [neural crest tumor, malignant]{"entity": "disease", "value": "neuroblastoma"}
+    - [myeloma, plasma cell, malignant]{"entity": "disease", "value": "plasma cell myeloma"}
+    - [adenocarcinoma, adrenocortical, malignant]{"entity": "disease", "value": "adrenal cortex carcinoma"}
+    - [neuroblastoma (schwannian stroma-poor)]{"entity": "disease", "value": "neuroblastoma"}
+    - [essential thrombocytemia]{"entity": "disease", "value": "essential thrombocythemia"}
+    - [lymphomas, diffuse large-cell]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [grade iv astrocytoma]{"entity": "disease", "value": "glioblastoma"}
+    - [carcinoma of the adrenal cortex]{"entity": "disease", "value": "adrenal cortex carcinoma"}
+    - [aml - acute myeloid leukemia]{"entity": "disease", "value": "acute myeloid leukemia"}
+    - [epithelioma malignant]{"entity": "disease", "value": "carcinoma"}
+    - [chromophobe cell carcinoma of kidney]{"entity": "disease", "value": "chromophobe renal cell carcinoma"}
+    - [large-cell lymphomas]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [diffuse large cell lymphoma]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [neuroepithelioma]{"entity": "disease", "value": "primitive neuroectodermal tumor"}
+    - [lymphoid neoplasm diffuse large b-cell lymphoma]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [mesenchymal tumor, malignant]{"entity": "disease", "value": "sarcoma"}
+    - [fibrosarcoma, malignant]{"entity": "disease", "value": "fibrosarcoma"}
+    - [adenocarcinoma of the stomach]{"entity": "disease", "value": "gastric adenocarcinoma"}
+    - [cervix uteri carcinoma]{"entity": "disease", "value": "cervical carcinoma"}
+    - [adenocarcinoma of cervix]{"entity": "disease", "value": "cervical adenocarcinoma"}
+    - [dukes' type c, grade iv, colorectal adenocarcinoma]{"entity": "disease", "value": "colorectal adenocarcinoma"}
+    - [pancreatitis](disease)
+    - [epidermoid cell carcinoma of lung]{"entity": "disease", "value": "lung squamous cell carcinoma"}
+    - [fibrosarcoma - not infantile]{"entity": "disease", "value": "fibrosarcoma"}
+    - [cancer, lung carcinoma]{"entity": "disease", "value": "lung carcinoma"}
+    - [paad]{"entity": "disease", "value": "pancreatic adenocarcinoma"}
+    - [mammary dysplasia]{"entity": "disease", "value": "breast fibrocystic change"}
+    - [lymphoblastic leukemia, lymphoma]{"entity": "disease", "value": "t lymphoblastic leukemia/lymphoma"}
+    - [chromophil carcinoma of kidney]{"entity": "disease", "value": "papillary renal cell carcinoma"}
+    - [multiple myeloma/plasma cell myeloma]{"entity": "disease", "value": "plasma cell myeloma"}
+    - [pheochromocythoma and paraganglioma]{"entity": "disease", "value": "adrenal gland pheochromocytoma"}
+    - [carcinoma of esophagus]{"entity": "disease", "value": "esophageal carcinoma"}
+    - [diffuse histiocytic lymphomas]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [grade iv]{"entity": "disease", "value": "clavien-dindo grade iv"}
+    - [tumor of neuroglia]{"entity": "disease", "value": "glioma"}
+    - [cancer of the cervix]{"entity": "disease", "value": "cervical carcinoma"}
+    - [sarcoma of the soft tissue and bone]{"entity": "disease", "value": "sarcoma"}
+    - [diffuse histiocytic lymphoma]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [adenocarcinoma of large intestine]{"entity": "disease", "value": "colorectal adenocarcinoma"}
+    - [squamous cell carcinoma](disease)
+    - [acute myeloid leukemia m3]{"entity": "disease", "value": "acute promyelocytic leukemia"}
+    - [malignant cutaneous melanoma]{"entity": "disease", "value": "cutaneous melanoma"}
+    - [infiltrating breast cancer]{"entity": "disease", "value": "invasive breast carcinoma"}
+    - [invasive mammary carcinoma]{"entity": "disease", "value": "invasive breast carcinoma"}
+    - [hcc]{"entity": "disease", "value": "hepatocellular carcinoma"}
+    - [skin melanoma]{"entity": "disease", "value": "cutaneous melanoma"}
+    - [cervix adenocarcinoma]{"entity": "disease", "value": "cervical adenocarcinoma"}
+    - [gbm]{"entity": "disease", "value": "glioblastoma"}
+    - [liver and intrahepatic bile duct carcinoma]{"entity": "disease", "value": "liver carcinoma"}
+    - [cervical cancer]{"entity": "disease", "value": "cervical carcinoma"}
+    - [melanoma of the uvea]{"entity": "disease", "value": "uveal melanoma"}
+    - [neuroblastoma, malignant]{"entity": "disease", "value": "neuroblastoma"}
+    - [adenocarcinoma of lung]{"entity": "disease", "value": "lung adenocarcinoma"}
+    - [lung large cell carcinoma](disease)
+    - [large intestine adenocarcinoma]{"entity": "disease", "value": "colorectal adenocarcinoma"}
+    - [duct carcinoma]{"entity": "disease", "value": "breast ductal carcinoma"}
+    - [malignant melanoma]{"entity": "disease", "value": "melanoma"}
+    - [precursor t-lymphoblastic leukemia (t-cell all)]{"entity": "disease", "value": "t acute lymphoblastic leukemia"}
+    - [blca]{"entity": "disease", "value": "bladder urothelial carcinoma"}
+    - [adenocarcinoma, cancer]{"entity": "disease", "value": "adenocarcinoma"}
+    - [uveal melanoma](disease)
+    - [squamous cell carcinoma; mesothelioma]{"entity": "disease", "value": "squamous cell carcinoma"}
+    - [carcinoma; large cell lung cancer]{"entity": "disease", "value": "lung large cell carcinoma"}
+    - [malignant mixed mesodermal (müllerian) tumor of the uterus]{"entity": "disease", "value": "uterine carcinosarcoma"}
+    - [carcinoma of prostate]{"entity": "disease", "value": "prostate carcinoma"}
+    - [cancer of the breast]{"entity": "disease", "value": "breast carcinoma"}
+    - [cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)]{"entity": "disease", "value": "cholangiocarcinoma"}
+    - [breast fibrocystic disease]{"entity": "disease", "value": "breast fibrocystic change"}
+    - [cholangiosarcoma]{"entity": "disease", "value": "cholangiocarcinoma"}
+    - [skcm]{"entity": "disease", "value": "cutaneous melanoma"}
+    - [cml]{"entity": "disease", "value": "chronic myeloid leukemia"}
+    - [primary hyperparathyroidism](disease)
+    - [cancer, osteosarcoma]{"entity": "disease", "value": "osteosarcoma"}
+    - [follicular centre cell lymphoma]{"entity": "disease", "value": "follicular lymphoma"}
+    - [carcinoma of the stomach]{"entity": "disease", "value": "gastric carcinoma"}
+    - [laml]{"entity": "disease", "value": "acute myeloid leukemia"}
+    - [prcc]{"entity": "disease", "value": "papillary renal cell carcinoma"}
+    - [tumor of the neuroglia]{"entity": "disease", "value": "glioma"}
+    - [pancreatic carcinoma](disease)
+    - [adenocarcinoma of the endometrium]{"entity": "disease", "value": "endometrial adenocarcinoma"}
+    - [sarcoma, malignant]{"entity": "disease", "value": "sarcoma"}
+    - [carcinoma of the pancreas]{"entity": "disease", "value": "pancreatic carcinoma"}
+    - [lymphoma, diffuse histiocytic]{"entity": "disease", "value": "diffuse large b-cell lymphoma"}
+    - [esophageal cancer, nos]{"entity": "disease", "value": "esophageal carcinoma"}
+    - [carcinoma of the prostate]{"entity": "disease", "value": "prostate carcinoma"}
+    - [papillary renal cell carcinoma](disease)
+    - [hbl]{"entity": "disease", "value": "hepatoblastoma"}
+    - [carcinoma of the bladder]{"entity": "disease", "value": "bladder carcinoma"}
+    - [cornelia de lange syndrome 1; cdls1; nipped-b-like; nipbl]{"entity": "disease", "value": "cornelia de lange syndrome"}
+    - [malignant primitive neuroectodermal tumor]{"entity": "disease", "value": "primitive neuroectodermal tumor"}
+- intent: choice_value_target
+  examples: |
+    - [ddx21](target)
+    - [creb3](target)
+    - [uchl5](target)
+    - [mynn](target)
+    - [spi1](target)
+    - [atf3](target)
+    - [znf2](target)
+    - [h3k27_monomethylation_site](target)
+    - [t7-control]{"entity": "target", "value": "galnt7"}
+    - [cebpg](target)
+    - [h3k9me2](target)
+    - [zfp91](target)
+    - [cebpa](target)
+    - [rbfox2](target)
+    - [znf423](target)
+    - [h4k91ac](target)
+    - [phf5a](target)
+    - [atm](target)
+    - [h3k27ac]{"entity": "target", "value": "h3k27_acetylation_site"}
+    - [tbl1xr1](target)
+    - [sap30](target)
+    - [h2bub1](target)
+    - [znf300](target)
+    - [znf614](target)
+    - [znf621](target)
+    - [cbx8](target)
+    - [chd2](target)
+    - [wrnip1](target)
+    - [rps11](target)
+    - [znf407](target)
+    - [zbtb21](target)
+    - [cbx3](target)
+    - [znf404](target)
+    - [znf677](target)
+    - [tfap4](target)
+    - [gli4](target)
+    - [eed](target)
+    - [znf600](target)
+    - [cc2d1a](target)
+    - [tbx3](target)
+    - [khsrp](target)
+    - [sox13](target)
+    - [gli2](target)
+    - [grsf1](target)
+    - [znf7](target)
+    - [elf3](target)
+    - [e2f7](target)
+    - [ctbp2](target)
+    - [znf83](target)
+    - [h3.3,h2a.z](target)
+    - [phf20](target)
+    - [mtpap](target)
+    - [ptrf](target)
+    - [znf507](target)
+    - [tcf7l2](target)
+    - [znf221](target)
+    - [h3k23me2]{"entity": "target", "value": "h3k23_dimethylation_site"}
+    - [zxdb](target)
+    - [bach1](target)
+    - [cux1](target)
+    - [eif3g](target)
+    - [tbp](target)
+    - [hist1h3c](target)
+    - [zbtb33](target)
+    - [irf3](target)
+    - [rbpj](target)
+    - [dmap1](target)
+    - [h3k18 acetylation site]{"entity": "target", "value": "h3k18_acetylation_site"}
+    - [snrnp70](target)
+    - [myrf](target)
+    - [larp7](target)
+    - [h2a1](target)
+    - [ppp1r10](target)
+    - [pbx2](target)
+    - [hist1h4f](target)
+    - [meis2](target)
+    - [znf610](target)
+    - [hdac3](target)
+    - [znf280a](target)
+    - [hmg20a](target)
+    - [hltf](target)
+    - [h1.4]{"entity": "target", "value": "hist1h1e"}
+    - [znf112](target)
+    - [h3k23ac]{"entity": "target", "value": "h3k23_acetylation_site"}
+    - [arid3a](target)
+    - [rest](target)
+    - [klf10](target)
+    - [smad2](target)
+    - [h2a.bbd]{"entity": "target", "value": "h2afb1"}
+    - [znf217](target)
+    - [h4k5ac](target)
+    - [znf280d](target)
+    - [six5](target)
+    - [mbd2](target)
+    - [ncoa3](target)
+    - [ddx3x](target)
+    - [zbtb5](target)
+    - [h3k14_acetylation_site](target)
+    - [xpo5](target)
+    - [ddx42](target)
+    - [creb3l1](target)
+    - [etv6](target)
+    - [pus1](target)
+    - [zeb1](target)
+    - [zhx1](target)
+    - [mixl1](target)
+    - [znf579](target)
+    - [eif3h](target)
+    - [klf9](target)
+    - [cbx5](target)
+    - [znf292](target)
+    - [maff](target)
+    - [bmi1](target)
+    - [kmt2b](target)
+    - [tead1](target)
+    - [rcor2](target)
+    - [h1.4k34ac](target)
+    - [znf791](target)
+    - [h2azac](target)
+    - [znf571](target)
+    - [bcor](target)
+    - [h3k122ac](target)
+    - [nfe2](target)
+    - [mta3](target)
+    - [utp3](target)
+    - [smc3](target)
+    - [usf2](target)
+    - [gata2](target)
+    - [znf624](target)
+    - [zzz3](target)
+    - [rbm22](target)
+    - [mef2b](target)
+    - [e2f5](target)
+    - [znf24](target)
+    - [znf23](target)
+    - [znf574](target)
+    - [dkc1](target)
+    - [fam120a](target)
+    - [kdm4a](target)
+    - [cenpa](target)
+    - [znf514](target)
+    - [znf175](target)
+    - [nfe2l2](target)
+    - [tatdn2p3](target)
+    - [tcf12](target)
+    - [trove2](target)
+    - [fmr1](target)
+    - [mlx](target)
+    - [znf473](target)
+    - [wt1](target)
+    - [ddx59](target)
+    - [h2b]{"entity": "target", "value": "hist1h2bi"}
+    - [srsf1](target)
+    - [ilk](target)
+    - [h3.3]{"entity": "target", "value": "h3f3b"}
+    - [ncbp2](target)
+    - [ctcf](target)
+    - [sbds](target)
+    - [h3k9me3](target)
+    - [xrcc5](target)
+    - [klf5](target)
+    - [h1f0](target)
+    - [stat2](target)
+    - [rbm25](target)
+    - [nbn](target)
+    - [fkbp4](target)
+    - [znf645](target)
+    - [znf132](target)
+    - [znf670](target)
+    - [polr2aphosphos2](target)
+    - [h2afz](target)
+    - [h3k27 acetylation site]{"entity": "target", "value": "h3k27_acetylation_site"}
+    - [h3k27me3](target)
+    - [dnmt3b](target)
+    - [arid4b](target)
+    - [ehmt2](target)
+    - [gtf2a2](target)
+    - [qki](target)
+    - [irf2](target)
+    - [sf3b1](target)
+    - [znf282](target)
+- intent: metadatum
+  examples: |
+    - 'clinical_patient__days_to_diagnostic_computed_tomography_performed':- 39
+    - 'manually_curated__seqplatform':- 2
+    - clinical__clin_shared__followup_case_report_form_submission_reason
+    - 'clinical_drug__treatment_best_response':- 5
+    - 'clinical_patient__lymph_nodes_examined_count':- 110
+    - 'clinical_follow_up__new_tumor_event_site_surgery':- 2
+    - 'clinical_follow_up__nte_er_positivity_define_method':- 2
+    - 'clinical_patient__tumor_invasion_percent':- 118
+    - 'clinical_omf__clinical_stage':- 9
+    - 'biospecimen_portion__bcr_sample_barcode':- 10559
+    - 'clinical_patient__tobacco_smoking_pack_years_smoked':- 190
+    - 'clinical_patient__bilirubin_total_norm_range_upper':- 17
+    - gdc__demographic__gender
+    - 'clinical_patient__undescended_testis_method_right':- 1
+    - 'clinical_patient__karnofsky_score':- 10
+    - 'clinical_patient__cause_of_death':- 9
+    - 'gender':- 2
+    - 'clinical_patient__pregnancies_count_live_birth':- 12
+    - 'clinical_follow_up__tobacco_smokeless_use_at_dx':- 2
+    - 'clinical_nte__nte_pr_status_by_ihc':- 2
+    - 'clinical_patient__bcg_tx_maintenance_courses_indicator':- 2
+    - 'clinical_patient__diabetes_diagnosis_indicator':- 2
+    - 'biospecimen_slide__percent_stromal_cells':- 91
+    - 'clinical_omf__days_to_drug_therapy_start':- 82
+    - 'clinical_patient__keratinization_squamous_cell':- 2
+    - 'clinical_patient__days_to_death':- 127
+    - 'clinical_patient__clark_level_at_diagnosis':- 5
+    - file_identifier_with_directory
+    - 'clinical_omf__bcr_omf_uuid':- 1008
+    - 'clinical_patient__mitotic_rate':- 2
+    - 'clinical_patient__family_history_cancer_type_other':- 28
+    - 'clinical_patient__number_of_relatives_diagnosed':- 3
+    - 'clinical_follow_up__days_to_additional_surgery_locoregional_procedure':- 1
+    - 'clinical_nte__nte_her2_status':- 2
+    - antibody__product_id
+    - 'clinical_follow_up__new_tumor_event_melanoma_count':- 10
+    - 'clinical_patient__her2_fish_method':- 27
+    - clinical__shared__other_dx
+    - 'clinical_patient__hpv_types_positive':- 6
+    - 'clinical_patient__axillary_staging_method':- 5
+    - clinical__clin_shared__bcr_followup_barcode
+    - 'clinical_patient__inherited_genetic_syndrome_specified':- 4
+    - 'clinical_follow_up__nte_well_or_dedifferentiated_indicator':- 3
+    - file_identifier
+    - gdc__diagnoses__ajcc_pathologic_n
+    - 'clinical_radiation__radiation_total_dose':- 426
+    - 'clinical_radiation__therapy_regimen':- 6
+    - 'clinical_nte__new_tumor_event_procedure_other':- 3
+    - 'clinical_patient__first_symptom_longest_duration':- 4
+    - 'clinical_follow_up__days_to_performance_status_assessment':- 140
+    - 'clinical_patient__nte_er_status_ihc__positive':- 3
+    - 'clinical_follow_up__new_tumor_event_dx_indicator':- 3
+    - 'clinical_patient__noninvasive_bladder_history':- 2
+    - 'clinical_patient__cent17_copy_number':- 66
+    - 'clinical_patient__surgical_approach_at_diagnosis':- 2
+    - 'clinical_patient__radiation_type_other':- 2
+    - 'clinical_follow_up__bcr_followup_barcode':- 8564
+    - gdc__analytes__analyte_type_id
+    - 'clinical_follow_up__targeted_molecular_therapy':- 3
+    - 'clinical_follow_up__new_neoplasm_event_type':- 4
+    - 'clinical_follow_up__nte_her2_fish_status':- 1
+    - gdc__experimental_strategy
+    - 'clinical_patient__history_neoadjuvant_tx_type':- 4
+    - 'clinical_patient__her2_status_by_ihc':- 4
+    - 'biospecimen_normal_control__bcr_patient_barcode':- 9449
+    - 'clinical_omf__drug_tx_extent':- 2
+    - 'clinical_patient__history_immunosuppressive_tx_other':- 2
+    - 'biospecimen_slide__percent_necrosis':- 33
+    - 'clinical_follow_up__days_to_chemotherapy_end':- 13
+    - 'clinical_nte__pet_scan_after_treatment_results':- 4
+    - 'clinical_follow_up__pharm_tx_mitotane_theraputic_levels':- 2
+    - biosample__applied_modifications__award
+    - 'clinical_patient__her2_and_cent17_scale_other':- 4
+    - 'clinical_patient__pathologic_n':- 2
+    - 'clinical_follow_up__residual_tumor':- 1
+    - biospecimen__bio__is_derived_from_ffpe
+    - 'clinical_patient__occupation_current':- 94
+    - gdc__file_name
+    - clinical__clin_shared__tissue_prospective_collection_indicator
+    - 'clinical_patient__bone_marrow_involvement':- 2
+    - 'clinical_patient__atypical_mitotic_figures':- 2
+    - 'clinical_patient__ldh_level':- 33
+    - 'clinical_patient__immunopheotypic_analysis_results':- 37
+    - 'clinical_patient__er_ihc_score':- 5
+    - 'biospecimen_analyte__rinvalue':- 42
+    - gdc__diagnoses__site_of_resection_or_biopsy
+    - 'clinical_nte__new_tumor_event_additional_surgery_procedure':- 3
+    - 'biospecimen_shipment_portion__shipment_portion_month_of_shipment':- 12
+    - gender
+    - 'clinical_patient__asbestos_exposure_age_last':- 9
+    - 'clinical_patient__breslow_thickness_at_diagnosis':- 149
+    - gdc__samples__sample_id
+    - 'clinical_patient__pharm_tx_mitotane_theraputic_macro':- 2
+    - biosample__applied_modifications__biosamples_modified
+    - 'clinical_patient__pharm_tx_mitotane_for_macro_disease':- 2
+    - 'clinical_patient__nte_her2_positivity_ihc_score':- 2
+    - gdc__disease_type
+    - 'clinical_patient__pr_positivity_scale_used':- 2
+    - epi__core_plus_ac_plus_dnase_plus_9_class1_marks
+    - 'clinical_patient__suv_of_pleura_max':- 22
+    - 'clinical_follow_up__followup_reason':- 3
+    - 'clinical_radiation__bcr_radiation_uuid':- 2798
+    - 'clinical_patient__psa_most_recent_results':- 110
+    - 'clinical_patient__history_myasthenia_gravis':- 2
+    - 'biospecimen_analyte__is_derived_from_ffpe':- 1
+    - 'clinical_patient__immunopheotypic_analysis_tested':- 41
+    - epi__manual_use_train
+    - clinical__admin__file_uuid
+    - 'clinical_nte__new_tumor_event_dx_days_to':- 657
+    - 'clinical_patient__metastatic_disease_confirmed':- 2
+    - clinical__admin__day_of_dcc_upload
+    - 'clinical_follow_up__first_progression_biopsied_indicator':- 2
+    - 'clinical_follow_up__her2_ihc_score':- 1
+    - 'clinical_patient__eml4_alk_translocation_status':- 2
+    - 'clinical_patient__specimen_non_node_tumor_deposits':- 2
+    - 'clinical_patient__tumor_resected_max_dimension':- 57
+    - antibody__characterizations
+    - 'clinical_patient__zone_of_origin':- 4
+    - 'biospecimen_analyte__analyte_type':- 1
+    - 'clinical_patient__cause_of_death_source':- 4
+    - 'clinical_patient__history_eczema':- 2
+    - 'clinical_patient__pathologic_t':- 10
+    - 'clinical_patient__alcohol_consumption_per_day':- 23
+    - 'clinical_patient__history_headaches':- 2
+    - 'clinical_nte__new_tumor_event_site_surgery':- 1
+    - 'clinical_follow_up__days_to_new_tumor_event_after_initial_treatment':- 46
+    - 'clinical_drug__prescribed_dose':- 265
+    - 'clinical_patient__lymph_node_involvement_site':- 23
+    - 'clinical_follow_up__days_to_additional_surgery_metastatic_procedure':- 42
+    - antibody__lot_reviews__targets
+    - 'clinical_follow_up__new_tumor_event_type':- 38
+    - 'clinical_follow_up__brachytherapy_status':- 2
+    - 'clinical_patient__serum_albumin_norm_range_lower':- 14
+    - 'clinical_follow_up__radiation_therapy_xrt_type':- 2
+    - clinical__coad_read_shared__history_of_colon_polyps
+    - gdc__diagnoses__prior_malignancy
+    - 'clinical_patient__clinical_stage':- 24
+    - clinical__clin_shared__informed_consent_verified
+    - 'biospecimen_tumor_sample__bcr_patient_barcode':- 9534
+    - 'clinical_patient__family_history_cancer_type':- 104
+    - 'clinical_follow_up__chemo_concurrent_fractions_total':- 4
+    - 'manually_curated__id':- 10769
+    - 'manually_curated__tumor_tag':- 33
+    - 'clinical_follow_up__new_tumor_event_procedure':- 3
+    - 'clinical_follow_up__new_tumor_event_residual_tumor':- 2
+    - 'clinical_nte__new_tumor_event_type':- 13
+    - 'clinical_follow_up__new_tumor_event_surgery_days_to':- 155
+    - 'clinical_patient__primary_melanoma_skin_type':- 1
+    - 'biospecimen_slide__bcr_patient_uuid':- 9785
+    - 'clinical_follow_up__radiation_therapy_status':- 2
+    - 'manually_curated__md5sum':- 13500
+    - 'clinical_patient__gleason_pattern_primary':- 4
+    - 'clinical_patient__hysterectomy_type':- 3
+    - 'clinical_patient__testis_tumor_macroextent_other':- 3
+    - 'clinical_patient__location_lung_parenchyma':- 2
+    - 'clinical_patient__other_immunosuppressive_disease':- 2
+    - 'clinical_patient__rt_tx_reason_not_completed_other':- 2
+    - 'clinical_nte__nte_cent_17_her2_ratio':- 2
+    - 'clinical_drug__pharmaceutical_therapy_type':- 8
+    - 'clinical_follow_up__pathologic_tumor_burden':- 2
+    - 'clinical_patient__metastatic_dx_confirmed_by_other':- 5
+    - 'clinical_patient__ajcc_nodes_clinical_cn':- 5
+    - 'clinical_patient__anatomic_neoplasm_subdivision':- 112
+    - 'clinical_patient__symp_changes_visual':- 2
+    - 'clinical_patient__ajcc_nodes_pathologic_pn':- 19
+    - 'clinical_patient__pr_positivity_define_method':- 53
+    - 'clinical_patient__synovial_ss18ssx_testing_method':- 2
+    - 'species':- 1
+    - 'clinical_patient__fev1_percent_ref_prebroncholiator':- 122
+    - 'clinical_nte__days_to_new_tumor_event_after_initial_treatment':- 133
+    - 'clinical_patient__family_history_esoph_gastic_cancer':- 2
+    - 'clinical_patient__days_to_birth':- 480
+    - 'clinical_patient__necrosis_percent':- 18
+    - 'clinical_patient__genetic_abnormality_tested':- 6
+    - biospecimen__bio__month_of_shipment
+    - gdc__diagnoses__primary_diagnosis
+    - 'clinical_follow_up__nte_her2_positivity_method':- 2
+    - 'iospecimen_aliquot__plate_row':- 8
+    - 'clinical_patient__pr_status_by_ihc':- 3
+    - 'clinical_follow_up__lymphoma_progression_histology_other':- 1
+    - epi__pool_filenames_h3k4me3
+    - clinical__clin_shared__lymphatic_invasion
+    - 'clinical_drug__regimen_number':- 37
+    - 'clinical_patient__tumor_site':- 8
+    - 'clinical_follow_up__ablation_embolization_tx_adjuvant':- 3
+    - 'clinical_patient__chemo_concurrent_reason_not_given':- 5
+    - clinical__clin_shared__tissue_retrospective_collection_indicator
+    - 'clinical_patient__level_of_non_descent':- 2
+    - 'clinical_nte__new_tumor_event_dx_evidence':- 8
+    - 'clinical_patient__pre_orchi_afp':- 91
+    - 'clinical_patient__primary_multiple_at_dx':- 2
+    - 'clinical_follow_up__i_131_radiation_tx_cumulative_dose':- 111
+    - 'clinical_drug__bcr_patient_barcode':- 3607
+    - 'clinical_nte__first_progression_biopsied_indicator':- 2
+    - 'clinical_nte__new_tumor_event_met_site':- 5
+    - 'clinical_patient__allergy_food_dx_type':- 17
+    - gdc__samples__intermediate_dimension
+    - gdc__type
+    - 'clinical_nte__new_tumor_event_residual_tumor':- 4
+    - antibody__url
+    - 'clinical_patient__margins_involved_hysterectomy':- 5
+    - 'clinical_patient__residual_tumor':- 4
+    - 'clinical_patient__noninvasive_bladder_ca_tx_type':- 2
+    - 'clinical_follow_up__new_tumor_event_dx_days_to':- 1057
+    - 'clinical_patient__her2_ihc_percent_positive':- 10
+    - 'clinical_patient__ablation_embolization_tx_adjuvant':- 2
+    - biospecimen__bio__year_of_creation
+    - 'clinical_patient__occupation_primary':- 213
+    - 'clinical_follow_up__cause_of_death_other':- 3
+    - 'clinical_nte__lymphoma_progression_histology':- 2
+    - 'biospecimen_sample__bcr_sample_uuid':- 10582
+    - 'clinical_follow_up__performance_status_other_timing':- 21
+    - audit__warning__detail
+    - 'clinical_patient__lymph_nodes_examined_ihc_count':- 14
+    - 'clinical_follow_up__ecog_score':- 5
+    - 'clinical_patient__serum_markers':- 5
+    - 'clinical_patient__ldh_norm_range_upper':- 7
+    - epi__type
+    - 'clinical_patient__days_to_fdg_or_ct_pet_performed':- 33
+    - manually_curated__opengdc_file_size
+    - clinical__coad_read_shared__braf_gene_analysis_performed
+    - 'clinical_patient__bcr_patient_uuid':- 9781
+    - 'clinical_patient__cea_level_pretreatment':- 264
+    - 'clinical_follow_up__progression_after_hormone_tx':- 2
+    - biospecimen__bio__days_to_index
+    - 'clinical_nte__nte_pr_ihc_intensity_score':- 2
+    - 'clinical_patient__performance_status_days_to':- 131
+    - exp__correlation_of_imputed_with_observed
+    - 'clinical_patient__history_colon_polyps':- 2
+    - 'clinical_patient__immunophenotypic_analysis_method':- 26
+    - epi__solid_or_liquid
+    - 'clinical_omf__days_to_surgical_resection':- 474
+    - 'clinical_patient__radiation_treatment_adjuvant':- 3
+    - gdc__diagnoses__tissue_or_organ_of_origin
+    - 'clinical_patient__her2_positivity_method_text':- 17
+    - 'clinical_nte__new_tumor_event_melanoma_count':- 3
+    - 'clinical_patient__extranodal_site_involvement':- 6
+    - 'clinical_radiation__course_number':- 9
+    - 'clinical_patient__surgery_for_positive_margins':- 4
+    - 'clinical_patient__tobacco_smoking_age_started':- 43
+    - gdc__aliquots__submitter_id
+    - 'clinical_nte__new_tumor_event_histo_progression':- 2
+    - 'clinical_omf__pathologic_m':- 5
+    - 'clinical_drug__clinical_trial_drug_classification':- 37
+    - 'biospecimen_sample__vial_number':- 4
+    - clinical__clin_shared__bcr_followup_uuid
+    - 'clinical_patient__relation_testicular_cancer':- 7
+    - 'clinical_patient__alcohol_history_documented':- 2
+    - 'clinical_patient__microsatellite_instability':- 2
+    - clinical__coad_read_shared__number_of_first_degree_relatives_with_cancer_diagnosis
+    - gdc__updated_datetime
+    - 'manually_curated__local_md5':- 13475
+    - gdc__treatments__treatment_or_therapy
+    - clinical__shared_stage__pathologic_n
+    - epi__epigenome_name_edacc_9
+    - 'clinical_patient__days_to_biochemical_recurrence_first':- 68
+    - 'clinical_follow_up__days_to_biochemical_recurrence_second':- 13
+    - 'biospecimen_sample__days_to_collection':- 2523
+    - 'biospecimen_normal_control__ncedna_dna_vol':- 1336
+- intent: choice_exact_experiment
+  examples: |
+    - [oci-ly4](cell) [cell](field)
+    - [foxa3](target) [target](field)
+    - [uchl5](target) [target](field)
+    - [znf549](target) [target](field)
+    - [gm19201](cell) [cell](field)
+    - [mcf7-lted](cell) [cell](field)
+    - [target](field) [nr2c1](target)
+    - [znf223](target) [target](field)
+    - i want [gene expression](data_type) as (data_type)(field)
+    - [nol12](target) [target](field)
+    - [dna copy number polymorphisms]{"entity": "data_type", "value": "copy number segment"} from [diffuse large b-cell lymphoma](disease) for [grch38](assembly)
+    - [rj2.2.5](cell) [cell](field)
+    - [uteros](tissue) [tissue](field)
+    - [rad21](target) [target](field)
+    - [gallbladder](tissue) [tissue](field)
+    - [gm13976](cell) [cell](field)
+    - [bcl11a](target) [target](field)
+    - [zeb1](target) [target](field)
+    - can i have [ago2](target) for cell line [ag04450](cell)
+    - [h9 derived neuron cultured cells](cell) [cell](field)
+    - [zkscan1](target) [target](field)
+    - [ag08470](cell) [cell](field)
+    - [smooth muscle cell](cell) [cell](field)
+    - [hnrnpc](target) [target](field)
+    - can we have data from [tumoral]{"entity": "is_healthy", "value": "False"} tissue from [cerebellum](tissue)
+    - [znf621](target) [target](field)
+    - [hues48 cells](cell) [cell](field)
+    - [hs-27a](cell) [cell](field)
+    - [rps11](target) [target](field)
+    - [dna repair, dna replication](feature) [feature](field)
+    - [rwpe2](cell) [cell](field)
+    - [spleen](tissue) [tissue](field)
+    - [sin3b](target) [target](field)
+    - [ssrp1](target) [target](field)
+    - [gm2610](cell) [cell](field)
+    - [huh-7](cell) [cell](field)
+    - [znf791](target) [target](field)
+    - [pabpc1](target) [target](field)
+    - [gm18909](cell) [cell](field)
+    - [gm2588](cell) [cell](field)
+    - [tead4](target) [target](field)
+    - [zbtb1](target) [target](field)
+    - [znf426](target) [target](field)
+    - data regarding [dna methylations]{"entity": "data_type", "value": "dna methylation"} for cell [acc112](cell)
+    - [hela](cell) [cell](field)
+    - [mef2c](target) [target](field)
+    - [trim25](target) [target](field)
+    - I need to select [brain](tissue) data taken from [roadmap epigenomics](source)
+    - [gm19152](cell) [cell](field)
+    - [nhu](cell) [cell](field)
+    - [rna binding protein](feature) [feature](field)
+    - [disease](field) [carcinoma](disease) (prostate)
+    - [kopt-k1](cell) [cell](field)
+    - [znf207](target) [target](field)
+    - [hl-60](cell) [cell](field)
+    - [h1](cell) [cell](field)
+    - [rlf](target) [target](field)
+    - [psoas muscle](tissue) [tissue](field)
+    - [eif3g](target) [target](field)
+    - [pulmonary artery endothelial cell](cell) [cell](field)
+    - [cervical adenocarcinoma](disease) [disease](field)
+    - [foxk2](target) [target](field)
+    - give me [primary culture](biosample_type) [biosample_type](field)
+    - [other endocrine glands and related structures](tissue) [tissue](field)
+    - files from [tads](source) for [grch38](assembly)
+    - [glioblastoma multiforme](disease) [disease](field)
+    - [rere](target) [target](field)
+    - [gm18870](cell) [cell](field)
+    - [rxrb](target) [target](field)
+    - [hdgf](target) [target](field)
+    - [h128](cell) [cell](field)
+    - [tgif2](target) [target](field)
+    - [znf596](target) [target](field)
+    - [gist48](cell) [cell](field)
+    - [cwru1](cell) [cell](field)
+    - [znf491](target) [target](field)
+    - [sf268](cell) [cell](field)
+    - [t-helper 2 cell](cell) [cell](field)
+    - [ubtf](target) [target](field)
+    - [snrnp70](target) [target](field)
+    - [nccit](cell) [cell](field)
+    - [etv4](target) [target](field)
+    - [hdac8](target) [target](field)
+    - [de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der](disease) (22)t(3;22)(q25.3;p12) [disease](field)
+    - [target](field) [fastkd2](target)
+    - [hgadfn167](cell) [cell](field)
+    - give me people with [diseased]{"entity": "is_healthy", "value": "false"}
+    - [squamous cell carcinoma; mesothelioma](disease) [disease](field)
+    - [mnc491](cell) [cell](field)
+    - I would like to have data regarding [artery](tissue) extracted from [hg19](assembly)
+    - [dna methylation](data_type) [data_type](field)
+    - [lung adenocarcinoma](disease) [disease](field)
+    - [acc112](cell) [cell](field)
+    - [gatad2b](target) [target](field)
+    - I am looking for [dna copy number changes]{"entity": "data_type", "value": "cnv"}
+    - [target](field) [bcl11b](target)
+    - [1000 genomes](source) data for [acute lymphoblastic leukemia](disease)
+    - [nhdf-ad](cell) [cell](field)
+    - give me [in vitro differentiated cells](biosample_type) [biosample_type](field)
+    - [runx3](target) [target](field)
+    - [e2f5](target) [target](field)
+    - [m23f](cell) [cell](field)
+    - [technique](field) [iclip](technique)
+    - [h4k91ac](target) [target](field)
+    - [mlx](target) [target](field)
+    - [h3k23me2](target) [target](field)
+    - [apobec3c](target) [target](field)
+    - [vezf1](target) [target](field)
+    - [gi colon](tissue) [tissue](field)
+    - [primary t helper cells pma-i stimulated](cell) [cell](field)
+    - [trip13](target) [target](field)
+    - [ips df 19.11](cell) [cell](field)
+    - [mta2](target) [target](field)
+    - [znf407](target) [target](field)
+    - [transverse colon](tissue) [tissue](field)
+    - [disease](field) [parkinson's disease](disease)
+    - [foreskin melanocyte primary cells skin03](cell) [cell](field)
+    - i want [livear](disease) [hg19](assembly) [hues64](cell) patients
+    - [gata3](target) [target](field)
+    - [e2f1](target) [target](field)
+    - [mnt](target) [target](field)
+    - [mef2a](target) [target](field)
+    - [gm18519](cell) [cell](field)
+    - [fto](target) [target](field)
+    - [wm266-4](cell) [cell](field)
+    - [rest](target) [target](field)
+    - [ramos](cell) [cell](field)
+    - [mef2b](target) [target](field)
+    - [gm18498](cell) [cell](field)
+    - data regarding [copy number variation]{"entity": "data_type", "value": "cnv"} for cell line [1205-lu](cell)
+    - [irf3](target) [target](field)
+    - [sjcrh30](cell) [cell](field)
+    - [aebp2](target) [target](field)
+    - [pygo2](target) [target](field)
+    - [mybl2](target) [target](field)
+    - [elf1](target) [target](field)
+    - [junb](target) [target](field)
+    - [tshz1](target) [target](field)
+    - [es-ucsf4  cells](cell) [cell](field)
+    - [raji](cell) [cell](field)
+    - [safb2](target) [target](field)
+    - [nb4](cell) [cell](field)
+    - [target](field) [ctbp1](target)
+    - [unknown](tissue) [tissue](field)
+    - [znf83](target) [target](field)
+    - [bed](file_format) [file_format](field)
+    - [nbn](target) [target](field)
+    - [hues48](cell) [cell](field)
+    - [superior temporal gyrus](tissue) [tissue](field)
+    - [znf398](target) [target](field)
+    - [tive-ltc](cell) [cell](field)
+    - [znf740](target) [target](field)
+    - [primary t cells from peripheral blood](cell) [cell](field)
+    - [zfx](target) [target](field)
+    - [other and unspecified parts of mouth](tissue) [tissue](field)
+    - [rpmi8226](cell) [cell](field)
+    - find the [mirna expressions]{"entity": "data_type", "value": "mirna expression"} from [tonsil](tissue) extracted with [grch38](assembly) [assembly](field)
+    - [gm19223](cell) [cell](field)
+    - samples for [adnp](target) data
+    - [brain](tissue) [tissue](field)
+    - [znf574](target) [target](field)
+    - [elf1](cell) [cell](field)
+    - [bcbl1](cell) [cell](field)
+    - [liver hepatocellular carcinoma](disease) [disease](field)
+    - [utp18](target) [target](field)
+    - [dermis microvascular lymphatic vessel endothelial cell](cell) [cell](field)
+    - [embryo](tissue) extracted from [healthy]{"entity": "is_healthy", "value": "True"} patients
+    - [snip1](target) [target](field)
+    - [znf37a](target) [target](field)
+    - [sltm](target) [target](field)
+    - [exon quantification](data_type) from [alveolus of lung](tissue)
+    - [hmg20a](target) [target](field)
+    - [pancreatic adenocarcinoma](disease) [disease](field)
+    - [gm18916](cell) [cell](field)
+    - [trim28](target) [target](field)
+    - [body of pancreas](tissue) [tissue](field)
+    - [znf318](target) [target](field)
+    - [ims13q](cell) [cell](field)
+    - [brain microvascular endothelial cell](cell) [cell](field)
+    - [cebpa](target) [target](field)
+    - [spinal cord](tissue) [tissue](field)
+    - [relb](target) [target](field)
+    - [nh-a astrocytes primary cells](cell) [cell](field)
+    - [ezh2](target) [target](field)
+    - [cbfa2t3](target) [target](field)
+    - [phf20](target) [target](field)
+    - [kidney renal clear cell carcinoma](disease) [disease](field)
+    - [eye](tissue) [tissue](field)
+    - [osteoblast primary cells](cell) [cell](field)
+    - i need [mirna expression](data_type)
+    - can i have [aff1](target) for cell line [a549](cell)
+    - [gm19222](cell) [cell](field)
+    - [gabpb1](target) [target](field)
+    - [ep400](target) [target](field)
+    - [dna seq](data_type) from [adrenal gland](tissue)
+    - [znf248](target) [target](field)
+    - [caudate nucleus](tissue) extracted from [healthy]{"entity": "is_healthy", "value": "True"} patients
+    - [homez](target) [target](field)
+    - [brca1](target) [target](field)
+    - data for [cartilage element](tissue)
+    - [rpmi7951](cell) [cell](field)
+    - [metap2](target) [target](field)
+    - [brain lower grade glioma](disease) [disease](field)
+    - [znf670](target) [target](field)
+    - [hmbox1](target) [target](field)
+    - [rhabdomyosarcoma](disease) [disease](field)
+    - [22rv1](cell) [cell](field)
+    - [cutll1](cell) [cell](field)
+    - [u2af1](target) [target](field)
+    - [coronary artery](tissue) [tissue](field)
+    - [ft246](cell) [cell](field)
+    - [isoform expression quantification](data_type) [data_type](field)
+    - [zbtb17](target) [target](field)
+    - [znf610](target) [target](field)
+    - [znf331](target) [target](field)
+    - [cerebellum](tissue) [tissue](field)
+    - [lcorl](target) [target](field)
+    - i want [mirna expression data type](data_type)
+    - data from [hg19](assembly) [chip-seq]{"entity": "data_type", "value": "domain"} for [esophageal carcinoma](disease)
+    - [znf132](target) [target](field)
+    - can we have data from [tumoral]{"entity": "is_healthy", "value": "false"} tissue from [ammon's horn](tissue)?
+    - [znf341](target) [target](field)
+    - [znf777](target) [target](field)
+    - [ctcfl](target) [target](field)
+    - [vcap](cell) [cell](field)
+    - [carcinoma; large cell lung cancer](disease) [disease](field)
+    - [brain](disease) with [rna-seq](tissue) and [ctcf](target) and [encode](source) and [bed](file_format)
+    - [copy number segment](data_type) [data_type](field)
+    - [klf13](target) [target](field)
+    - [choroid plexus epithelial cell](cell) [cell](field)
+    - [heart](tissue) [tissue](field)
+    - [namalwa](cell) [cell](field)
+    - [h9 derived neuronal progenitor cultured cells](cell) [cell](field)
+    - i need [tumoral]{"entity": "is_healthy", "value": "false"} patients and [mirna expression](data_type)
+    - [ovary](tissue) [tissue](field)
+    - I want to retrieve data from [cornelia de lange syndrome](disease)
+    - [bones, joints and articular cartilage of limbs](tissue) [tissue](field)
+    - [qki](target) [target](field)
+    - [ag10803](cell) [cell](field)
+    - i need [gene expression](data_type) and [pancreatic adenocarcinoma](disease)
+    - give me [esc derived cell line](biosample_type) [biosample_type](field)
+    - [grade iv, adenocarcinoma](disease) [disease](field)
+    - [cystadenocarcinoma](disease) [disease](field)
+    - [jun](target) [target](field)
+    - [znf350](target) [target](field)
+    - [left kidney](tissue) [tissue](field)
+    - [supt20h](target) [target](field)
+    - [fezf1](target) [target](field)
+    - [gm18517](cell) [cell](field)
+    - [experimental data](experiments) [tcga](source) from [source](field)
+    - data from [hg19](assembly) [spljxn quantification](data_type) for [bone osteosarcoma](disease)
+    - [matr3](target) [target](field)
+    - [saec](cell) [cell](field)
+    - [igf2bp2](target) [target](field)
+    - [znf138](target) [target](field)
+    - [znf837](target) [target](field)
+    - [hnrnpm](target) [target](field)
+    - can i have [primary cell](biosample_type) [biosample_type](field) data?
+    - [cc2d1a](target) [target](field)
+    - [mg63](cell) [cell](field)
+    - [prdm10](target) [target](field)
+    - [znf184](target) [target](field)
+    - [sk-n-dz](cell) [cell](field)
+    - [ganglion eminence derived primary cultured neurospheres](cell) [cell](field)
+    - [zbtb49](target) [target](field)
+    - [loximvi](cell) [cell](field)
+    - [rcc 7860](cell) [cell](field)
+    - [nt2-d1](cell) [cell](field)
+    - [znf282](target) [target](field)
+    - I need [breast](tissue) data taken from [tads](source)
+    - [zmiz1](target) [target](field)
+    - can we have data from [tumoral]{"entity": "is_healthy", "value": "False"} tissue from [blood](tissue)
+    - [hek293](cell) [cell](field)
+    - [srf](target) [target](field)
+    - [gm18511](cell) [cell](field)
+    - [gum](tissue) [tissue](field)
+    - [gm18907](cell) [cell](field)
+    - [mda-mb-231](cell) [cell](field)
+    - [ascending aorta](tissue) [tissue](field)
+    - [chip-seq](technique) [technique](field)
+    - [hgfdfn168](cell) [cell](field)
+    - [wibr2](cell) [cell](field)
+    - [oci-ly7](cell) [cell](field)
+    - [mier2](target) [target](field)
+    - [mda-mb-468](cell) [cell](field)
+    - [atf3](target) [target](field)
+    - [max](target) [target](field)
+    - i need [tumoral]{"entity": "is_healthy", "value": "False"} patients
+    - patients with [breast adenocarcinoma](disease)
+    - [npm1](target) [target](field)
+    - [klf5](target) [target](field)
+    - [gm19116](cell) [cell](field)
+    - [shef 4](cell) [cell](field)
+    - [nci-h69](cell) [cell](field)
+    - [znf843](target) [target](field)
+    - [cortex derived primary cultured neurospheres](cell) [cell](field)
+    - [tibial artery](tissue) [tissue](field)
+    - [primary hematopoietic stem cells g-csf-mobilized female](cell) [cell](field)
+    - [zgpat](target) [target](field)
+    - [irf2](target) [target](field)
+    - [lower leg skin](tissue) [tissue](field)
+    - [rbm25](target) [target](field)
+    - [ttc549](cell) [cell](field)
+    - I need [rhabdomyosarcoma](disease) [disease](field)
+    - [gm03348](cell) [cell](field)
+    - [huref](cell) [cell](field)
+    - [hbp1](target) [target](field)
+    - [ddx42](target) [target](field)
+    - [imr-90](cell) [cell](field)
+    - [mixl1](target) [target](field)
+    - [karpas-422](cell) [cell](field)
+    - [ips-15b cells](cell) [cell](field)
+    - [creb1](target) [target](field)
+    - [znf521](target) [target](field)
+    - [znf781](target) [target](field)
+    - [rptec](cell) [cell](field)
+    - [bronchial epithelial cell](cell) [cell](field)
+    - [renal cell adenocarcinoma](disease) [disease](field)
+    - [copy number]{"entity": "data_type", "value": "cnv"} from [cervical carcinoma](disease) for [grch38](assembly)
+    - [ep300](target) [target](field)
+    - [znf614](target) [target](field)
+    - [klf11](target) [target](field)
+    - [primary hyperparathyroidism](disease) [disease](field)
+    - [znf354b](target) [target](field)
+    - [sf7761](cell) [cell](field)
+    - [hg19](assembly) [dna copy number variation]{"entity": "data_type", "value": "cnv"} from [cervicitis](disease)
+    - [zbtb5](target) [target](field)
+    - [gabpa](target) [target](field)
+    - [h3k79me1](target) [target](field)
+    - [myrf](target) [target](field)
+    - [renal cortical epithelial cell](cell) [cell](field)
+    - samples of [a673](cell) of patients affected by [colorectal cancer pathway](disease)
+    - [germinal center](tissue) [tissue](field)
+    - [fam120a](target) [target](field)
+    - [znf140](target) [target](field)
+    - [gata2](target) [target](field)
+    - [arnt](target) [target](field)
+    - give me [ill]{"entity": "is_healthy", "value": "false"} people
+    - [nr4a1](target) [target](field)
+    - [lncap](cell) [cell](field)
+    - please give me the [rna](content_type) [content_type](field)
+    - [irf4](target) [target](field)
+    - [gata4](target) [target](field)
+    - [renal carcinoma](disease) [disease](field)
+    - [bcl6](target) [target](field)
+    - [hkc8](cell) [cell](field)
+    - [genotyping array](technique) [technique](field)
+    - [arid4b](target) [target](field)
+    - [znf579](target) [target](field)
+    - [stat1](target) [target](field)
+    - [fos](target) [target](field)
+    - [regulatory t cell](cell) [cell](field)
+    - [aatf](target) [target](field)
+    - [znf16](target) [target](field)
+    - [znf555](target) [target](field)
+    - [znf687](target) [target](field)
+    - [zscan16](target) [target](field)
+    - [zbtb12](target) [target](field)
+    - [hic1](target) [target](field)
+    - [smarca4](target) [target](field)
+    - [grwd1](target) [target](field)
+    - [e2f7](target) [target](field)
+    - [vagina](tissue) [tissue](field)
+    - [malignant melanoma](disease) [disease](field)
+    - [zkscan8](target) [target](field)
+    - [ht-29](cell) [cell](field)
+    - [bcl6b](target) [target](field)
+    - [foxa1](target) [target](field)
+    - [ddx52](target) [target](field)
+    - [gm19093](cell) [cell](field)
+    - [sum159-mda453](cell) [cell](field)
+    - [znf785](target) [target](field)
+    - [mcm5](target) [target](field)
+    - [breast myoepithelial primary cells](cell) [cell](field)
+    - [gm19114](cell) [cell](field)
+    - [h3k4me1](target) [target](field)
+    - [immunoglobulin a lambda myeloma](disease) [disease](field)
+    - [gm18862](cell) [cell](field)
+    - [body of uterus](tissue) data from [dna copy number variants]{"entity": "data_type", "value": "cnv"} for [childhood chronic myelogenous leukemia, bcr-abl1 positive](disease)
+    - [rfx3](target) [target](field)
+    - [ag04450](cell) [cell](field)
+    - [pttg1](target) [target](field)
+    - [zscan5c](target) [target](field)
+    - i want [gene expression](data_type)
+    - [pc-3](cell) [cell](field)
+    - [h3k79me2](target) [target](field)
+- synonym: thymoma
+  examples: |
+    - thynoma
+    - thym
+- synonym: mirna expression
+  examples: |
+    - mirna expressione data
+    - mirna expressions
+    - mirna expression quantification
+    - mirna quantification
+    - expressions of micrornas
+    - expressions of micro rnas
+    - micro rna sequencing
+    - mirna seq
+    - transcriptomics
+    - quantification of micro rna
+    - mirna quantifications
+    - mirna expression quantifications
+    - mirna expression data
+    - expression of micro rna
+    - expression of microrna
+    - expressions of mirna
+- synonym: 'false'
+  examples: |
+    - tumoral
+    - ill
+    - diseased
+    - sick
+    - tumor
+    - non-healthy
+- synonym: copy number segment
+  examples: |
+    - copy number variation
+    - copy number variations
+    - copy number
+    - dna copy number variation
+    - dna copy number variants
+    - dna copy number polymorphisms
+    - dna copy number polymorphism
+    - copy number polymorphisms
+    - dna copy number changes
+    - dna copy number change
+    - polymorphisms, copy number
+- synonym: 'true'
+  examples: |
+    - healthy
+    - non tumoral
+    - control
+    - normal
+    - normal tissue
+    - control sample
+    - healthy tissue
+    - healthy sample
+- synonym: cnv
+  examples: |
+    - copy number polymorphism
+- synonym: methylation beta value
+  examples: |
+    - dna methylations
+    - dna methylation
+- synonym: masked somatic mutation
+  examples: |
+    - dna sequencing
+    - dna seq
+    - masked dna mutations
+- synonym: dna seq
+  examples: |
+    - somatic mutations
+    - dna mutations
+- synonym: peaks
+  examples: |
+    - chip-seq
+    - chromatin immunoprecipitation sequencing
+    - chip sequencing
+    - sequencing, chip
+    - chromatin immuno-precipitation sequencing
+    - chromatin immuno precipitation sequencing
+- synonym: data_type
+  examples: |
+    - data type
+- synonym: gene expression
+  examples: |
+    - gene expression data
+    - gene expressions
+    - gene expression quantification
+    - gene expression quantifications
+    - rna expression
+    - gene quantifications
+    - expression of genes
+    - expression of gene
+    - expressions of gene
+    - expression of long rna
+    - gene quantification
+    - sequencing of genes
+    - expressions of genes
+- synonym: dataset_name
+  examples: |
+    - dataset
+    - dataset name
+- synonym: clonal rearrangement, multiple peaks
+  examples: |
+    - peaks
+    - replicated peaks
+- synonym: exon
+  examples: |
+    - exon quantifications
+    - insdc_feature:exon
+- synonym: filtered cigar
+  examples: |
+    - filtered transcribed fragments
+- synonym: nipa1 wt allele
+  examples: |
+    - fsp3
+    - hotspots
+    - mgc102724
+    - mgc35570
+    - non imprinted in prader-willi/angelman syndrome 1 wt allele
+    - spastic paraplegia 6 (autosomal dominant) gene
+    - spg6
+- synonym: rna binding protein
+  examples: |
+    - rna-binding protein associated mrnas
+    - rna binding protein, chromatin remodeler
+    - rna binding protein, chromatin remodeller, transcription factor
+    - rna binding protein, cofactor
+    - rna binding protein, recombinant protein, transcription factor
+    - rna binding protein, transcription factor
+- synonym: stable
+  examples: |
+    - stable peaks
+- synonym: transcribed_fragment
+  examples: |
+    - transcribed fragment
+    - transcribed fragments
+- synonym: spljxn quantification
+  examples: |
+    - splice junctions expression
+    - quantification of splice junctions
+    - splice junction rna-seq
+    - expression of splice junctions
+    - splice junction quantification
+- synonym: variant calling
+  examples: |
+    - genetic variation
+    - mutations
+    - germline mutations
+    - variants
+    - germline substitutions
+    - germline variants
+- synonym: acute adult t-cell leukemia/lymphoma
+  examples: |
+    - acute adult t-cell lymphoma/leukemia
+    - acute t cell leukemia, cancer
+- synonym: acute lymphoblastic leukemia
+  examples: |
+    - acute lymphoblastic leukemia (all)
+    - acute lymphoblastic leukemia, nos
+    - acute lymphocytic leukaemia
+    - acute lymphocytic leukemia
+    - acute lymphocytic leukemias
+    - acute lymphogenous leukemia
+    - acute lymphoid leukemia
+    - all
+    - all - acute lymphocytic leukemia
+    - leukemia, lymphoblastic, malignant
+    - lymphoblastic leukemia
+    - precursor cell lymphoblastic leukemia
+    - precursor lymphoblasic leukemia
+    - precursor lymphoblastic leukemia
+- synonym: acute myeloid leukemia
+  examples: |
+    - acute granulocytic leukemia
+    - acute myeloblastic leukemia
+    - acute myelocytic leukemia
+    - acute myelogenous leukemia
+    - acute myelogenous leukemias
+    - acute myeloid leukemia (aml)
+    - acute nonlymphocytic leukemia
+    - aml
+    - aml - acute myeloid leukemia
+    - anll
+    - hematopoeitic - acute myleogenous leukemia (aml)
+    - laml
+- synonym: acute promyelocytic leukemia
+  examples: |
+    - acute myeloblastic leukemia type 3
+    - acute myeloid leukemia m3
+    - acute promyelocytic leukemia, atrichia with papular lesions
+    - acute promyelocytic leukemia, cancer
+- synonym: adenocarcinoma
+  examples: |
+    - adenocarcinoma, cancer
+    - adenocarcinoma, malignant
+    - adenocarcinoma, nos
+- synonym: adenoid cystic carcinoma
+  examples: |
+    - adenocystic carcinoma
+    - adenoid cystic cancer
+    - cylindroid adenocarcinoma
+    - submaxillar tumor
+- synonym: adrenal cortex carcinoma
+  examples: |
+    - adenocarcinoma, adrenocortical, malignant
+    - adrenal cortex adenocarcinoma
+    - adrenal cortex cancer
+    - adrenal cortical adenocarcinoma
+    - adrenal cortical carcinoma
+    - adrenocortical cancer
+    - adrenocortical carcinoma
+    - adrenocortical carcinoma, nos
+    - cancer of the adrenal cortex
+    - carcinoma, adrenocortical, malignant
+    - carcinoma of adrenal cortex
+    - carcinoma of the adrenal cortex
+    - cortical cell carcinoma
+    - acc
+- synonym: adrenal gland pheochromocytoma
+  examples: |
+    - adrenal gland chromaffinoma
+    - adrenal gland chromaffin paraganglioma
+    - adrenal gland paraganglioma
+    - adrenal medullary paraganglioma
+    - adrenal medullary pheochromocytoma
+    - adrenal pheochromocytoma
+    - chromaffin paraganglioma of the adrenal gland
+    - intraadrenal paraganglioma
+    - pcc
+    - pheochromocythoma and paraganglioma
+    - pheochromocytoma
+    - pheochromocytoma (adrenal)
+    - pheochromocytoma and paraganglioma
+    - pcpg
+- synonym: b-cell non-hodgkin lymphoma
+  examples: |
+    - b cell lymphoma
+    - b-cell lymphoma
+    - b-cell non hodgkin's lymphoma
+    - b-cell non-hodgkin's lymphoma
+    - lymphomas non-hodgkin's b-cell
+    - non-hodgkin's b-cell lymphoma
+    - non-hodgkin's lymphoma b-cell
+- synonym: bladder carcinoma
+  examples: |
+    - bladder cancer
+    - cancer of bladder
+    - cancer of the bladder
+    - cancer of the urinary bladder
+    - cancer of urinary bladder
+    - carcinoma of bladder
+    - carcinoma of the bladder
+    - carcinoma of the urinary bladder
+    - carcinoma of urinary bladder
+    - urinary bladder cancer
+    - urinary bladder carcinoma
+- synonym: bladder urothelial carcinoma
+  examples: |
+    - bladder transitional cell carcinoma
+    - bladder urothelial cancer
+    - transitional cell carcinoma of the urinary bladder
+    - urinary bladder transitional cell carcinoma
+    - urinary bladder urothelial carcinoma
+    - urothelial carcinoma of the urinary bladder
+    - blca
+- synonym: bone osteosarcoma
+  examples: |
+    - bone cancer, osteosarcoma
+    - osteosarcoma of bone
+- synonym: brain glioma
+  examples: |
+    - brain lower grade glioma
+    - lower grade glioma
+    - lgg
+- synonym: breast adenocarcinoma
+  examples: |
+    - adenocarcinoma of breast
+    - adenocarcinoma of the breast
+    - breast adenocarcinoma, breast cancer
+    - breast cancer (adenocarcinoma)
+    - mammary adenocarcinoma
+- synonym: breast carcinoma
+  examples: |
+    - breast cancer
+    - breast cancer, breast carcinoma
+    - breast cancer, carcinoma
+    - breast cancer, nos
+    - cancer, breast
+    - cancer of breast
+    - cancer of the breast
+    - carcinoma of breast
+    - carcinoma of the breast
+    - mammary carcinoma
+- synonym: breast ductal carcinoma
+  examples: |
+    - duct carcinoma
+    - mammary ductal carcinoma
+- synonym: breast fibrocystic change
+  examples: |
+    - benign breast disease
+    - breast fibrocystic disease
+    - cystic disease of breast
+    - cystic disease of the breast
+    - diffuse cystic mastopathy
+    - fibrocystic breast
+    - fibrocystic breast changes
+    - fibrocystic breast disease
+    - fibrocystic change of breast
+    - fibrocystic change of the breast
+    - fibrocystic disease
+    - fibrocystic disease of breast
+    - fibrocystic disease of the breast
+    - fibrocystic mastopathy
+    - mammary dysplasia
+- synonym: burkitt lymphoma
+  examples: |
+    - burkitt's lymphoma
+    - small non-cleaved cell lymphoma, burkitt's type
+- synonym: carcinoma
+  examples: |
+    - cancer, carcinoma
+    - carcinoma, malignant
+    - carcinoma, nos
+    - epithelial carcinoma
+    - epithelioma malignant
+    - malignant epithelial neoplasm
+    - malignant epithelial tumor
+    - malignant epithelioma
+    - other carcinoma
+- synonym: cervical adenocarcinoma
+  examples: |
+    - adenocarcinoma - cervix
+    - adenocarcinoma of cervix
+    - adenocarcinoma of cervix uteri
+    - adenocarcinoma of the cervix
+    - adenocarcinoma of the cervix uteri
+    - adenocarcinoma of the uterine cervix
+    - adenocarcinoma of uterine cervix
+    - cervical adenocarcinoma, nos
+    - cervical adenocarcinoma, not otherwise specified
+    - cervix adenocarcinoma
+    - cervix uteri adenocarcinoma
+    - uterine cervix adenocarcinoma
+- synonym: cervical carcinoma
+  examples: |
+    - cancer of cervix
+    - cancer of the cervix
+    - cancer of the uterine cervix
+    - cancer of uterine cervix
+    - carcinoma of cervix
+    - carcinoma of cervix uteri
+    - carcinoma of the cervix
+    - carcinoma of the cervix uteri
+    - carcinoma of the uterine cervix
+    - carcinoma of uterine cervix
+    - cervical cancer
+    - cervical cancer, nos
+    - cervical squamous cell carcinoma and endocervical adenocarcinoma
+    - cervix cancer
+    - cervix carcinoma
+    - cervix uteri carcinoma
+    - uterine cervix cancer
+    - uterine cervix carcinoma
+    - cesc
+- synonym: cervicitis
+  examples: |
+    - cancer, carcinoma, cervicitis
+    - carcinoma, cervicitis
+- synonym: childhood chronic myelogenous leukemia, bcr-abl1 positive
+  examples: |
+    - childhood chronic myelogenous leukemia
+    - childhood chronic myeloid leukemia
+    - childhood cml
+    - chronic myelogenous leukemia (cml)
+- synonym: cholangiocarcinoma
+  examples: |
+    - cc
+    - cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)
+    - cholangiocarcinoma, malignant
+    - cholangiocar.- intra/extrahepatic
+    - cholangiocellular carcinoma
+    - cholangiosarcoma
+    - intrahepatic bile duct cancer (cholangiocarcinoma)
+    - chol
+- synonym: chromophobe renal cell carcinoma
+  examples: |
+    - chromophobe adenocarcinoma
+    - chromophobe carcinoma
+    - chromophobe carcinoma of kidney
+    - chromophobe carcinoma of the kidney
+    - chromophobe cell carcinoma of kidney
+    - chromophobe cell carcinoma of the kidney
+    - chromophobe renal cell cancer
+    - kidney chromophobe
+    - renal cell carcinoma, chromophobe type
+    - kich
+- synonym: chronic myeloid leukemia
+  examples: |
+    - chronic granulocytic leukemia
+    - chronic leukemia, chronic myeloid leukemia
+    - chronic myelogenous leukemia
+    - cml
+    - cml - chronic myelogenous leukemia
+    - myeloid leukemia, chronic
+- synonym: clavien-dindo grade iv
+  examples: |
+    - grade iv
+    - grade iv, adenocarcinoma
+- synonym: colon adenocarcinoma
+  examples: |
+    - adenocarcinoma - colon
+    - adenocarcinoma of colon
+    - adenocarcinoma of the colon
+    - colonic adenocarcinoma
+    - coad
+- synonym: colon carcinoma
+  examples: |
+    - carcinoma of colon
+    - carcinoma of the colon
+    - colon cancer
+    - colonic carcinoma
+- synonym: colorectal adenocarcinoma
+  examples: |
+    - adenocarcinoma of large bowel
+    - adenocarcinoma of large intestine
+    - adenocarcinoma of the large bowel
+    - adenocarcinoma of the large intestine
+    - cancer, colorectal adenocarcinoma
+    - colorectal (colon or rectal) adenocarcinoma
+    - dukes' type c, grade iv, colorectal adenocarcinoma
+    - large bowel adenocarcinoma
+    - large intestine adenocarcinoma
+- synonym: colorectal carcinoma
+  examples: |
+    - cancer of large bowel
+    - cancer of large intestine
+    - cancer of the large bowel
+    - cancer of the large intestine
+    - carcinoma of large bowel
+    - carcinoma of large intestine
+    - carcinoma of the large bowel
+    - carcinoma of the large intestine
+    - colorectal cancer
+    - colorectal cancer, nos
+    - colorectal (colon or rectal) cancer
+    - crc
+    - large bowel cancer
+    - large bowel carcinoma
+    - large intestine cancer
+    - large intestine carcinoma
+- synonym: cornelia de lange syndrome
+  examples: |
+    - cornelia de lange syndrome 1; cdls1; nipped-b-like; nipbl
+    - de lange phenotype; developmental delay; profound retardation; seizures; 3 cousins are also affected; 46,xy,-22,+der (22)t(3;22)(q25.3;p12)
+- synonym: coronary artery disease
+  examples: |
+    - cad
+    - cancer, coronary artery disease, hypertension
+    - coronary artery disease, hypertension
+    - coronary disease
+    - coronary heart disease
+- synonym: cutaneous melanoma
+  examples: |
+    - cutaneous (skin) melanoma
+    - malignant cutaneous melanoma
+    - malignant melanoma of skin
+    - malignant melanoma (of skin), stage unspecified
+    - malignant melanoma of skin stage unspecified
+    - melanoma of skin
+    - melanoma of the skin
+    - skin cutaneous melanoma
+    - skin melanoma
+    - skin, melanoma
+    - skcm
+- synonym: cystadenocarcinoma
+  examples: |
+    - cystadenocarcinoma, malignant
+- synonym: diffuse large b-cell lymphoma
+  examples: |
+    - diffuse histiocytic lymphoma
+    - diffuse histiocytic lymphomas
+    - diffuse, large b-cell, lymphoma
+    - diffuse large b-cell lymphoma, tonsillitis
+    - diffuse large cell lymphoma
+    - diffuse large-cell lymphoma
+    - diffuse large-cell lymphomas
+    - diffuse large lymphoma
+    - dlbcl
+    - histiocytic lymphoma
+    - histiocytic lymphoma, diffuse
+    - histiocytic lymphomas
+    - histiocytic lymphomas, diffuse
+    - human b cell non-hodgkin's lymphoma
+    - large b-cell lymphoma
+    - large cell lymphoma
+    - large-cell lymphoma
+    - large cell lymphoma, diffuse
+    - large-cell lymphoma, diffuse
+    - large cell lymphoma; diffuse mixed histiocytic and lymphocytic lymphoma; follicular b cell lymphoma
+    - large-cell lymphomas
+    - large-cell lymphomas, diffuse
+    - large lymphoid lymphoma, diffuse
+    - large lymphoma
+    - large lymphoma diffuse
+    - lymphoid neoplasm diffuse large b-cell lymphoma
+    - lymphoma, diffuse histiocytic
+    - lymphoma diffuse large
+    - lymphoma, diffuse large cell
+    - lymphoma, diffuse large-cell
+    - lymphoma, histiocytic
+    - lymphoma, histiocytic, diffuse
+    - lymphoma large
+    - lymphoma, large b-cell, diffuse
+    - lymphoma, large cell
+    - lymphoma, large-cell
+    - lymphoma, large cell, diffuse
+    - lymphoma, large-cell, diffuse
+    - lymphoma large diffuse
+    - lymphoma, large lymphoid, diffuse
+    - lymphomas, diffuse histiocytic
+    - lymphomas, diffuse large-cell
+    - lymphomas, histiocytic
+    - lymphomas, large-cell
+    - dlbc
+- synonym: down syndrome
+  examples: |
+    - trisomy 21
+    - trisomy 21 (down syndrome)
+    - trisomy 21 syndrome
+- synonym: embryonal carcinoma
+  examples: |
+    - carcinoma, embryonal, malignant
+    - embryonal carcinoma, mediastinitis, seminoma
+    - malignant pluripotent embryonal carcinoma
+- synonym: embryonal testis carcinoma
+  examples: |
+    - cancer, embryonal carcinoma, embryonal testis carcinoma
+    - embryonal carcinoma of testis
+    - testicular embryonal carcinoma
+- synonym: endometrial adenocarcinoma
+  examples: |
+    - adenocarcinoma, endometrial, malignant
+    - adenocarcinoma of endometrium
+    - adenocarcinoma of the endometrium
+- synonym: endometrial carcinoma
+  examples: |
+    - cancer, endometrial carcinoma
+    - carcinoma, endometrial, malignant
+    - carcinoma of endometrium
+    - carcinoma of the endometrium
+    - endometrial cancer
+- synonym: esophageal carcinoma
+  examples: |
+    - cancer of esophagus
+    - cancer of the esophagus
+    - carcinoma of esophagus
+    - carcinoma of the esophagus
+    - esophageal cancer
+    - esophageal cancer, nos
+    - esophagus carcinoma
+    - esca
+- synonym: essential thrombocythemia
+  examples: |
+    - essential thrombocytemia
+    - essential thrombocytosis
+    - et
+    - idiopathic thrombocythemia
+    - primary thrombocythemia
+    - primary thrombocytosis
+- synonym: ewing sarcoma
+  examples: |
+    - es
+    - ewing's sarcoma
+    - ewing's tumor
+- synonym: fibrosarcoma
+  examples: |
+    - fibrosarcoma (excluding infantile fibrosarcoma)
+    - fibrosarcoma, malignant
+    - fibrosarcoma - not infantile
+    - malignant fibromatous neoplasm
+- synonym: follicular lymphoma
+  examples: |
+    - follicle center lymphoma
+    - follicular centre cell lymphoma
+    - follicular non-hodgkin lymphoma
+    - follicular non-hodgkin's lymphoma
+    - lymphoma, follicular centre cell
+    - lymphoma, follicular, malignant
+- synonym: gastric adenocarcinoma
+  examples: |
+    - adenocarcinoma of stomach
+    - adenocarcinoma of the stomach
+    - adenocarcinoma - stomach
+    - gastric (stomach) adenocarcinoma
+    - stomach adenocarcinoma
+    - stad
+- synonym: gastric carcinoma
+  examples: |
+    - cancer of stomach
+    - cancer of the stomach
+    - carcinoma of stomach
+    - carcinoma of the stomach
+    - gastric cancer
+    - gastric cancer, nos
+    - gastric (stomach) cancer
+    - stomach cancer
+    - stomach carcinoma
+- synonym: gastrointestinal stromal tumor
+  examples: |
+    - gastrointestinal stromal neoplasm
+    - gastrointestinal stromal tumor (gist)
+    - gist
+- synonym: glioblastoma
+  examples: |
+    - gbm
+    - gbm (glioblastoma)
+    - glioblastoma multiforme
+    - grade iv astrocytic neoplasm
+    - grade iv astrocytic tumor
+    - grade iv astrocytoma
+    - malignant glioblastoma
+    - spongioblastoma multiforme
+    - who grade iv glioma
+- synonym: glioma
+  examples: |
+    - glial neoplasm
+    - glial tumor
+    - neoplasm of neuroglia
+    - neoplasm of the neuroglia
+    - neuroglial neoplasm
+    - neuroglial tumor
+    - neuroglioma
+    - tumor of neuroglia
+    - tumor of the neuroglia
+- synonym: granular renal cell carcinoma
+  examples: |
+    - granular cell carcinoma of kidney
+    - granular cell carcinoma of the kidney
+    - kidney granular cell carcinoma
+    - kidney renal clear cell carcinoma
+    - kirc
+- synonym: head and neck squamous cell carcinoma
+  examples: |
+    - head and neck squamous cell carcinoma, nos
+    - scchn
+    - squamous cell carcinoma of head and neck
+    - squamous cell carcinoma of the head and neck
+    - hnsc
+- synonym: healthy
+  examples: |
+    - apparently healthy
+- synonym: hepatoblastoma
+  examples: |
+    - hbl
+    - hepatoblastoma, malignant
+    - pediatric embryonal hepatoma
+    - pediatric hepatoblastoma
+- synonym: hepatocellular carcinoma
+  examples: |
+    - cancer, hepatocellular carcinoma
+    - carcinoma, hepatocellular, malignant
+    - carcinoma of liver cells
+    - carcinoma of the liver cells
+    - hcc
+    - hepatocellular adenocarcinoma
+    - hepatocellular cancer
+    - hepatoma
+    - liver cell cancer (hepatocellular carcinoma)
+    - liver cell carcinoma
+    - liver hepatocellular carcinoma
+    - primary carcinoma of liver cells
+    - primary carcinoma of the liver cells
+    - lihc
+- synonym: hereditary spherocytosis
+  examples: |
+    - hereditary spherocytosis type 2
+- synonym: immunoblastic lymphoma
+  examples: |
+    - lymphoma, immunoblastic, malignant
+    - refractory immunoblastic b cell lymphoma progressed from follicular centroblastic/centrocytic lymphoma
+- synonym: immunoglobulin lambda locus
+  examples: |
+    - igl
+    - immunoglobulin a lambda myeloma
+    - immunoglobulin lambda gene
+    - lambda light chain gene
+- synonym: invasive breast carcinoma
+  examples: |
+    - breast invasive carcinoma
+    - infiltrating breast cancer
+    - infiltrating breast carcinoma
+    - infiltrating carcinoma of breast
+    - infiltrating carcinoma of the breast
+    - invasive breast cancer
+    - invasive carcinoma of breast
+    - invasive carcinoma of the breast
+    - invasive mammary carcinoma
+    - brca
+- synonym: leukemia
+  examples: |
+    - blood (leukemia)
+    - cancer, leukemia
+    - leukemia, disease
+    - leukemia, malignant
+    - leukemia nos
+    - leukemia, nos
+    - leukemias
+    - leukemias, general
+- synonym: liver carcinoma
+  examples: |
+    - liver and intrahepatic bile duct carcinoma
+- synonym: lung adenocarcinoma
+  examples: |
+    - adenocarcinoma of lung
+    - adenocarcinoma of the lung
+    - cancer, lung adenocarcinoma
+    - luad
+- synonym: lung carcinoma
+  examples: |
+    - cancer, lung carcinoma
+    - cancer of lung
+    - cancer of the lung
+    - carcinoma of lung
+    - carcinoma of the lung
+    - lung cancer
+    - lung cancer, nos
+- synonym: lung large cell carcinoma
+  examples: |
+    - anaplastic lung carcinoma
+    - carcinoma; large cell lung cancer
+    - large cell carcinoma of lung
+    - large cell carcinoma of the lung
+    - large cell lung cancer
+    - large cell lung carcinoma
+    - large cell undifferentiated lung carcinoma
+- synonym: lung squamous cell carcinoma
+  examples: |
+    - epidermoid cell carcinoma of lung
+    - epidermoid cell carcinoma of the lung
+    - epidermoid cell lung carcinoma
+    - squamous cell carcinoma of lung
+    - squamous cell carcinoma of the lung
+    - squamous cell lung cancer
+    - squamous cell lung carcinoma
+    - lusc
+- synonym: medulloblastoma
+  examples: |
+    - medulloblastoma, malignant
+    - medulloblastomas
+- synonym: melanoma
+  examples: |
+    - malignant melanoma
+    - melanoma, malignant
+- synonym: mesothelioma
+  examples: |
+    - meso
+- synonym: metastatic neuroblastoma
+  examples: |
+    - metastatic neuroblastoma from bone marrow
+- synonym: multiple myeloma-iga
+  examples: |
+    - igak myeloma
+- synonym: myeloid neoplasm
+  examples: |
+    - multiple myeloma, myeloid neoplasm
+    - myeloid malignancy
+    - myeloid tumor
+- synonym: neuroblastoma
+  examples: |
+    - cancer, neuroblastoma
+    - neural crest tumor, malignant
+    - neuroblastoma, malignant
+    - neuroblastoma (schwannian stroma-poor)
+- synonym: nut carcinoma
+  examples: |
+    - carcinoma with t(15;19)(q13;p13.1) translocation
+    - midline carcinoma of children and young adults with nut rearrangement
+    - nut midline carcinoma
+- synonym: osteosarcoma
+  examples: |
+    - cancer, osteosarcoma
+    - cancer, osteosarcoma, sarcoma
+    - osteogenic sarcoma
+    - osteosarcoma, malignant
+- synonym: ovarian serous cystadenocarcinoma
+  examples: |
+    - ov
+- synonym: pancreatic adenocarcinoma
+  examples: |
+    - adenocarcinoma of pancreas
+    - adenocarcinoma of the pancreas
+    - adenocarcinoma - pancreas
+    - pancreas adenocarcinoma
+    - paad
+- synonym: pancreatic carcinoma
+  examples: |
+    - cancer of pancreas
+    - cancer of the pancreas
+    - cancer, pancreatic carcinoma
+    - carcinoma of pancreas
+    - carcinoma of the pancreas
+    - exocrine cancer
+    - exocrine pancreas carcinoma
+    - pancreas cancer
+    - pancreas carcinoma
+    - pancreatic cancer
+    - pancreatic cancer (excluding islets), nos
+    - pancreatic cancer (not islets)
+- synonym: papillary renal cell carcinoma
+  examples: |
+    - chromophil carcinoma of kidney
+    - chromophil carcinoma of the kidney
+    - chromophil renal cell carcinoma
+    - kidney renal papillary cell carcinoma
+    - papillary (chromophil) renal cell carcinoma
+    - papillary renal cell cancer
+    - prcc
+    - kirp
+- synonym: parathyroid gland adenoma
+  examples: |
+    - adenoma of parathyroid
+    - adenoma of the parathyroid gland
+- synonym: parathyroid gland
+  examples: |
+    - parathyroid adenoma
+    - parathyroid
+- synonym: parkinson's disease
+  examples: |
+    - parkinson disease
+- synonym: plasma cell myeloma
+  examples: |
+    - kahler disease
+    - multiple myeloma
+    - multiple myeloma/plasma cell myeloma
+    - myeloma
+    - myeloma, nos
+    - myeloma, plasma cell, malignant
+    - myelomatosis
+- synonym: plasmacytoma
+  examples: |
+    - plasmacytoma; myeloma
+- synonym: posterior uveitis
+  examples: |
+    - choroiditis
+- synonym: primitive neuroectodermal tumor
+  examples: |
+    - malignant primitive neuroectodermal tumor
+    - neuroectodermal neoplasm
+    - neuroectodermal tumor
+    - neuroepithelioma
+    - pnet
+    - primitive neuroectodermal neoplasm
+    - primitive neuroectodermal tumor (pnet)
+- synonym: progeria
+  examples: |
+    - hutchinson-gilford disease
+    - hutchinson-gilford progeria syndrome
+    - premature senility syndrome
+- synonym: prostate adenocarcinoma
+  examples: |
+    - adenocarcinoma of prostate
+    - adenocarcinoma of the prostate
+    - cancer, prostate adenocarcinoma, prostate carcinoma
+    - prad
+- synonym: prostate carcinoma
+  examples: |
+    - cancer of prostate
+    - cancer of the prostate
+    - carcinoma of prostate
+    - carcinoma of the prostate
+    - carcinoma (prostate)
+    - prostate cancer
+    - prostate cancer, nos
+    - prostate cancer, prostate carcinoma
+    - prostate carcinoma, prostatitis
+- synonym: rectal adenocarcinoma
+  examples: |
+    - adenocarcinoma of rectum
+    - adenocarcinoma of the rectum
+    - adenocarcinoma - rectum
+    - rectum adenocarcinoma
+    - read
+- synonym: renal cell carcinoma
+  examples: |
+    - adenocarcinoma of kidney
+    - adenocarcinoma of the kidney
+    - carcinoma, renal cell, malignant
+    - kidney adenocarcinoma
+    - rcc
+    - renal carcinoma
+    - renal cell adenocarcinoma
+    - renal cell cancer
+    - renal cell carcinoma, nos
+    - renal cell carcinoma, stage unspecified
+    - renal carcinoma
+- synonym: retinoblastoma
+  examples: |
+    - cancer, retinoblastoma
+    - rb
+    - retinoblastoma, malignant
+- synonym: rhabdoid tumor
+  examples: |
+    - hepatic rhabdoid tumor
+    - rhabdoid sarcoma
+    - rhabdoid tumor (wilm's tumor)
+- synonym: rhabdomyosarcoma
+  examples: |
+    - rhabdomyosarcoma, malignant
+    - rhabdomyosarcoma, nos
+- synonym: sarcoma
+  examples: |
+    - mesenchymal tumor, malignant
+    - sarcoma, malignant
+    - sarcoma of soft tissue and bone
+    - sarcoma of the soft tissue and bone
+    - sarc
+    - connective and soft tissue neoplasm
+    - connective and soft tissue neoplasms
+    - connective soft tissue neopl
+    - connective tissue sarcoma
+    - malignant mesenchymal tumor
+    - malignant mesenchymal tumour
+    - malignant neoplasm of connective and other soft tissue
+    - malignant neoplasm of connective and other soft tissue (disorder)
+    - malignant neoplasm of connective and other soft tissue of abdomen
+    - malignant neoplasm of connective and other soft tissue of head, face, and neck
+    - malignant neoplasm of connective and other soft tissue of lower limb, including hip
+    - malignant neoplasm of connective and other soft tissue of pelvis
+    - malignant neoplasm of connective and other soft tissue of thorax
+    - malignant neoplasm of connective and other soft tissue of trunk, unspecified
+    - malignant neoplasm of connective and other soft tissue of upper limb, including shoulder
+    - malignant neoplasm of connective and other soft tissue, site unspecified
+    - malignant neoplasm of other specified sites of connective and other soft tissue
+    - malignant neoplasm of soft tissue
+    - malignant neoplasm of soft tissue (disorder)
+    - malignant neoplasm of the soft tissue
+    - malignant soft tissue neoplasm
+    - malignant soft tissue tumor
+    - malignant tumor of soft tissue
+    - malignant tumor of the soft tissue
+    - malignant tumour of soft tissue
+    - mal neopl trunk nos
+    - mal neo soft tis abdomen
+    - mal neo soft tis pelvis
+    - mal neo soft tissue arm
+    - mal neo soft tissue head
+    - mal neo soft tissue leg
+    - mal neo soft tissue nec
+    - mal neo soft tissue nos
+    - mal neo soft tis thorax
+    - mesenchymal tumour, malignant
+    - neoplasms, connective and soft tissue
+    - neopl connective soft tissue
+    - nhdf-neo
+    - sarcoma, no icd-o subtype
+    - sarcoma, no icd-o subtype (morphologic abnormality)
+    - sarcoma, nos
+    - sarcoma of soft tissue
+    - sarcoma of the soft tissue
+    - soft tissue sarcoma
+    - soft tissue tumor, malignant
+    - soft tissue tumour, malignant
+    - tumor of soft tissue and skeleton
+    - [m]sarcoma nos
+    - [m]sarcoma nos (morphologic abnormality)
+- synonym: seminoma
+  examples: |
+    - seminoma, malignant
+    - seminoma, pure
+- synonym: squamous cell carcinoma
+  examples: |
+    - carcinoma, squamous cell, malignant
+    - epidermoid carcinoma
+    - epidermoid cell cancer
+    - malignant epidermoid cell neoplasm
+    - malignant epidermoid cell tumor
+    - malignant squamous cell neoplasm
+    - malignant squamous cell tumor
+    - squamous carcinoma
+    - squamous cell cancer
+    - squamous cell carcinoma; mesothelioma
+    - squamous cell epithelioma
+- synonym: t acute lymphoblastic leukemia
+  examples: |
+    - acute t cell leukemia
+    - acute t-cell leukemia
+    - acute t cell lymphoblastic leukemia
+    - acute t-cell lymphoblastic leukemia
+    - acute t cell lymphocytic leukemia
+    - acute t-cell lymphocytic leukemia
+    - precursor t-lymphoblastic leukemia
+    - precursor t-lymphoblastic leukemia (t-cell all)
+    - t-acute lymphoblastic leukemia (t-all; type iii cortical)
+    - t-all
+    - t-cell acute lymphoblastic leukemia
+    - t-cell acute lymphoblastic leukemia cell line atcc crl-2629
+    - t-cell acute lymphocytic leukemia
+    - t-cell all
+    - t-cell type acute leukemia
+- synonym: t-cell prolymphocytic leukemia
+  examples: |
+    - t-cell leukemia
+    - t cell prolymphocytic leukemia
+    - t prolymphocytic leukemia
+- synonym: testicular germ cell tumor
+  examples: |
+    - germ cell neoplasm of testis
+    - germ cell neoplasm of the testis
+    - germ cell tumor of testis
+    - germ cell tumor of the testis
+    - testicular germ cell neoplasm
+    - testicular germ cell neoplasms
+    - testicular germ cell tumors
+    - tgct
+- synonym: thyroid gland carcinoma
+  examples: |
+    - cancer of the thyroid
+    - cancer of thyroid
+    - carcinoma of the thyroid
+    - carcinoma of the thyroid gland
+    - carcinoma of thyroid
+    - carcinoma of thyroid gland
+    - head and neck cancer, thyroid
+    - thyroid cancer
+    - thyroid cancer, nos
+    - thyroid carcinoma
+    - thyroid gland cancer
+    - thca
+- synonym: t lymphoblastic leukemia/lymphoma
+  examples: |
+    - lymphoblastic leukemia, lymphoma
+    - precursor t lymphoblastic leukemia/lymphoma
+    - precursor t lymphoblastic lymphoma/leukemia
+    - precursor t-lymphoblastic lymphoma/leukemia
+    - t-lymphoblastic leukemia/lymphoma
+- synonym: uterine carcinosarcoma
+  examples: |
+    - carcinosarcoma of the uterus
+    - malignant mixed mesodermal (mullerian) tumor of the uterus
+    - malignant mixed mesodermal (müllerian) tumor of the uterus
+    - uterine malignant mixed mesodermal (mullerian) tumor
+    - uterine malignant mixed mesodermal (müllerian) tumor
+    - ucs
+- synonym: uterine corpus endometrial carcinoma
+  examples: |
+    - ucec
+- synonym: uveal melanoma
+  examples: |
+    - intraocular melanoma
+    - melanoma of the uvea
+    - melanoma of uvea
+    - melanoma, uveal, malignant
+    - uvm
+- synonym: galnt7
+  examples: |
+    - t7
+    - t7-control
+- synonym: h1f0
+  examples: |
+    - h1.0
+- synonym: h1fx
+  examples: |
+    - h1x
+- synonym: h2afb1
+  examples: |
+    - h2a.bbd
+- synonym: h2afb2
+  examples: |
+    - h2a
+- synonym: h2afx
+  examples: |
+    - h2ax
+- synonym: h2afz
+  examples: |
+    - h2a.z
+- synonym: h3f3b
+  examples: |
+    - h3.3
+- synonym: h3k14_acetylation_site
+  examples: |
+    - h3k14ac
+    - h3k14 acetylation site
+- synonym: h3k18_acetylation_site
+  examples: |
+    - h3k18ac
+    - h3k18 acetylation site
+- synonym: h3k23_acetylation_site
+  examples: |
+    - h3k23ac
+    - h3k23 acetylation site
+- synonym: h3k23_dimethylation_site
+  examples: |
+    - h3k23 dimethylation site
+    - h3k23me2
+- synonym: h3k27_acetylation_site
+  examples: |
+    - h3k27ac
+    - h3k27 acetylation site
+- synonym: h3k27_monomethylation_site
+  examples: |
+    - h2k27 mono-methylation site
+    - h3k27me1
+- synonym: h3k36_trimethylation_site
+  examples: |
+    - h3k36me3
+    - h3k36me3b
+    - h3k36 tri-methylation site
+- synonym: h3.y
+  examples: |
+    - h3
+    - h3/4ac
+- synonym: h4k20me3 modified histone binding
+  examples: |
+    - h4k20me3
+- synonym: hist1h1c
+  examples: |
+    - h1.2
+- synonym: hist1h1e
+  examples: |
+    - h1.4
+- synonym: hist1h2bi
+  examples: |
+    - h2b
+- synonym: hist1h3c
+  examples: |
+    - h3.1
+- synonym: hist1h4f
+  examples: |
+    - h4
+- synonym: hist3h3
+  examples: |
+    - h3t
+- synonym: loc100128293
+  examples: |
+    - histone lysine crotonylation
+- synonym: tatdn2p3
+  examples: |
+    - dnase
+- synonym: adipose tissue
+  examples: |
+    - adipose
+    - fat
+    - fatty tissue
+- synonym: adrenal gland
+  examples: |
+    - adrenal
+    - fetal adrenal gland
+    - glandula adrenalis
+    - glandula suprarenalis
+- synonym: alveolus of lung
+  examples: |
+    - alveoli
+    - alveolus pulmonis
+    - lung alveolus
+    - pulmonary alveolus
+    - respiratory alveolus
+    - lung
+- synonym: ammon's horn
+  examples: |
+    - ammon gyrus
+    - ammon horn
+    - hippocampus major
+    - hippocampus proper
+    - hippocampus proprius
+- synonym: hippocampus fimbria
+  examples: |
+    - hippocampus
+    - fimbria-fornix
+    - fimbria hippocampus
+    - fimbria of hippocampus
+    - fimbria of the fornix
+    - hippocampal fimbria
+    - neuraxis fimbria
+- synonym: angular gyrus
+  examples: |
+    - middle part of inferior parietal lobule
+    - preoccipital gyrus
+- synonym: aorta
+  examples: |
+    - trunk of aortic tree
+    - trunk of systemic arterial tree
+- synonym: ascending aorta
+  examples: |
+    - vascular tissue
+    - ascending thoracic aorta
+    - pars ascendens aortae
+    - aorta
+- synonym: arm bone
+  examples: |
+    - arm bone organ
+    - bone of arm
+    - bone organ of arm
+    - left arm bone
+    - right arm bone
+    - upper limb bone
+- synonym: artery
+  examples: |
+    - arterial subtree
+    - arterial tree organ part
+    - arteries
+- synonym: autonomic nervous system
+  examples: |
+    - ans
+    - autonomic
+    - involuntary nervous system
+    - peripheral nerves and autonomic nervous system
+    - nervous system
+    - nerves
+- synonym: biliary tract
+  examples: |
+    - bile tract
+    - biliary system
+    - other and unspecified parts of biliary tract
+    - tract, biliary
+- synonym: bladder
+  examples: |
+    - urinary bladder
+    - urinary system, bladder
+- synonym: blood
+  examples: |
+    - portion of blood
+    - vertebrate blood
+- synonym: body of pancreas
+  examples: |
+    - pancreas body
+    - pancreatic body
+- synonym: body of uterus
+  examples: |
+    - corpus uteri
+    - uterine body
+    - uterine corpus
+- synonym: bone marrow
+  examples: |
+    - medulla ossea
+    - medulla ossium
+- synonym: bone tissue
+  examples: |
+    - bone
+    - calcium tissue
+    - osseous tissue
+    - osteogenic tissue
+- synonym: brain
+  examples: |
+    - fetal brain
+- synonym: breast
+  examples: |
+    - mammary part of chest
+    - mammary region
+- synonym: cartilage element
+  examples: |
+    - cartilage
+    - cartilage organ
+    - cartilaginous element
+    - chondrogenic element
+- synonym: caudate nucleus
+  examples: |
+    - caudatus
+- synonym: central nervous system
+  examples: |
+    - cns
+    - nervous system, cns
+    - spinal cord, cranial nerves, and other parts of central nervous system
+    - systema nervosum centrale
+- synonym: cerebellar cortex
+  examples: |
+    - cortex of cerebellar hemisphere
+- synonym: cerebellum
+  examples: |
+    - epencephalon-1
+- synonym: chorion
+  examples: |
+    - chorion (vertebrates)
+    - embryonic chorion
+    - fetal chorion
+    - uterine chorion
+- synonym: cingulate gyrus
+  examples: |
+    - cingulate area
+    - cingulate region
+    - falciform lobe
+    - upper limbic gyrus
+- synonym: colon
+  examples: |
+    - colon crypt
+    - gi colon
+    - large bowel
+- synonym: colonic mucosa
+  examples: |
+    - colonic mucous membrane
+    - colon mucosa
+    - colon mucous membrane
+    - large bowel mucosa
+    - mucosa of colon
+    - mucosa of large bowel
+- synonym: connective tissue
+  examples: |
+    - portion of connective tissue
+    - stromal connective
+    - textus connectivus
+- synonym: coronary artery
+  examples: |
+    - coronary arterial tree
+- synonym: duodenal mucosa
+  examples: |
+    - doudenal mucosa
+    - duodenal mucous membrane
+    - duodenum mucosa
+    - mucosa of duodenum
+    - mucous membrane of duodenum
+- synonym: duodenum
+  examples: |
+    - gi duodenum
+- synonym: ear
+  examples: |
+    - unknown
+- synonym: embryo
+  examples: |
+    - embryonic organism
+- synonym: endometrium
+  examples: |
+    - endometrial
+    - tunica mucosa (endometrium)
+    - tunica mucosa uteri
+    - uterine endometrium
+- synonym: esophagus
+  examples: |
+    - gi esophagus
+    - gullet
+    - oesophagus
+- synonym: esophagus muscularis mucosa
+  examples: |
+    - esophagus muscularis mucosae
+    - lamina muscularis mucosae (oesphagus)
+    - lamina muscularis of esophageal mucous membrane
+    - muscularis mucosae of esophagus
+- synonym: eye
+  examples: |
+    - eye and adnexa
+- synonym: fallopian tube
+  examples: |
+    - fallopian tube secretory
+    - mammalian oviduct
+    - uterine tube (sensu mammalia)
+- synonym: femur
+  examples: |
+    - thigh bone
+- synonym: frontal cortex
+  examples: |
+    - cortex of frontal lobe
+    - frontal lobe cortex
+    - gray matter of frontal lobe
+    - grey matter of frontal lobe
+- synonym: frontal lobe
+  examples: |
+    - lobi frontales
+    - lobus frontalis
+    - mid frontal lobe
+- synonym: gall bladder
+  examples: |
+    - gallbladder
+    - vescica
+- synonym: gastrocnemius medialis
+  examples: |
+    - caput mediale musculus gastrocnemii
+    - caput mediale (musculus gastrocnemius)
+    - medial head of gastrocnemius
+    - medial head of gastrocnemius muscle
+- synonym: gastroesophageal sphincter
+  examples: |
+    - cardiac sphincter
+    - gastroesophageal sphincter muscle
+    - inferior esophageal sphincter
+- synonym: germinal center
+  examples: |
+    - central zone of follice
+    - light zone of follicle
+    - reaction center of follicle
+- synonym: gingiva
+  examples: |
+    - gum
+    - gums
+    - gum tissue
+- synonym: globus pallidus
+  examples: |
+    - pale body
+    - paleostriatum
+- synonym: heart
+  examples: |
+    - chambered heart
+    - fetal heart
+    - vertebrate heart
+- synonym: heart left ventricle
+  examples: |
+    - cardiac left ventricle
+    - left cardiac ventricle
+    - left ventricle
+    - left ventricle of heart
+- synonym: heart right ventricle
+  examples: |
+    - cardiac right ventricle
+    - right ventricle
+    - right ventricle of heart
+- synonym: hypopharynx
+  examples: |
+    - laryngeal pharynx
+    - laryngopharynx
+- synonym: hypothalamus
+  examples: |
+    - preoptico-hypothalamic area
+    - preoptico-hypothalamic region
+- synonym: inferior parietal cortex
+  examples: |
+    - inferior parietal lobule
+- synonym: inner membrane amniotic membrane tissue
+  examples: |
+    - amniotic membrane
+    - human amniotic membrane
+- synonym: intestine
+  examples: |
+    - bowel
+    - gi intestine
+- synonym: islet of langerhans
+  examples: |
+    - pancreatic insula
+    - pancreatic islet
+- synonym: large intestine
+  examples: |
+    - fetal large intestine
+- synonym: left cardiac atrium
+  examples: |
+    - atrium sinistrum
+    - cardiac left atrium
+    - heart left atrium
+    - left atrium
+    - left atrium of heart
+- synonym: leg bone
+  examples: |
+    - left leg bone
+    - right leg bone
+    - bone of the leg
+    - leg bones
+    - left or right lef bone
+    - lower limb bone
+- synonym: limb
+  examples: |
+    - free limb
+    - limb sensu vertebrata
+    - pentadactyl limb
+    - tetrapod limb
+- synonym: liver
+  examples: |
+    - body system, hepatic
+    - fetal liver
+    - gastrointestinal tract, liver
+    - hepatic body system
+    - hepatic organ system
+    - liver and intrahepatic bile ducts
+    - organ system, hepatic
+- synonym: lower leg skin
+  examples: |
+    - hind limb middle limb segment skin
+    - hind limb zeugopod skin
+- synonym: lung
+  examples: |
+    - embryonic lung
+    - fetal lung
+    - pulmo
+- synonym: lung/bronchus
+  examples: |
+    - bronchus and lung
+- synonym: lymph node
+  examples: |
+    - lymph nodes
+- synonym: mammary gland
+  examples: |
+    - glandula mammaria
+    - lactiferous gland
+- synonym: medulla oblongata
+  examples: |
+    - bulbus
+- synonym: middle frontal gyrus
+  examples: |
+    - gyrus frontalis medialis
+    - intermediate frontal gyrus
+    - medial frontal gyrus
+- synonym: mouth floor
+  examples: |
+    - floor of mouth
+    - floor of oval cavity
+    - floor of the oval cavity
+- synonym: mucosa of rectum
+  examples: |
+    - mucosa of organ of rectum
+    - mucous membrane of rectum
+    - organ mucosa of rectum
+    - rectal mucosa
+    - rectal mucous membrane
+    - rectum mucosa
+    - rectum mucosa of organ
+    - rectum mucous membrane
+    - rectum organ mucosa
+- synonym: muscle of leg
+  examples: |
+    - fetal muscle leg
+    - leg muscle
+    - leg muscle organ
+    - leg skeletal muscle
+    - leg skeletal muscle tissue
+    - muscle leg
+    - muscle of hindlimb zeugopod or stylopod
+    - muscle of thigh or crus
+    - muscle of upper/lower leg
+    - muscle of upper or lower hindlimb segment
+    - muscle organ of leg
+    - skeletal muscle of leg
+- synonym: muscle structure
+  examples: |
+    - muscle
+    - musculus
+- synonym: occipital lobe
+  examples: |
+    - regio occipitalis
+- synonym: omental fat pad
+  examples: |
+    - omental fat depot
+- synonym: oropharynx
+  examples: |
+    - oral part of pharynx
+- synonym: other and ill-defined sites icd-o-3
+  examples: |
+    - other and ill-defined sites
+- synonym: other and unspecified major salivary glands icd-o-3
+  examples: |
+    - other and unspecified major salivary glands
+- synonym: other and unspecified male genital organs icd-o-3
+  examples: |
+    - other and unspecified male genital organs
+- synonym: other and unspecified parts of mouth icd-o-3
+  examples: |
+    - other and unspecified parts of mouth
+- synonym: other and unspecified parts of tongue icd-o-3
+  examples: |
+    - other and unspecified parts of tongue
+- synonym: other endocrine glands and related structures icd-o-3
+  examples: |
+    - other endocrine glands and related structures
+- synonym: ovary
+  examples: |
+    - animal ovary
+    - female gonad
+    - female organism genitalia gonad
+    - female organism genitalia gonada
+    - female organism reproductive system gonad
+    - female organism reproductive system gonada
+    - female reproductive system gonad
+    - female reproductive system gonada
+    - genitalia of female organism gonad
+    - genitalia of female organism gonada
+    - gonada of female organism genitalia
+    - gonada of female organism reproductive system
+    - gonada of female reproductive system
+    - gonada of genitalia of female organism
+    - gonada of reproductive system of female organism
+    - gonad of female organism genitalia
+    - gonad of female organism reproductive system
+    - gonad of female reproductive system
+    - gonad of genitalia of female organism
+    - gonad of reproductive system of female organism
+    - ovum-producing ovary
+    - reproductive system of female organism gonad
+    - reproductive system of female organism gonada
+- synonym: peritoneum
+  examples: |
+    - human peritoneal membrane
+    - retroperitoneum and peritoneum
+- synonym: peyer's patch
+  examples: |
+    - noduli lymphoidei aggregati
+- synonym: placenta
+  examples: |
+    - allantoic placenta
+    - eutherian placenta
+    - fetal placenta
+- synonym: pleura
+  examples: |
+    - heart mediastinum and pleura
+    - heart, mediastinum, and pleura
+    - pleural tissue
+- synonym: pons
+  examples: |
+    - pons of varolius
+    - pons varolii
+- synonym: posterior cranial fossa
+  examples: |
+    - posterior fossa
+- synonym: posterior part of tongue
+  examples: |
+    - base of tongue
+    - pars posterior dorsi linguae
+    - pars posterior (dorsum linguae)
+    - pars posterior linguae
+    - pars postsulcalis (dorsum linguae)
+    - pharyngeal part of tongue
+    - pharyngeal portion of dorsum of tongue
+    - posterior part of dorsum of tongue
+    - postsulcal part of dorsum of tongue
+- synonym: prefrontal cortex
+  examples: |
+    - prefrontal
+    - prefrontal association cortex
+- synonym: prepuce of penis
+  examples: |
+    - foreskin
+    - penile prepuce
+    - prepuce of male
+    - preputium penis
+- synonym: pronephros
+  examples: |
+    - embryonic kidney
+    - pronephric kidney
+- synonym: prostate gland
+  examples: |
+    - male prostate
+    - prostate
+- synonym: psoas muscle
+  examples: |
+    - psoas
+- synonym: pulmonary artery
+  examples: |
+    - pulmonary arterial tree
+    - pulmonary arterial tree organ part
+- synonym: putamen
+  examples: |
+    - nucleus putamen
+- synonym: rectum
+  examples: |
+    - gi rectum
+    - terminal portion of intestine
+- synonym: reticuloendothelial system
+  examples: |
+    - hematopoietic and reticuloendothelial systems
+    - re system
+- synonym: retina
+  examples: |
+    - inner layer of eyeball
+    - retina of camera-type eye
+    - tunica interna of eyeball
+- synonym: right atrium auricular region
+  examples: |
+    - auricula dextra
+    - right auricle
+    - right auricula
+    - right auriculur appendix
+- synonym: right cardiac atrium
+  examples: |
+    - cardiac right atrium
+    - heart right atrium
+    - right atrium
+    - right atrium of heart
+- synonym: right lobe of liver
+  examples: |
+    - liver right lobe
+    - lobus hepaticus dexter
+    - right liver lobe
+    - liver
+    - liver lobe
+- synonym: skeletal muscle tissue
+  examples: |
+    - skeletal muscle
+- synonym: skin of forearm
+  examples: |
+    - forearm skin
+    - forearm skin biopsy
+    - lower arm skin
+    - lower segment of arm skin
+    - skin of antebrachial region
+    - skin of lower arm
+    - skin of lower segment of arm
+    - skin of zeugopod of arm
+- synonym: small intestine
+  examples: |
+    - fetal small intestine
+    - small bowel
+- synonym: soft tissue
+  examples: |
+    - connective subcutaneous and other soft tissues
+    - connective, subcutaneous and other soft tissues
+- synonym: somitomeric trunk muscle
+  examples: |
+    - fetal muscle trunk
+- synonym: spinal cord
+  examples: |
+    - fetal spinal cord
+- synonym: stomach
+  examples: |
+    - fetal stomach
+    - gi stomach
+- synonym: subcutaneous adipose tissue
+  examples: |
+    - fatty layer of subcutaneous tissue
+    - hypodermis fat layer
+    - panniculus adiposus telae subcutaneae
+    - panniculus adiposus (tela subcutanea)
+    - subcutaneous fat layer
+    - fat tissue
+- synonym: superior temporal gyrus
+  examples: |
+    - gyrus temporalis superior
+- synonym: synovial fluid
+  examples: |
+    - joint fluid
+- synonym: testis
+  examples: |
+    - gonad of male genitalia
+    - gonad of male reproductive system
+    - male gonad
+    - testicle
+- synonym: thoracic aorta
+  examples: |
+    - aorta thoracica
+    - thoracic part of aorta
+- synonym: thymus
+  examples: |
+    - fetal thymus
+    - thymus gland
+    - thymus organ
+- synonym: thyroid gland
+  examples: |
+    - thyroid
+- synonym: tibial nerve
+  examples: |
+    - medial popliteal nerve
+- synonym: transverse colon
+  examples: |
+    - colon transversum
+- synonym: umbilical cord
+  examples: |
+    - chorda umbilicalis
+    - funiculus umbilicalis
+- synonym: umbilical cord blood
+  examples: |
+    - cord blood
+- synonym: upper lobe of left lung
+  examples: |
+    - left lung cranial lobe
+    - left upper lobe
+    - left upper lobe of lung
+    - lobus superior pulmonis sinistri
+    - lobus superior (pulmo sinister)
+    - superior lobe of left lung
+- synonym: urothelium
+  examples: |
+    - epithelium transitionale
+    - transitional epithelium
+    - uroepithelium
+- synonym: uterine cervix
+  examples: |
+    - canalis cervicis uteri
+    - caudal segment of uterus
+    - cervical
+    - cervical canal of uterus
+    - cervix
+    - cervix uteri
+    - neck of uterus
+- synonym: uterus
+  examples: |
+    - uterus nos
+    - uterus, nos
+- synonym: vascular system
+  examples: |
+    - vascular
+- synonym: zone of skin
+  examples: |
+    - portion of skin
+    - region of skin
+    - skin
+    - skin region
+    - skin zone
+- synonym: gene_symbol
+  examples: |
+    - gene symbol
+- synonym: 1205-lu
+  examples: |
+    - wm451-lu
+- synonym: 293t
+  examples: |
+    - 293t-rex
+- synonym: 537 mel
+  examples: |
+    - 501-mel
+    - 537-mel
+- synonym: 786-0
+  examples: |
+    - 786_0
+    - 786-o
+    - crl-1932
+    - rcc7860
+    - rcc 7860
+    - rcc_7860
+- synonym: 8988t
+  examples: |
+    - 8988 t
+    - 8988-t
+    - acc 162
+    - pa-tu-8988t
+- synonym: a549
+  examples: |
+    - a-549
+    - a549 cell
+    - a549 etoh 0.02pct lung carcinoma cell line
+    - bt-549
+- synonym: acc112
+  examples: |
+    - utsw-acc112
+- synonym: ag04450
+  examples: |
+    - ag04449
+- synonym: ag08470 cell
+  examples: |
+    - ag08470
+- synonym: ag09319 cell
+  examples: |
+    - ag09319
+- synonym: all pairs
+  examples: |
+    - all_pairs
+    - all-sil
+- synonym: astrocyte
+  examples: |
+    - astrocytic glia
+- synonym: b cell
+  examples: |
+    - b-cell
+    - b lymphocyte
+    - b-lymphocyte
+- synonym: b-cell non-hodgkin lymphoma cell line
+  examples: |
+    - oci-ly4
+- synonym: be(2)-c
+  examples: |
+    - be2c
+    - be(2) c
+    - be(2)_c
+    - be2_c
+    - be2-c
+    - be(2)-c cell
+- synonym: beas-2b
+  examples: |
+    - beas2b
+- synonym: beige adipocyte
+  examples: |
+    - adipocyte
+    - beige/brite adipocyte
+    - beige brown adipocyte
+    - beige fat cell
+    - brite adipocyte
+    - brite cell
+    - brite fat cell
+- synonym: benzene
+  examples: |
+    - benzen
+    - benzine
+    - benzol
+    - benzole
+    - bicarburet of hydrogen
+    - c1ccccc1
+    - c6
+    - c6h6
+    - c6 vertebra
+    - coal naphtha
+    - cyclohexatriene
+    - inchi=1/c6h6/c1-2-4-6-5-3-1/h1-6h
+    - inchikey=uhovqnzjysornb-uhfffaoyah
+    - mineral naphtha
+    - phene
+    - phenyl hydride
+    - pyrobenzol
+    - pyrobenzole
+    - [6]annulene
+- synonym: c1 100080003
+  examples: |
+    - c1 100 08 0003
+    - c803
+- synonym: c4-2b
+  examples: |
+    - c4-2
+- synonym: c57bl/6
+  examples: |
+    - b6
+    - c57
+    - c57/b6
+    - c57b/6
+    - c57bl,
+    - c57bl6
+    - c57/bl6
+    - c57bl\6
+    - c57black
+    - c57black6
+    - c57 black/6
+    - c57black/6
+    - cb57
+    - p493-6
+- synonym: caco-2
+  examples: |
+    - caco2
+- synonym: caki1
+  examples: |
+    - caki-1
+- synonym: caki2
+  examples: |
+    - caki-2
+- synonym: cal51
+  examples: |
+    - cal-51
+    - cal51-mcf7
+- synonym: cardiac muscle cell
+  examples: |
+    - cardiac muscle fiber
+    - cardiac myocyte
+    - cardiomyocyte
+    - heart muscle cell
+- synonym: cardioblast
+  examples: |
+    - cardiovascular progenitor cell
+- synonym: cd8-positive, alpha-beta memory t cell
+  examples: |
+    - cd8-positive, alpha-beta memory t-cell
+    - cd8-positive, alpha-beta memory t lymphocyte
+    - cd8-positive, alpha-beta memory t-lymphocyte
+    - primary t cd8+ memory cells from peripheral blood
+    - t.8mem.sp
+- synonym: cell of skeletal muscle
+  examples: |
+    - skeletal muscle cell
+- synonym: cervical carcinoma cell line
+  examples: |
+    - hela-s3 cervical carcinoma cell line
+    - hepg2 hepatocellular carcinoma cell line
+- synonym: choroid plexus epithelial cell
+  examples: |
+    - epithelial cell of choroid plexus
+- synonym: colo 741
+  examples: |
+    - colo-741
+    - colo-783
+- synonym: colo829
+  examples: |
+    - colo-829
+- synonym: cwru1
+  examples: |
+    - ips_cwru1
+- synonym: d721med
+  examples: |
+    - d721
+    - d-721
+    - d-721med
+    - d-721 med
+- synonym: daoy
+  examples: |
+    - htb186
+- synonym: dld1
+  examples: |
+    - dld-1
+- synonym: dnd-41
+  examples: |
+    - acc525
+- synonym: du 145
+  examples: |
+    - du145
+    - du-145
+- synonym: eh
+  examples: |
+    - bj-eh, bj eh
+- synonym: ej cell
+  examples: |
+    - ej
+- synonym: el
+  examples: |
+    - bj-el, bj el
+- synonym: elf-1
+  examples: |
+    - elf1
+    - elf-1 cell
+- synonym: elr
+  examples: |
+    - bj-elr, bj elr
+- synonym: embryonic stem cell
+  examples: |
+    - embryonic stem cells
+    - esc
+    - lis2
+    - wa-7
+    - wibr2
+- synonym: endodermal cell
+  examples: |
+    - endoderm cell
+- synonym: endothelial cell derived cell line
+  examples: |
+    - hesc derived cd184+ endoderm cultured cells
+- synonym: epithelial cell derived cell line
+  examples: |
+    - bicr
+- synonym: epithelial cell line
+  examples: |
+    - 21nt
+    - ft246
+    - h3396
+    - islk-219
+- synonym: epithelial cell of amnion
+  examples: |
+    - amniotic epithelial cell
+- synonym: epithelial cell of prostate
+  examples: |
+    - prostate epithelial cell
+- synonym: epithelial cell of proximal tubule
+  examples: |
+    - kidney proximal tubule epithelial cell
+- synonym: erythroblast
+  examples: |
+    - normoblast
+- synonym: es-cj7
+  examples: |
+    - cj7 cell
+    - es-cj7 cell
+    - es-wa7 cells
+- synonym: es-i3
+  examples: |
+    - es-i3 cells
+    - hes i3
+- synonym: fibroblast of cardiac tissue
+  examples: |
+    - cardiac fibroblast
+- synonym: foreskin fibroblast
+  examples: |
+    - bj fibroblast
+- synonym: g401
+  examples: |
+    - g-401
+- synonym: g401.6
+  examples: |
+    - mrt_g401.6
+- synonym: glioblastoma h54
+  examples: |
+    - h54
+- synonym: glomerular visceral epithelial cell
+  examples: |
+    - glomerular podocyte
+    - podocyte
+- synonym: gm01660 cell
+  examples: |
+    - gm01660
+- synonym: gm03348 cell
+  examples: |
+    - gm03348
+- synonym: gm04503 cell
+  examples: |
+    - gm04503
+- synonym: gm04504 cell
+  examples: |
+    - gm04504
+- synonym: gm12878
+  examples: |
+    - gm12878 lymphoblastoid cells
+- synonym: gm12890 cell
+  examples: |
+    - gm12890
+- synonym: gm18486 cell
+  examples: |
+    - gm18486
+- synonym: gm18498 cell
+  examples: |
+    - gm18498
+- synonym: gm18499 cell
+  examples: |
+    - gm18499
+- synonym: gm18501 cell
+  examples: |
+    - gm18501
+- synonym: gm18502 cell
+  examples: |
+    - gm18502
+- synonym: gm18504 cell
+  examples: |
+    - gm18504
+- synonym: gm18508 cell
+  examples: |
+    - gm18508
+- synonym: gm18510 cell
+  examples: |
+    - gm18510
+- synonym: gm18511 cell
+  examples: |
+    - gm18511
+- synonym: gm18516 cell
+  examples: |
+    - gm18516
+- synonym: gm18517 cell
+  examples: |
+    - gm18517
+- synonym: gm18519 cell
+  examples: |
+    - gm18519
+- synonym: gm18520 cell
+  examples: |
+    - gm18520
+- synonym: gm18522 cell
+  examples: |
+    - gm18522
+- synonym: gm18852 cell
+  examples: |
+    - gm18852
+- synonym: gm18853 cell
+  examples: |
+    - gm18853
+- synonym: gm18855 cell
+  examples: |
+    - gm18855
+- synonym: gm18856 cell
+  examples: |
+    - gm18856
+- synonym: gm18858 cell
+  examples: |
+    - gm18858
+- synonym: gm18859 cell
+  examples: |
+    - gm18859
+- synonym: gm18861 cell
+  examples: |
+    - gm18861
+- synonym: gm18862 cell
+  examples: |
+    - gm18862
+- synonym: gm18870 cell
+  examples: |
+    - gm18870
+- synonym: gm18907 cell
+  examples: |
+    - gm18907
+- synonym: gm18909 cell
+  examples: |
+    - gm18909
+- synonym: gm18912 cell
+  examples: |
+    - gm18912
+- synonym: gm18913 cell
+  examples: |
+    - gm18913
+- synonym: gm18916 cell
+  examples: |
+    - gm18916
+- synonym: gm19092 cell
+  examples: |
+    - gm19092
+- synonym: gm19093 cell
+  examples: |
+    - gm19093
+- synonym: gm19098 cell
+  examples: |
+    - gm19098
+- synonym: gm19101 cell
+  examples: |
+    - gm19101
+- synonym: gm19114 cell
+  examples: |
+    - gm19114
+- synonym: gm19116 cell
+  examples: |
+    - gm19116
+- synonym: gm19119 cell
+  examples: |
+    - gm19119
+- synonym: gm19127 cell
+  examples: |
+    - gm19127
+- synonym: gm19130 cell
+  examples: |
+    - gm19130
+- synonym: gm19131 cell
+  examples: |
+    - gm19131
+- synonym: gm19137 cell
+  examples: |
+    - gm19137
+- synonym: gm19138 cell
+  examples: |
+    - gm19138
+- synonym: gm19140 cell
+  examples: |
+    - gm19140
+- synonym: gm19141 cell
+  examples: |
+    - gm19141
+- synonym: gm19143 cell
+  examples: |
+    - gm19143
+- synonym: gm19144 cell
+  examples: |
+    - gm19144
+- synonym: gm19147 cell
+  examples: |
+    - gm19147
+- synonym: gm19152 cell
+  examples: |
+    - gm19152
+- synonym: gm19153 cell
+  examples: |
+    - gm19153
+- synonym: gm19159 cell
+  examples: |
+    - gm19159
+- synonym: gm19160 cell
+  examples: |
+    - gm19160
+- synonym: gm19171 cell
+  examples: |
+    - gm19171
+- synonym: gm19190 cell
+  examples: |
+    - gm19190
+- synonym: gm19200 cell
+  examples: |
+    - gm19200
+- synonym: gm19201 cell
+  examples: |
+    - gm19201
+- synonym: gm19203 cell
+  examples: |
+    - gm19203
+- synonym: gm19204 cell
+  examples: |
+    - gm19204
+- synonym: gm19206 cell
+  examples: |
+    - gm19206
+- synonym: gm19207 cell
+  examples: |
+    - gm19207
+- synonym: gm19209 cell
+  examples: |
+    - gm19209
+- synonym: gm19210 cell
+  examples: |
+    - gm19210
+- synonym: gm19222 cell
+  examples: |
+    - gm19222
+- synonym: gm19223 cell
+  examples: |
+    - gm19223
+- synonym: gm19225 cell
+  examples: |
+    - gm19225
+- synonym: gm19257 cell
+  examples: |
+    - gm19257
+- synonym: gm23248
+  examples: |
+    - gm23248 cell
+- synonym: gtl-16
+  examples: |
+    - glc-16
+- synonym: h1-hesc
+  examples: |
+    - h1
+    - h1 cells
+- synonym: h7-hesc
+  examples: |
+    - h7
+    - h7 cell
+    - h7-es
+    - wa07
+- synonym: h9
+  examples: |
+    - h9 cells
+- synonym: hap-1
+  examples: |
+    - hap1
+- synonym: hbl-1 cell
+  examples: |
+    - hbl1
+- synonym: hcc1954
+  examples: |
+    - hcc-1954
+- synonym: hcc2157
+  examples: |
+    - hcc-2157
+- synonym: hcc95
+  examples: |
+    - hcc-95
+- synonym: hct116
+  examples: |
+    - hct-116 cell
+    - hct116 cell
+- synonym: hct15
+  examples: |
+    - hct-116
+    - hct-15
+- synonym: hek293
+  examples: |
+    - human embryonic kidney cell
+- synonym: helper t cell
+  examples: |
+    - helper t-cell
+    - helper t lymphocyte
+    - helper t-lymphocyte
+    - primary t helper memory cells from peripheral blood 2
+    - primary t helper naive cells from peripheral blood
+    - t-helper cell
+- synonym: hematopoietic multipotent progenitor cell
+  examples: |
+    - hemopoietic progenitor cell
+    - mpp
+- synonym: hematopoietic stem cell
+  examples: |
+    - blood forming stem cell
+    - hemopoietic stem cell
+    - hsc
+    - primary hematopoietic stem cells
+- synonym: hepatic stellate cell
+  examples: |
+    - hepatic perisinusoidal cell
+    - ito cell
+    - lx2
+    - perisinusoidal cell
+- synonym: hepg2
+  examples: |
+    - hep-g2
+    - hepg2 cell
+- synonym: hffc6
+  examples: |
+    - hff-htert clone 6
+- synonym: hff-myc
+  examples: |
+    - hff cmyc
+    - hff_cmyc
+    - hff-cmyc
+    - hff myc
+    - hff_myc
+- synonym: hgadfn167
+  examples: |
+    - hgadfn167 cell
+    - hgps
+    - hgps cell
+- synonym: hl-60
+  examples: |
+    - hl60
+    - hl-60 cell
+    - hl60 cell
+- synonym: hpde6-e6e7
+  examples: |
+    - hpde-6e6e7
+    - hpde-6_e6e7
+    - hpde-6/e6e7
+    - hpde6-e6e7-hpv
+    - pancreatic duct cells e6e7
+- synonym: hre
+  examples: |
+    - human renal epithelial cell line
+- synonym: hs-27a
+  examples: |
+    - hs-27a cell
+- synonym: hs 38.t
+  examples: |
+    - wi-38
+- synonym: hs-5
+  examples: |
+    - hs-5 cell
+- synonym: htr8/svneo
+  examples: |
+    - htr_8_svneo
+    - htr-8-svneo
+    - htr-8/svneo
+    - htr8-svneo
+- synonym: hues48
+  examples: |
+    - hues48 cells
+- synonym: hues6
+  examples: |
+    - hues6 cells
+- synonym: hues64
+  examples: |
+    - hues64 cells
+- synonym: huh-7
+  examples: |
+    - huh7
+- synonym: huvec cell
+  examples: |
+    - human umbilical vein endothelial cell
+    - huvec
+    - huvec umbilical vein endothelial primary cells
+- synonym: hypobranchial artery
+  examples: |
+    - ha
+    - ha-sp
+- synonym: immortal human testis-derived cell line cell
+  examples: |
+    - nccit
+- synonym: imr-90
+  examples: |
+    - imr90
+    - imr90 fetal lung fibroblast cell line
+    - imr90 fetal lung fibroblasts cell line
+- synonym: ips-15b
+  examples: |
+    - ips-15b cells
+- synonym: ips-20b
+  examples: |
+    - ips-20b cells
+- synonym: ips-5
+  examples: |
+    - ips-18 cells
+- synonym: ipsc derived cell line
+  examples: |
+    - induced pluripotent stem cell derived cell line
+    - ipsc derived
+    - m23f
+    - pdb1lox-17/puro-5
+    - pdb1lox-21/puro-26
+- synonym: ips df 19.11
+  examples: |
+    - ips df 19.11 cells
+- synonym: ips df 6.9
+  examples: |
+    - ips df 6.9 cells
+- synonym: ips-nihi11
+  examples: |
+    - ag20443
+    - ips 4
+    - ips a1
+    - ips a6
+    - ips c1
+    - ips nihi11
+- synonym: ips-nihi7
+  examples: |
+    - ag08395
+    - ips nihi7
+- synonym: ishikawa
+  examples: |
+    - ishikawa cell
+- synonym: jurkat
+  examples: |
+    - jm
+    - jm cell
+    - jurkat cell
+    - jurkat clone e61
+- synonym: jurkat e-6.1 cell
+  examples: |
+    - jurkat cell e-6.1
+    - jurkat cell e6.1
+    - jurkat e6-1
+    - jurkat e6.1
+    - tib-152
+- synonym: k562
+  examples: |
+    - k-562
+    - k562 cell
+    - k-562 cell
+    - k562 leukemia cells
+- synonym: karpas 422
+  examples: |
+    - karpas-422
+    - karpas 422 cell
+- synonym: keratinocyte
+  examples: |
+    - keratinized cell of epidermis
+    - malpighian cell
+- synonym: kms-11
+  examples: |
+    - kms11
+    - kms_11
+    - mv4-11
+    - tko
+- synonym: kopt-k1
+  examples: |
+    - koptk1
+- synonym: lc2/ad
+  examples: |
+    - nhdf-ad
+- synonym: lhcn-m2
+  examples: |
+    - lhcnm2
+    - lhcn m2
+- synonym: lhsr
+  examples: |
+    - prec
+- synonym: lncap
+  examples: |
+    - lncap-abl
+    - lncap cell
+- synonym: lncap clone fgc
+  examples: |
+    - crl-1740
+    - lncap clone fgc cell
+    - lncap_fgc
+    - lncap-fgc
+- synonym: loximvi
+  examples: |
+    - lox imvi
+    - lox-imvi
+- synonym: lymphoblastoid cell line
+  examples: |
+    - gm2610
+    - gm2630
+    - ms1
+    - ms4221
+- synonym: m059j
+  examples: |
+    - crl_2366
+- synonym: mammary epithelial cell
+  examples: |
+    - breast epithelial cell
+- synonym: mature t cell
+  examples: |
+    - cd3e-positive t cell
+    - mature t-cell
+    - primary t cells effector/memory enriched from peripheral blood
+- synonym: mcf 10a
+  examples: |
+    - mcf-10a
+- synonym: mcf-7
+  examples: |
+    - mcf7
+    - mcf-7 cell
+    - mcf7 cell
+    - mcf7-lted
+- synonym: mdamb231
+  examples: |
+    - mda-231
+    - mda-mb-231
+- synonym: mdamb436
+  examples: |
+    - mda-mb-436
+- synonym: mdamb453
+  examples: |
+    - mda-mb-453
+- synonym: mdamb468
+  examples: |
+    - mda-mb-468
+- synonym: melanocyte of skin
+  examples: |
+    - skin melanocyte
+    - wm262
+- synonym: mel cell
+  examples: |
+    - mel
+- synonym: mesodermal cell
+  examples: |
+    - mesoblast
+    - mesoderm cell
+- synonym: mm1
+  examples: |
+    - mm1.s
+- synonym: mm.1s
+  examples: |
+    - mm.1 s
+    - mm.1-s
+    - mm.1s cell
+- synonym: molm-16
+  examples: |
+    - molm-13
+    - molm-14
+- synonym: mononuclear cell
+  examples: |
+    - mononuclear leukocyte
+- synonym: motexafin gadolinium
+  examples: |
+    - c52h72gdn5o14
+    - gadolinium texaphyrin
+    - gd-tex
+    - gd texaphyrin
+    - inchi=1/c48h66n5o10.2c2h4o2.gd/c1-7-35-36(8-2)40-28-42-38(12-10-14-55)34(4)46(53-42)32-50-44-30-48(63-26-24-61-22-20-59-18-16-57-6)47(62-25-23-60-21-19-58-17-15-56-5)29-43(44)49-31-45-33(3)37(11-9-13-54)41(52-45)27-39(35)51-40;2*1-2(3)4;/h27-32,54-55h,7-26h2,1-6h3;2*1h3,(h,3,4);/q-1;;;+3/p-2/b39-27-,40-28-,41-27-,42-28-,45-31-,46-32-,49-31+,49-43+,50-32+,50-44+;;;/fc48h66n5o10.2c2h3o2.gd/qm;2*-1;m
+    - inchikey=vazlwpahmordgr-mpnkmpctdc
+    - mgd
+    - (pb-7-11-233'2'4)-bis(acetato-kappao)(9,10-diethyl-20,21-bis(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)-4,15-dimethyl-8,11-imino-3,6:16,13-dinitrilo-1,18-benzodiazacycloeicosine-5,14-dipropanolato-kappan(1),kappan(18),kappan(23),kappan(24),kappan(25))gadolinium
+    - tex
+    - xcytrin
+    - bis(acetato-kappao){3,3'-[4,5-diethyl-16,17-bis{2-[2-(2-methoxyethoxy)ethoxy]ethoxy}-10,23-dimethyl-13,20,25,26,27-pentaazapentacyclo[20.2.1.1(3,6).1(8,11).0(14,19)]heptacosa-1,3,5,7,9,11(26),12,14,16,18,20,22(25),23-tridecaene-9,24-diyl-kappa(5)n(13),n(20),n(25),n(26),n(27)]dipropan-1-olato}gadolinium
+    - ccc1c(cc)c2c=c3c(ccco)=c(c)c4=[n]3[gd]356(oc(c)=o)(oc(c)=o)[n](=cc7=[n]3c(=cc1n25)c(ccco)=c7c)c1cc(occoccoccoc)c(occoccoccoc)cc1[n]6=c4
+- synonym: mouse neural progenitor cell
+  examples: |
+    - ecto neural progenitor cell
+    - mouse npc
+    - neural progenitor cell
+- synonym: muscle cell
+  examples: |
+    - myocyte
+- synonym: myeloid leukemia cell line
+  examples: |
+    - dnd41 tcell leukemia cell line
+- synonym: myotube
+  examples: |
+    - myotubule
+    - single cell sarcomere
+- synonym: naive b cell
+  examples: |
+    - naive b-cell
+    - naive b lymphocyte
+    - naive b-lymphocyte
+- synonym: naive thymus-derived cd4-positive, alpha-beta t cell
+  examples: |
+    - naive thymus-derived cd4-positive, alpha-beta t-cell
+    - naive thymus-derived cd4-positive, alpha-beta t lymphocyte
+    - naive thymus-derived cd4-positive, alpha-beta t-lymphocyte
+    - t.4nve.sp
+    - th0
+- synonym: naive thymus-derived cd8-positive, alpha-beta t cell
+  examples: |
+    - naive thymus-dervied cd8-positive, alpha-beta t-cell
+    - naive thymus-dervied cd8-positive, alpha-beta t lymphocyte
+    - naive thymus-dervied cd8-positive, alpha-beta t-lymphocyte
+    - primary t cd8+ naive cells from peripheral blood
+- synonym: nci-h2009
+  examples: |
+    - h2009
+- synonym: nci-h2171
+  examples: |
+    - h2171
+- synonym: nci-h358
+  examples: |
+    - h358
+- synonym: nci-h69
+  examples: |
+    - h69
+    - h69 cell
+- synonym: nci-n87
+  examples: |
+    - nci-h526
+- synonym: neutrophil
+  examples: |
+    - neutrocyte
+    - neutrophilic leucocyte
+    - neutrophilic leukocyte
+    - neutrophil leucocyte
+    - neutrophil leukocyte
+- synonym: nf90-8
+  examples: |
+    - 90-8tl
+- synonym: ngp cell
+  examples: |
+    - ngp
+- synonym: non-pigmented ciliary epithelial cell
+  examples: |
+    - npe
+- synonym: nt2/d1
+  examples: |
+    - nt2-d1
+    - nt2/d1 cell
+    - ntera-2 cl.d1 cell
+- synonym: oci-ly1
+  examples: |
+    - oci-ly8
+- synonym: oci-ly3
+  examples: |
+    - oci-ly-3
+    - oci-ly-3 cell
+- synonym: osteoblast
+  examples: |
+    - osteoblast primary cells
+- synonym: panc1
+  examples: |
+    - panc-1
+- synonym: pc-3
+  examples: |
+    - pc3
+    - pc-3 cell
+    - pc3 cell
+- synonym: pc-7
+  examples: |
+    - te-7
+- synonym: pfsk-1
+  examples: |
+    - pfsk-1 cell
+- synonym: pl-21
+  examples: |
+    - pdb2lox-21
+- synonym: precursor cell
+  examples: |
+    - islet precursor cell
+- synonym: primary myelofibrosis
+  examples: |
+    - agnogenic myeloid metaplasia
+    - aleukemic myelosis
+    - amm
+    - bone marrow fibrosis
+    - chronic idiopathic myelofibrosis
+    - cimf
+    - primary monocytes fromNBSPperipheralNBSPblood
+    - idiopathic bone marrow fibrosis
+    - idiopathic myelofibrosis
+    - megakaryocytic myelosclerosis
+    - myelofibrosis with myeloid metaplasia
+    - myelosclerosis
+    - myelosclerosis with myeloid metaplasia
+    - osteomyelofibrosis
+    - primary neutrophils fromNBSPperipheralNBSPblood
+- synonym: promyelocytic leukemia cell line
+  examples: |
+    - mr4
+    - upr9
+- synonym: radial glial cell
+  examples: |
+    - mid-neurogenesis radial glial cells
+- synonym: regulatory t cell
+  examples: |
+    - regulatory t-cell
+    - regulatory t lymphocyte
+    - regulatory t-lymphocyte
+- synonym: renal cell adenocarcinoma
+  examples: |
+    - renal cell carcinoma
+- synonym: rpmi-7951
+  examples: |
+    - rpmi7951
+    - rpmi 7951
+    - rpmi_7951
+    - rpmi-8402
+- synonym: rs4-11 cell
+  examples: |
+    - rs4
+- synonym: rwpe1
+  examples: |
+    - crl-11609
+    - rwpe 1
+    - rwpe_1
+- synonym: rwpe2
+  examples: |
+    - crl-11610
+    - rwpe 2
+    - rwpe_2
+- synonym: sbc-3
+  examples: |
+    - calu-3
+    - hmads-3
+- synonym: scc-9
+  examples: |
+    - um-scc-4
+    - um-scc-47
+- synonym: sf268
+  examples: |
+    - sf-268
+- synonym: shef-1
+  examples: |
+    - shef1
+    - shef 4
+- synonym: simpson-golabi-behmel syndrome
+  examples: |
+    - dgsx
+    - golabi-rosen syndrome
+    - sara angers syndrome
+    - sdys
+    - sgbs
+    - sgbs1
+    - sgb syndrome
+    - simpson dysmorphia syndrome
+    - simpson-golabi-behmel syndrome type 1
+    - x-linked dysplasia gigantism syndrome
+- synonym: sjcrh30
+  examples: |
+    - crl-2061
+    - rms 13
+- synonym: skeletal muscle myoblast
+  examples: |
+    - hsmm skeletal muscle myoblasts cells
+    - skeletal myoblast
+- synonym: skmc
+  examples: |
+    - human skeletal muscle cells
+- synonym: sk-mel-5
+  examples: |
+    - mel-5
+    - skmel5
+    - sk mel 5
+    - sk_mel_5
+    - sk-mel-5 cell
+- synonym: sk-n-dz
+  examples: |
+    - skndz
+    - sk n dz
+    - sk_n_dz
+    - sk-n-dz cell
+- synonym: sk-n-mc
+  examples: |
+    - sknmc
+- synonym: sk-n-sh
+  examples: |
+    - sknsh
+- synonym: smooth muscle cell
+  examples: |
+    - myocytes, smooth muscle
+    - smcs
+    - smooth muscle fiber
+- synonym: somite 17
+  examples: |
+    - pdb2lox-17
+- synonym: stromal cell of bone marrow
+  examples: |
+    - bone marrow stromal cell
+- synonym: su.86.86
+  examples: |
+    - su-dhl6
+- synonym: sudhl6
+  examples: |
+    - su-dhl-6
+- synonym: sum159pt
+  examples: |
+    - sum159
+    - sum 159
+    - sum-159
+    - sum159-mda453
+    - sum 159pt
+    - sum-159pt
+- synonym: t47d
+  examples: |
+    - t47d-mtvl
+- synonym: t cell
+  examples: |
+    - ncha1
+    - t-cell
+    - t lymphocyte
+    - t-lymphocyte
+- synonym: tc-seq
+  examples: |
+    - tc-797
+- synonym: th-1
+  examples: |
+    - skno-1
+    - zr-75-1
+- synonym: th-2
+  examples: |
+    - hk-2
+    - tcam-2
+- synonym: t-helper 17 cell
+  examples: |
+    - helper t cell type 17
+    - il-17-producing cd4+ t helper
+    - th17 cd4+ t cell
+    - t(h)-17 cell
+    - th17 cell
+    - th17 t cell
+    - th17 t-cell
+    - th17 t lymphocyte
+    - th17 t-lymphocyte
+    - t helper cells type 17
+- synonym: t-helper 1 cell
+  examples: |
+    - helper t cell type 1
+    - th1 cd4+ t cell
+    - t(h)-1 cell
+    - th1 cell
+    - th1 t cell
+    - th1 t-cell
+    - th1 t lymphocyte
+    - th1 t-lymphocyte
+    - t helper cells type 1
+- synonym: t-helper 2 cell
+  examples: |
+    - helper t cell type 2
+    - t(h)-2 cell
+    - th2 cell
+    - th2 t cell
+    - th2 t-cell
+    - th2 t lymphocyte
+    - th2 t-lymphocyte
+    - t helper cells type 2
+- synonym: tive
+  examples: |
+    - tive-ltc
+- synonym: t-lymphocyte cell line
+  examples: |
+    - atconv
+- synonym: ttc549
+  examples: |
+    - mrtttc549
+- synonym: u2os
+  examples: |
+    - u2-os
+- synonym: u-87 mg
+  examples: |
+    - u87
+    - u-87 cell
+    - u87 cell
+    - u-87 mg cell
+    - u-87-mg cell
+    - u-87mg cell
+    - u87-mg cell
+    - u87mg cell
+- synonym: ucsf4
+  examples: |
+    - es-ucsf4  cells
+    - ucsf-4
+    - ucsf-4*
+- synonym: uke1
+  examples: |
+    - uke-1
+- synonym: um-scc-17a cell
+  examples: |
+    - um-scc-74a
+- synonym: urothelium cell line
+  examples: |
+    - human ureter cell
+    - urothelial cell
+    - urotsa cell
+- synonym: weri-rb-1
+  examples: |
+    - weri rb 1
+    - weri_rb_1
+- synonym: wm 266-4 cell
+  examples: |
+    - wm266-4
+- synonym: biosample_type
+  examples: |
+    - biosample type
+- synonym: isoform expression
+  examples: |
+    - rna seq
+    - rna-seq
+    - rna sequencing
+    - isoform expression quantification
+    - isoform quantification
+    - expression of isoforms
+    - sequencing of isoforms
+    - quantification of isoforms
+    - isoform rna seq
+- synonym: lung fibroblast
+  examples: |
+    - fibroblast of lung
+    - nhlf
+- synonym: exon quantification
+  examples: |
+    - exon expression
+    - quantification of transcriptomic features
+    - exon rna-seq
+    - expression of exons
+    - quantification of exons
+- synonym: masked copy number segment
+  examples: |
+    - masked copy number variation
+    - masked copy number variations
+    - masked copy number
+    - masked dna copy number variation
+    - masked dna copy number variants
+    - masked dna copy number polymorphisms
+    - masked dna copy number polymorphism
+    - masked copy number polymorphisms
+    - masked polymorphisms, copy number
+    - masked dna copy number changes
+- synonym: chronic myeloid leukemia pathway
+  examples: |
+    - cancer, chronic myeloid leukemia, leukemia
+    - chronic myeloid leukemia
+    - chronic myeloid leukemia, leukemia
+    - cml pathway
+- synonym: colorectal cancer pathway
+  examples: |
+    - crc pathway
+- synonym: prostate cancer pathway
+  examples: |
+    - cancer, prostate cancer
+- synonym: urinary bladder
+  examples: |
+    - vesica urinaria
+- synonym: cds
+  examples: |
+    - coding sequence
+    - coding_sequence
+    - insdc_feature:cds
+- synonym: centromere
+  examples: |
+    - insdc_feature:centromere
+- synonym: c_gene_segment
+  examples: |
+    - c gene
+    - c_gene
+    - c gene segment
+    - constant gene
+    - insdc_feature:c_region
+- synonym: d_loop
+  examples: |
+    - d loop
+    - d-loop
+    - insdc_feature:d-loop
+- synonym: enhancer
+  examples: |
+    - insdc_qualifier:enhancer
+- synonym: gene
+  examples: |
+    - genes
+- synonym: gene_segment
+  examples: |
+    - d gene segment
+    - gene segment
+- synonym: intron
+  examples: |
+    - insdc_feature:intron
+- synonym: j_gene_segment
+  examples: |
+    - insdc_feature:j_segment
+    - j gene
+    - j-gene
+    - j gene segment
+- synonym: mirna
+  examples: |
+    - insdc_qualifier:mirna
+    - microrna
+    - micro rna
+    - small temporal rna
+    - strna
+- synonym: mrna
+  examples: |
+    - insdc_feature:mrna
+    - messenger rna
+    - protein_coding_transcript
+- synonym: ncrna
+  examples: |
+    - known_ncrna
+    - noncoding rna
+- synonym: primary_transcript
+  examples: |
+    - insdc_feature:precursor_rna
+    - insdc_feature:prim_transcript
+    - precursor rna
+    - primary transcript
+- synonym: promoter
+  examples: |
+    - insdc_qualifier:promoter
+    - promoter sequence
+- synonym: repeat_region
+  examples: |
+    - insdc_qualifier:other
+    - repeat region
+- synonym: rna
+  examples: |
+    - lnc rna
+- synonym: rnase_mrp_rna
+  examples: |
+    - insdc_qualifier:rnase_mrp_rna
+    - rnase mrp rna
+- synonym: rnase_p_rna
+  examples: |
+    - insdc_qualifier:rnase_p_rna
+    - rnase p rna
+- synonym: rrna
+  examples: |
+    - insdc_feature:rrna
+    - ribosomal ribonucleic acid
+    - ribosomal rna
+- synonym: selenocysteine
+  examples: |
+    - sec
+    - u
+- synonym: snorna
+  examples: |
+    - insdc_qualifier:snorna
+    - small nucleolar rna
+- synonym: snrna
+  examples: |
+    - insdc_qualifier:snrna
+    - small nuclear rna
+- synonym: srp_rna
+  examples: |
+    - insdc_qualifier:srp_rna
+    - srp rna
+- synonym: start_codon
+  examples: |
+    - initiation codon
+    - start codon
+- synonym: stop_codon
+  examples: |
+    - stop codon
+- synonym: telomerase_rna
+  examples: |
+    - insdc_qualifier:telomerase_rna
+    - telomerase rna
+- synonym: transcript
+  examples: |
+    - transcripts
+- synonym: trna
+  examples: |
+    - insdc_feature:trna
+- synonym: utr
+  examples: |
+    - untranslated region
+- synonym: vault_rna
+  examples: |
+    - insdc_qualifier:vault_rna
+    - vault rna
+- synonym: v_gene_segment
+  examples: |
+    - insdc_feature:v_segment
+    - variable_gene
+    - v gene
+    - v-gene
+    - v gene segment
+- synonym: y_rna
+  examples: |
+    - insdc_qualifier:y_rna
+    - y rna
+- synonym: annotation
+  examples: |
+    - annotations
+    - perform annotations
+    - enrich regions

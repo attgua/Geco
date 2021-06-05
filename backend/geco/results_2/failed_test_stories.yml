@@ -1,0 +1,51 @@
+version: "2.0"
+stories:
+- story: happy path 1 (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: action_workflow
+  - intent: mood_great  # predicted: choice_value_target: [amazing](target)
+  - action: utter_happy  # predicted: action_take_dbscan_2
+- story: happy path 2 (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: action_workflow
+  - intent: mood_great  # predicted: choice_value_target: [amazing](target)
+  - action: utter_happy  # predicted: action_take_dbscan_2
+  - intent: goodbye  # predicted: strings: bye-bye!
+  - action: utter_goodbye  # predicted: action_take_dbscan_2
+- story: sad path 1 (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: action_workflow
+  - intent: mood_unhappy  # predicted: greet: not good
+  - action: utter_cheer_up  # predicted: action_take_dbscan_2
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm
+  - action: utter_happy  # predicted: action_default_fallback
+- story: sad path 2 (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: action_workflow
+  - intent: mood_unhappy  # predicted: greet: not good
+  - action: utter_cheer_up  # predicted: action_take_dbscan_2
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: choice_value_disease: [not really](disease)
+  - action: utter_goodbye  # predicted: action_rename_database
+- story: sad path 3 (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: action_workflow
+  - intent: mood_unhappy  # predicted: choice_value_tissue: [very terrible](tissue)
+  - action: utter_cheer_up  # predicted: action_take_dbscan_2
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny
+  - action: utter_goodbye  # predicted: action_rename_database
+- story: say goodbye (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: strings: bye-bye!
+  - action: utter_goodbye  # predicted: action_is_healthy_no
+- story: bot challenge (/tmp/tmpbtxj1yfs/afc2b8a99f2c4bd1b19e123ee8800531_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: union: are you a bot?
+  - action: utter_iamabot  # predicted: action_is_healthy_no

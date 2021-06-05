@@ -3,10 +3,10 @@
     <div class="title_bar">
       <h1>
         GeCo Agent
-        <font-awesome-icon class="icon" :icon="['fas', 'dna']" size="1x" />
+        <font-awesome-icon class="icon" :icon="['fas', 'dna']" size="1x"/>
       </h1>
       <div class="reset_button" @click="reset">
-        <font-awesome-icon class="icon" :icon="['fas', 'redo']" size="2x" />
+        <font-awesome-icon class="icon" :icon="['fas', 'redo']" size="2x"/>
         Reset
       </div>
     </div>
@@ -19,40 +19,98 @@
     <div class="grid_container_lower_row">
       <div class="prova pane_border box_pane">
         <div
-          v-for="item in stepList"
-          :key="item.name"
-          :class="['process_step_box', item.state]"
+            v-for="item in stepList"
+            :key="item.name"
+            :class="['process_step_box', item.state]"
         >
           <div>
             {{ item.name }}
           </div>
           <font-awesome-icon
-            class="download_icon"
-            :icon="['fas', 'download']"
-            size="1x"
-            @click="downloadFile(item.urlList, 'esempio.txt', 'text/plain')"
-            v-if="item.isDownloadButtonVisible"
+              class="download_icon"
+              :icon="['fas', 'download']"
+              size="1x"
+              @click="downloadFile(item.urlList, 'esempio.txt', 'text/plain')"
+              v-if="item.isDownloadButtonVisible"
           />
         </div>
       </div>
-      <div class="prova pane_border"><parameters-box></parameters-box></div>
+      <div class="prova pane_border">
+        <parameters-box></parameters-box>
+      </div>
     </div>
   </div>
 </template>
 
 <script src="/socket.io/socket.io.js"></script>
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator';
-import { namespace } from 'vuex-class';
+import {Component, Vue, Prop} from 'vue-property-decorator';
+import {namespace} from 'vuex-class';
 import io from 'socket.io-client';
 import Chat from './../components/chat/chat_interface.vue';
 import FunctionsArea from '../components/functionsArea/functionsArea.vue';
 import Toolbox from './../components/toolbox/toolbox_interface.vue';
 import ParametersBox from '@/components/ParametersBox.vue';
-import { conversation } from './../test/conversation';
+import {conversation} from './../test/conversation';
 
-//const socket = io('/test', { path: '/geco_agent/socket.io' });
-const socket = io('http://localhost:5980');
+console.log("before", document.cookie)
+
+function getCookie(name:any) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length == 2){
+        const d = parts.pop().split(';').shift()
+        return d;
+  }
+}
+
+const session=getCookie('session')
+if(!session){
+    document.cookie="session="+Math.random()
+}
+
+//function writeCookie(name:any,value:any,days:any) {
+//    var date, expires;
+//    if (days) {
+//        date = new Date();
+//        date.setTime(date.getTime()+(days*24*60*60*1000));
+//        expires = "; expires=" + date.toUTCString();
+//            }else{
+//        expires = "";
+//    }
+//    document.cookie = name + "=" + value + expires + "; path=/";
+//    console.log("heyyyyyyyyyyyy")
+//    console.log(document.cookie)
+//}
+
+//function readCookie(name:any) {
+//    var i, c, ca, nameEQ = name + "=";
+//    ca = document.cookie.split(';');
+//    for(i=0;i < ca.length;i++) {
+//        c = ca[i];
+//        while (c.charAt(0)==' ') {
+//            c = c.substring(1,c.length);
+//        }
+//        if (c.indexOf(nameEQ) == 0) {
+//            return c.substring(nameEQ.length,c.length);
+//        }
+//    }
+//    return '';
+//}
+
+//var sId = 's234543245';
+//writeCookie('sessionId', sId, 3);
+
+//var sId = readCookie('sessionId')
+
+
+//const socket = io('/test', {
+//  path: '/geco_agent_rasa/socket.io',
+
+const socket = io()
+
+
+//const socket = io('http://localhost:5990');
 const tools = namespace('tools');
 const gecoAgentStore = namespace('gecoAgent');
 const conversationStore = namespace('gecoAgent/conversation');
@@ -61,6 +119,8 @@ const functionsAreaStore = namespace('gecoAgent/functionsArea');
 const dataVizStore = namespace('gecoAgent/DataViz');
 const processStore = namespace('gecoAgent/process');
 const tableStore = namespace('gecoAgent/TableViewer');
+
+
 
 @Component({
   components: {
@@ -82,29 +142,31 @@ export default class GecoAgent extends Vue {
   @conversationStore.Mutation setSendButtonStatus!: (newValue: boolean) => void;
 
   @conversationStore.Mutation('parseJsonResponse') messageParser!: (
-    msg: MessageObject
+      msg: MessageObject
   ) => void;
   @parametersStore.Mutation('setParametersList') parameterParser!: (
-    payload: Parameter[]
+      payload: Parameter[]
   ) => void;
   @functionsAreaStore.Mutation('parseJsonResponse')
   availableChoicesParser!: (newChoices: AvailableChoiceJsonPayload) => void;
   @tools.Mutation addSingleToolToPane!: (newTool: string) => void;
   @tools.Mutation removeSingleToolFromPane!: (tool: string) => void;
   @dataVizStore.Mutation setCharts!: (newCharts: DataSummaryPayload) => void;
-  @dataVizStore.Action updateToolToShow!: (newTool: string) => void;
+  @tools.Action updateToolToShow!: (newTool: string) => void;
   @processStore.Mutation('parseJsonResponse') processParser!: (
-    newProcess: ProcessPanePayload
+      newProcess: ProcessPanePayload
   ) => void;
   @tableStore.Mutation setTable!: (tablePayload: TablePayload) => void;
   // @gecoAgentStore.Mutation updateLastMessageId!: (newValue: number) => void;
 
   @processStore.Mutation resetProcess!: () => void;
+  @tools.Mutation resetToolPane!: () => void;
 
   lastMessageId = -1;
 
   addRemoveTools(jsonPayload: ToolsSetUpPayload) {
-    if (jsonPayload.add) {
+    if (jsonPayload.add != null) {
+      console.log("chiamo add con", jsonPayload.add);
       jsonPayload.add.forEach((newTool) => {
         this.addSingleToolToPane(newTool);
       });
@@ -118,14 +180,15 @@ export default class GecoAgent extends Vue {
     // this.removeToolsFromPane(jsonPayload.remove);
     // this.addToolsToPane(jsonPayload.add);
   }
+
   conversation?: MessageObject[] = [];
   fieldList = [];
   isDownloadButtonVisible = false;
   linkList!: any;
   messageTypes = [
     // { typeName: 'query', nameSpace: 'gecoAgent/queryParameters' },
-    { typeName: 'message', nameSpace: 'gecoAgent/conversation' },
-    { typeName: 'select_annotations', nameSpace: 'tools' }
+    {typeName: 'message', nameSpace: 'gecoAgent/conversation'},
+    {typeName: 'select_annotations', nameSpace: 'tools'}
   ];
 
   jsonResponseParsingFunctions = {
@@ -152,7 +215,9 @@ export default class GecoAgent extends Vue {
   }
 
   created() {
-    socket.emit('ack', { message_id: this.lastMessageId });
+    socket.emit('connect', { session_id:  "ciao"});
+    socket.emit('ack', {session_id: document.cookie, message_id: this.lastMessageId, location: "crated"});
+    socket.emit('session_request', { session_id:  document.cookie});
     socket.on('json_response', (payload: any) => {
       if (payload.type) {
         console.log('server sent JSON_response', payload);
@@ -162,29 +227,43 @@ export default class GecoAgent extends Vue {
       }
     });
     socket.on('reconnect', () => {
-      socket.emit('ack', { message_id: this.lastMessageId });
+      socket.emit('ack', {message_id: this.lastMessageId, location: "reconnect"});
       console.log('RECONNECT! Mando ack');
     });
+    socket.on('wait_msg', (payload: any) => {
+      console.log("Ehi wait msg", payload);
+      this.jsonResponseParsingFunctions['message'](payload.payload);
+      this.setSendButtonStatus (false);
+    });
+
+    socket.on("session_confirm", (payload: any) => {
+    console.log("sessione confermata fra")
+    console.log(payload)
+        })
   }
 
   sendMessage() {
     if (this.message != '') {
       this.setSendButtonStatus(false);
       this.addUserMessage(this.message);
-      socket.emit('my_event', { data: this.message });
+      socket.emit('my_event', {session_id:  document.cookie, data: this.message});
       this.editMessage('');
     }
   }
+
+
 
   concatenateToMessage(newPiece: string) {
     this.message += ' ' + newPiece;
   }
 
   parseResponse(data: SocketJsonResponse) {
-    console.log('PARSE RESPONSE, type: ' + data.type);
+    console.log('PARSE RESPONSE, show: ' + data.show);
     console.log(data);
-    if (data.show) {
-      this.updateToolToShow(data.show);
+    //this.updateToolToShow(data.show);
+    if (data.show != null) {
+       console.log("Chiamato show!");
+       this.updateToolToShow(data.show);
     }
     // this.updateLastMessageId(data.message_id);
     this.lastMessageId = data.message_id;
@@ -196,13 +275,13 @@ export default class GecoAgent extends Vue {
   pushBotMessage(msg: string) {
     if (msg != '') {
       // conversation.push({ sender: 'bot', text: msg });
-      this.messageParser({ sender: 'bot', text: msg });
+      this.messageParser({sender: 'bot', text: msg});
     }
   }
 
   downloadFile(content: any, fileName: string, contentType: string) {
     var a = document.createElement('a');
-    var file = new Blob([content], { type: contentType });
+    var file = new Blob([content], {type: contentType});
     a.href = URL.createObjectURL(file);
     a.download = fileName;
     a.click();
@@ -212,15 +291,16 @@ export default class GecoAgent extends Vue {
 
   reset() {
     if (
-      window.confirm('Do you want to lose all your progresses and start over?')
+        window.confirm('Do you want to lose all your progresses and start over?')
     ) {
       socket.emit('reset', {});
 
       this.editMessage('');
-      
-      socket.emit('ack', { message_id: -1 });
-      this.resetProcess();;
-      
+
+      //socket.emit('ack', {message_id: -1, location: "reset"});
+      this.resetProcess();
+      this.resetToolPane();
+
       this.updateFieldList([]);
       this.parameterParser([]);
 
@@ -233,6 +313,7 @@ export default class GecoAgent extends Vue {
 </script>
 <style scoped lang="scss">
 @import '../style/base.scss';
+
 .container {
   height: 95vh;
   overflow: hidden;

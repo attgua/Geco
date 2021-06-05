@@ -3,11 +3,14 @@ class Field:
         self.name = field
 
 class Dataset:
-    def __init__(self, fields, name, region_schema=None, meta_schema = None):
+    def __init__(self, fields, name, region_schema=None, meta_schema = None, donors=[], items=[]):
         self.fields = fields
         self.name = name
         self.region_schema = region_schema
         self.meta_schema = meta_schema
+        self.donors = donors
+        self.items = items
+        self.dict_for_join= {}
 
     def add_meta_schema(self, schema):
         self.meta_schema = schema

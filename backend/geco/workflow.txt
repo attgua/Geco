@@ -1,49 +1,58 @@
 0
 Select
 --parameters--
-executed:True
-result:<data_structure.dataset.Dataset object at 0x7fc350e42290>
+executed:False
+result:None
 depends_on:Dataset
 metadata:None
 region:None
 -------
 1
+Select
+--parameters--
+executed:True
+result:<data_structure.dataset.Dataset object at 0x7f7fc07bb690>
+depends_on:Dataset
+metadata:None
+region:None
+-------
+2
 Pivot
 --parameters--
-executed:False
-result:None
+executed:True
+result:<logic.pivot_logic.PivotRes object at 0x7f7fc05a8dd0>
 depends_on:Select
-region_row:None
-meta_row:['item_id']
-region_col:['gene_symbol']
-meta_col:None
-value:['reads_per_million_mirna_mapped']
+region_row:['gene_symbol']
+meta_row:None
+region_col:None
+meta_col:['item_id']
+value:['fpkm']
 other_meta:None
 other_region:None
 -------
-2
+3
 KMeans
 --parameters--
-executed:False
-result:None
+executed:True
+result:<logic.kmeans_logic.ClusteringRes object at 0x7f7fc36c5250>
 depends_on:Pivot
 tuning:True
 min_clusters:3
-max_clusters:6
+max_clusters:5
 -------
-3
+4
 PCA
 --parameters--
-executed:False
-result:None
+executed:True
+result:<logic.pca_logic.PCARes object at 0x7f7fc36f2b90>
 depends_on:KMeans
 components:2
 -------
-4
+5
 Scatter
 --parameters--
-executed:False
-result:None
+executed:True
+result:<logic.scatter_logic.ScatterRes object at 0x7f7fc35624d0>
 depends_on:PCA
 depends_on_2:KMeans
 -------
